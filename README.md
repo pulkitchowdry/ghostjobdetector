@@ -304,4 +304,4 @@ MIT License - see LICENSE file for details.
 
 ## Acknowledgments
 
-Inspired by the need for transparency in job markets and platforms like ghostjobs.us. Built to help job seekers make informed decisions and reduce time wasted on ghost job applications.
+Inspired by the need for transparency in job markets. Built to help job seekers make informed decisions and reduce time wasted on ghost job applications.
