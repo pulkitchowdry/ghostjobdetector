@@ -1,0 +1,10 @@
+{
+  "name": "ghost-job-detector-extension",
+  "private": true,
+  "version": "1.0.0",
+  "description": "Chrome extension for Ghost Job Detector",
+  "scripts": {
+    "build": "node build.js",
+    "watch": "node build.js --watch"
+  }
+}

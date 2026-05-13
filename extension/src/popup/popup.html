@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ghost Job Detector</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      background: #0a0a0f;
+      color: #f5f5f7;
+      width: 360px;
+      min-height: 400px;
+    }
+    
+    .header {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      padding: 16px;
+      border-bottom: 1px solid #27272f;
+    }
+    
+    .header svg {
+      width: 24px;
+      height: 24px;
+      color: #22c55e;
+    }
+    
+    .header h1 {
+      font-size: 16px;
+      font-weight: 600;
+    }
+    
+    .content {
+      padding: 16px;
+    }
+    
+    .status {
+      text-align: center;
+      padding: 24px 16px;
+    }
+    
+    .status-icon {
+      width: 48px;
+      height: 48px;
+      margin: 0 auto 12px;
+      color: #9ca3af;
+    }
+    
+    .status-text {
+      color: #9ca3af;
+      font-size: 14px;
+      line-height: 1.5;
+    }
+    
+    .score-display {
+      text-align: center;
+      padding: 24px 16px;
+    }
+    
+    .score-ring {
+      position: relative;
+      width: 140px;
+      height: 140px;
+      margin: 0 auto 16px;
+    }
+    
+    .score-ring svg {
+      transform: rotate(-90deg);
+    }
+    
+    .score-ring .bg {
+      fill: none;
+      stroke: #27272f;
+      stroke-width: 10;
+    }
+    
+    .score-ring .progress {
+      fill: none;
+      stroke-width: 10;
+      stroke-linecap: round;
+      transition: stroke-dashoffset 0.5s ease-out;
+    }
+    
+    .score-ring .progress.green { stroke: #22c55e; }
+    .score-ring .progress.yellow { stroke: #eab308; }
+    .score-ring .progress.red { stroke: #ef4444; }
+    
+    .score-value {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      text-align: center;
+    }
+    
+    .score-number {
+      font-size: 36px;
+      font-weight: 700;
+      line-height: 1;
+    }
+    
+    .score-number.green { color: #22c55e; }
+    .score-number.yellow { color: #eab308; }
+    .score-number.red { color: #ef4444; }
+    
+    .score-label {
+      font-size: 11px;
+      color: #9ca3af;
+      margin-top: 4px;
+    }
+    
+    .verdict {
+      font-size: 14px;
+      font-weight: 500;
+      padding: 6px 12px;
+      border-radius: 6px;
+      display: inline-block;
+    }
+    
+    .verdict.green {
+      background: rgba(34, 197, 94, 0.15);
+      color: #22c55e;
+    }
+    
+    .verdict.yellow {
+      background: rgba(234, 179, 8, 0.15);
+      color: #eab308;
+    }
+    
+    .verdict.red {
+      background: rgba(239, 68, 68, 0.15);
+      color: #ef4444;
+    }
+    
+    .factors {
+      margin-top: 16px;
+      padding-top: 16px;
+      border-top: 1px solid #27272f;
+    }
+    
+    .factor {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 8px 0;
+    }
+    
+    .factor-name {
+      font-size: 13px;
+      color: #9ca3af;
+    }
+    
+    .factor-score {
+      font-size: 13px;
+      font-weight: 600;
+    }
+    
+    .factor-score.green { color: #22c55e; }
+    .factor-score.yellow { color: #eab308; }
+    .factor-score.red { color: #ef4444; }
+    
+    .insights {
+      margin-top: 16px;
+      padding-top: 16px;
+      border-top: 1px solid #27272f;
+    }
+    
+    .insight {
+      display: flex;
+      align-items: flex-start;
+      gap: 8px;
+      padding: 6px 0;
+      font-size: 12px;
+    }
+    
+    .insight svg {
+      width: 14px;
+      height: 14px;
+      flex-shrink: 0;
+      margin-top: 2px;
+    }
+    
+    .insight.positive svg { color: #22c55e; }
+    .insight.warning svg { color: #ef4444; }
+    
+    .btn {
+      width: 100%;
+      padding: 12px 16px;
+      border: none;
+      border-radius: 8px;
+      font-size: 14px;
+      font-weight: 500;
+      cursor: pointer;
+      transition: background 0.2s;
+    }
+    
+    .btn-primary {
+      background: #22c55e;
+      color: #0a0a0f;
+    }
+    
+    .btn-primary:hover {
+      background: #16a34a;
+    }
+    
+    .btn-primary:disabled {
+      opacity: 0.5;
+      cursor: not-allowed;
+    }
+    
+    .btn-secondary {
+      background: #1e1e26;
+      color: #f5f5f7;
+      margin-top: 8px;
+    }
+    
+    .btn-secondary:hover {
+      background: #27272f;
+    }
+    
+    .loading {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+    }
+    
+    .spinner {
+      width: 16px;
+      height: 16px;
+      border: 2px solid transparent;
+      border-top-color: currentColor;
+      border-radius: 50%;
+      animation: spin 0.8s linear infinite;
+    }
+    
+    @keyframes spin {
+      to { transform: rotate(360deg); }
+    }
+    
+    .footer {
+      padding: 12px 16px;
+      border-top: 1px solid #27272f;
+      text-align: center;
+    }
+    
+    .footer a {
+      color: #3b82f6;
+      text-decoration: none;
+      font-size: 12px;
+    }
+    
+    .footer a:hover {
+      text-decoration: underline;
+    }
+    
+    .error {
+      background: rgba(239, 68, 68, 0.1);
+      border: 1px solid rgba(239, 68, 68, 0.3);
+      border-radius: 8px;
+      padding: 12px;
+      color: #ef4444;
+      font-size: 13px;
+      margin-bottom: 16px;
+    }
+    
+    .not-linkedin {
+      text-align: center;
+      padding: 32px 16px;
+    }
+    
+    .not-linkedin svg {
+      width: 64px;
+      height: 64px;
+      color: #27272f;
+      margin-bottom: 16px;
+    }
+    
+    .not-linkedin p {
+      color: #9ca3af;
+      font-size: 14px;
+      margin-bottom: 16px;
+    }
+  </style>
+</head>
+<body>
+  <div class="header">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+      <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+    </svg>
+    <h1>Ghost Job Detector</h1>
+  </div>
+  
+  <div class="content" id="content">
+    <!-- Content will be injected by JavaScript -->
+  </div>
+  
+  <div class="footer">
+    <a href="https://your-app.vercel.app" target="_blank">Open Web App</a>
+  </div>
+  
+  <script src="popup.js"></script>
+</body>
+</html>
