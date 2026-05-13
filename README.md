@@ -209,6 +209,7 @@ pnpm dev
 **Backend only:**
 ```bash
 cd backend
+source .venv/bin/activate - In order to have a virtual environment where the packages can be installed
 pip install -e .
 uvicorn main:app --reload
 ```

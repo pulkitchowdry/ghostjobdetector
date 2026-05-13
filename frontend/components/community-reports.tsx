@@ -19,6 +19,7 @@ interface CommunityReportsProps {
 }
 
 export function CommunityReports({ jobId, stats, onReport }: CommunityReportsProps) {
+  const API_URL = process.env.NEXT_PUBLIC_API_URL
   const [submitted, setSubmitted] = useState<string | null>(null)
   const [isSubmitting, setIsSubmitting] = useState(false)
   
@@ -27,7 +28,7 @@ export function CommunityReports({ jobId, stats, onReport }: CommunityReportsPro
     
     setIsSubmitting(true)
     try {
-      const response = await fetch("/api/report", {
+      const response = await fetch(`${API_URL}/report`, {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({

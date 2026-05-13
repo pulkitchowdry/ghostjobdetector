@@ -33,6 +33,7 @@ interface AnalysisResult {
 }
 
 export default function HomePage() {
+  const API_URL = process.env.NEXT_PUBLIC_API_URL
   const [result, setResult] = useState<AnalysisResult | null>(null)
   const [isLoading, setIsLoading] = useState(false)
   const [error, setError] = useState<string | null>(null)
@@ -50,7 +51,7 @@ export default function HomePage() {
     setError(null)
     
     try {
-      const response = await fetch("/api/analyze", {
+      const response = await fetch(`${API_URL}/analyze`, {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({
@@ -260,8 +261,7 @@ export default function HomePage() {
                 <div className="bg-secondary/50 rounded-lg p-4 text-sm text-muted-foreground">
                   <strong className="text-foreground">Disclaimer:</strong> This analysis is based on 
                   available data and heuristics. It provides insights to help you make informed 
-                  decisions but cannot definitively determine if a job is real or fake. Always 
-                  verify directly with the company when possible.
+                  decisions but cannot definitively determine if a job is real or fake.
                 </div>
               </div>
             </div>

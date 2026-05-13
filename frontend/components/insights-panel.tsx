@@ -41,7 +41,7 @@ export function InsightsPanel({ insights, warnings, atsVerified, atsUrl }: Insig
             </p>
             <p className="text-sm text-muted-foreground mt-1">
               {atsVerified === true ? "This job was found on the company's official careers page." :
-               atsVerified === false ? "We couldn't find this job on the company's ATS. It may be filled or removed." :
+               atsVerified === false ? "We couldn't find this job on the company's careers page." :
                "We don't have ATS data for this company yet."}
             </p>
             {atsUrl && (

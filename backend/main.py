@@ -13,6 +13,16 @@ from datetime import datetime, timedelta
 import hashlib
 import httpx
 from collections import defaultdict
+from bs4 import BeautifulSoup
+from dataclasses import dataclass
+from typing import Optional
+from rapidfuzz import fuzz
+import logging
+
+logging.basicConfig(
+    level = logging.INFO,
+    format = "%(asctime)s | %(levelname)s | %(name)s | %(message)s"
+)
 
 app = fastapi.FastAPI(
     title="Ghost Job Detector API",
@@ -77,6 +87,123 @@ class AnalysisResponse(BaseModel):
     ats_verified: Optional[bool]
     ats_url: Optional[str]
     community_stats: dict
+
+# ============================================================================
+# Dataclass models
+# ============================================================================
+
+@dataclass
+class ATSResult:
+    exists: Optional[bool]
+    confidence: float
+    url: Optional[str]
+    source: str
+    reason: str
+
+class ATSAdapter:
+    async def verify(self, company: str, job_title: str) -> ATSResult:
+        raise NotImplementedError
+
+class SmartRecruitersAdapter(ATSAdapter):
+    async def verify(self, company: str, job_title: str) -> ATSResult:
+        url = f"https://careers.smartrecruiters.com/{company}/api/groups?page=1"
+
+        try:
+            async with httpx.AsyncClient(timeout=10.0) as client:
+                response = await client.get(url)
+
+            if response.status_code != 200:
+                return ATSResult(
+                    exists=None,
+                    confidence=0.0,
+                    url=None,
+                    source="smartrecruiters",
+                    reason="Failed to fetch ATS page"
+                )
+
+            soup = BeautifulSoup(response.text, "html.parser")
+
+            best_score = 0.0
+            best_url = None
+            best_title = None
+            location_hint = None
+
+            sections = soup.select("section.openings-section")
+
+            for section in sections:
+                location_el = section.select_one("h3.opening-title")
+                location_hint = location_el.text.strip() if location_el else None
+
+                jobs = section.select("li.opening-job")
+
+                for job in jobs:
+                    title_el = job.select_one("h4.job-title")
+                    link_el = job.select_one("a")
+
+                    if not title_el or not link_el:
+                        continue
+
+                    title = title_el.text.strip()
+                    href = link_el.get("href")
+
+                    score = match_score(title, job_title)
+
+                    if score > best_score:
+                        best_score = score
+                        best_url = href
+                        best_title = title
+
+            # decision threshold (tune this later)
+            exists = best_score >= 0.85
+
+            return ATSResult(
+                exists=exists,
+                confidence=best_score,
+                url=best_url,
+                source="smartrecruiters",
+                reason=f"Best match: {best_title} in {location_hint}"
+            )
+
+        except Exception as e:
+            return ATSResult(
+                exists=None,
+                confidence=0.0,
+                url=None,
+                source="smartrecruiters",
+                reason=f"Exception: {str(e)}"
+            )
+
+class GreenhouseAdapter(ATSAdapter):
+    async def verify(self, company: str, job_title: str) -> ATSResult:
+        url = f"https://boards-api.greenhouse.io/v1/boards/{company}/jobs"
+
+        async with httpx.AsyncClient(timeout=10.0) as client:
+            response = await client.get(url)
+
+        if response.status_code != 200:
+            return ATSResult(None, 0.0, None, "greenhouse", "API failed")
+
+        jobs = response.json().get("jobs", [])
+
+        best_score = 0.0
+        best_url = None
+        best_title = None
+
+        for job in jobs:
+            score = match_score(job.get("title", ""), job_title)
+
+            if score > best_score:
+                best_score = score
+                best_title = job.get("title")
+                best_url = job.get("absolute_url")
+
+        return ATSResult(
+            exists=best_score >= 0.85,
+            confidence=best_score,
+            url=best_url,
+            source="greenhouse",
+            reason=f"Best match: {best_title}"
+        )
 
 # ============================================================================
 # NLP Analysis Functions (Heuristic-based, production-ready without ML deps)
@@ -394,80 +521,91 @@ ATS_PATTERNS = {
         "url_pattern": r"jobs\.ashbyhq\.com/([^/]+)",
         "api_template": "https://jobs.ashbyhq.com/api/non-user-graphql",
     },
+    "smartrecruiters" : {
+        "url_pattern": r"careers\.smartrecruiters\.com/([^/]+)",
+        "api_template": "https://careers.smartrecruiters.com/{company}/api/groups"
+    }
 }
 
 # Company to ATS mapping (expand this in production)
 COMPANY_ATS_MAP = {
-    "stripe": ("greenhouse", "stripe"),
-    "airbnb": ("greenhouse", "airbnb"),
-    "notion": ("greenhouse", "notion"),
-    "figma": ("lever", "figma"),
-    "spotify": ("greenhouse", "spotify"),
-    "meta": ("workday", "meta"),
-    "google": ("workday", "google"),
+    "stripe":       {
+                        "ats_type": "greenhouse",
+                        "ats_url_company": "stripe"
+                    },
+    "airbnb":       {
+                        "ats_type": "greenhouse",
+                        "ats_url_company": "airbnb"
+                    },
+    "notion":       {
+                        "ats_type": "greenhouse",
+                        "ats_url_company": "notion"
+                    },
+    "figma":        {
+                        "ats_type": "lever",
+                        "ats_url_company": "figma"
+                    },
+    "spotify":      {
+                        "ats_type": "greenhouse",
+                        "ats_url_company": "spotify"
+                    },
+    "meta":         {
+                        "ats_type": "workday",
+                        "ats_url_company": "meta"
+                    },
+    "google":       {
+                        "ats_type": "workday",
+                        "ats_url_company": "google"
+                    },
+    "freshworks":   {
+                        "ats_type": "smartrecruiters",
+                        "ats_url_company": "freshworks"
+                    },
+    "visa":         {
+                        "ats_type": "smartrecruiters",
+                        "ats_url_company": "visa"
+                    },
 }
 
-async def verify_ats(company_name: str, job_title: str) -> tuple[bool, Optional[str], str]:
-    """
-    Attempt to verify if job exists on company's ATS.
-    Returns (verified, ats_url, details)
-    """
+ATS_ADAPTERS = {
+    "smartrecruiters": SmartRecruitersAdapter(),
+    "greenhouse": GreenhouseAdapter(),
+    # "lever": LeverAdapter(),
+}
+
+# Fuzzy match to find similarities
+def match_score(a: str, b: str) -> float:
+    return (fuzz.token_set_ratio(a.lower(), b.lower()) / 100)
+
+async def verify_ats(company_name: str, job_title: str, ats_type: str, ats_company: str) -> ATSResult:
+    logger = logging.getLogger("verify_ats")
     company_lower = company_name.lower().strip()
-    
-    # Check cache first
-    cache_key = f"{company_lower}:{job_title.lower()[:50]}"
+
+    cache_key = f"{company_lower}:{job_title.lower()[:60]}:{ats_type}"
+
+    logger.info(f"cache_key: {cache_key}")
+    logger.info(f"ats_cache: {ats_cache}")
     if cache_key in ats_cache:
-        cached = ats_cache[cache_key]
-        return cached["verified"], cached.get("url"), "Retrieved from cache"
-    
-    # Try known company mappings
-    if company_lower in COMPANY_ATS_MAP:
-        ats_type, ats_company = COMPANY_ATS_MAP[company_lower]
-        
-        if ats_type == "greenhouse":
-            try:
-                async with httpx.AsyncClient(timeout=10.0) as client:
-                    url = f"https://boards-api.greenhouse.io/v1/boards/{ats_company}/jobs"
-                    response = await client.get(url)
-                    
-                    if response.status_code == 200:
-                        jobs = response.json().get("jobs", [])
-                        job_title_lower = job_title.lower()
-                        
-                        for job in jobs:
-                            if job_title_lower in job.get("title", "").lower():
-                                ats_url = f"https://boards.greenhouse.io/{ats_company}"
-                                ats_cache[cache_key] = {"verified": True, "url": ats_url}
-                                return True, ats_url, "Job found on company Greenhouse careers page"
-                        
-                        ats_cache[cache_key] = {"verified": False}
-                        return False, None, "Job not found on company Greenhouse - may be filled or removed"
-            except Exception as e:
-                return None, None, f"Could not verify ATS: {str(e)}"
-        
-        elif ats_type == "lever":
-            try:
-                async with httpx.AsyncClient(timeout=10.0) as client:
-                    url = f"https://api.lever.co/v0/postings/{ats_company}"
-                    response = await client.get(url)
-                    
-                    if response.status_code == 200:
-                        jobs = response.json()
-                        job_title_lower = job_title.lower()
-                        
-                        for job in jobs:
-                            if job_title_lower in job.get("text", "").lower():
-                                ats_url = f"https://jobs.lever.co/{ats_company}"
-                                ats_cache[cache_key] = {"verified": True, "url": ats_url}
-                                return True, ats_url, "Job found on company Lever careers page"
-                        
-                        ats_cache[cache_key] = {"verified": False}
-                        return False, None, "Job not found on company Lever - may be filled or removed"
-            except Exception as e:
-                return None, None, f"Could not verify ATS: {str(e)}"
-    
-    # For unknown companies, return None (unverifiable)
-    return None, None, "ATS verification not available for this company"
+        return ats_cache[cache_key]
+
+    adapter = ATS_ADAPTERS.get(ats_type)
+
+    logger.info(f"adapter: {adapter}")
+    if not adapter:
+        result = ATSResult(
+            exists=None,
+            confidence=0.0,
+            url=None,
+            source=ats_type,
+            reason="No adapter available"
+        )
+        return result
+
+    result = await adapter.verify(ats_company, job_title)
+
+    ats_cache[cache_key] = result
+
+    return result
 
 # ============================================================================
 # API Endpoints
@@ -482,6 +620,7 @@ async def analyze_job(request: JobAnalysisRequest) -> AnalysisResponse:
     """
     Analyze a job posting and return legitimacy score with detailed breakdown.
     """
+    logger = logging.getLogger("Analyze Job")
     factors = []
     insights = []
     warnings = []
@@ -489,21 +628,55 @@ async def analyze_job(request: JobAnalysisRequest) -> AnalysisResponse:
     # Generate job ID
     job_id = generate_job_hash(request.job_title, request.company_name, request.job_description)
     
-    # 1. ATS Verification (25% weight)
-    ats_verified, ats_url, ats_details = await verify_ats(request.company_name, request.job_title)
-    
-    if ats_verified is True:
-        ats_score = 100
-        insights.append("Job verified on company careers page - strong legitimacy signal")
-    elif ats_verified is False:
-        ats_score = 30
-        warnings.append("Job not found on company ATS - verify directly with company")
+    company_name = request.company_name.lower().strip()
+    ats_info = COMPANY_ATS_MAP.get(company_name)
+    logger.info(f"{ats_info}")
+    if ats_info:
+        ats_type = ats_info.get("ats_type")
+        ats_company = ats_info.get("ats_url_company")
     else:
-        ats_score = 50  # Unable to verify
+        ats_type, ats_company = None, None
+    # 1. ATS Verification (25% weight)
+    # ats_verified, ats_url, ats_details = await verify_ats(request.company_name, request.job_title)
+    ats_result = await verify_ats(
+            company_name=request.company_name,
+            job_title=request.job_title,
+            ats_type=ats_type,
+            ats_company=ats_company
+        )
+    logger.info(f"{ats_result}")
+
+    if ats_result.exists is True:
+        ats_score = 70 + (ats_result.confidence * 30)  # 70–100
+        insights.append(
+            "Job verified on company careers page with strong match confidence"
+        )
+        ats_details = f"Job found on the company careers page. Confidence level: {ats_score}"
+        ats_verified = True
+        ats_url = ats_result.url
+
+    elif ats_result.exists is False:
+        ats_score = 20 + (ats_result.confidence * 20)  # 20–40
+        warnings.append(
+            "Job not found on company ATS - possible ghost or repost"
+        )
+        ats_details = "Job not found on company careers page"
+        ats_verified = False
+        ats_url = None
+
+    else:
+        ats_score = 50  # unknown / unverifiable
+        warnings.append(
+            "ATS verification inconclusive - could not confirm listing"
+        )
+        ats_details = "Company careers page verification was inconclusive."
+        ats_verified = None
+        ats_url = None
     
+    logger.info(f"{ats_score}")
     factors.append(AnalysisFactor(
         name="ATS Verification",
-        score=ats_score,
+        score=round(ats_score),
         weight=0.25,
         details=ats_details,
         indicators=["Checked against known ATS systems"]

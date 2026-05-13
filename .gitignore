@@ -13,3 +13,18 @@ __v0_jsx-dev-runtime.ts
 node_modules
 .next/
 .DS_Store
+.vercel
+
+# Python cache
+backend/__pycache__
+*.pyc
+
+# Virtual environment
+backend/.venv
+
+# Packaging metadata
+backend/*.egg-info
+
+# Build
+backend/build
+
