@@ -1,0 +1,170 @@
+<section data-qty="1" class="openings-section opening opening--grouped js-group">
+  <header class="opening-header">
+    <ul class="list--dotted title-list">
+      <li>
+        <h3 class="opening-title title display--inline-block text--default">London, United Kingdom</h3>
+      </li>
+      <li>
+        <span class="title">1 job</span>
+      </li>
+    </ul>
+  </header>
+  <ul class="opening-jobs grid--gutter padding--none js-group-list">
+    <li class="opening-job job column wide-7of16 medium-1of2">
+      <a href="https://jobs.smartrecruiters.com/Freshworks/744000114722251-senior-manager-customer-success-uki" aria-label="Senior Manager - Customer Success UKI - REF8740I" class="link--block details js-job-ad-link">
+        <h4 class="details-title job-title link--block-target">Senior Manager - Customer Success UKI</h4>
+        <p class="details-desc job-desc">
+          <span class="margin--right--s">Full-time</span>
+          <spl-tooltip content="Employees work in a hybrid mode">
+            <spl-icon src="M 22.78125 1.5q 0.51563 0 0.86719 0.35156T 24 2.71875v 18.5625q 0 0.51563-0.35156 0.86719T 22.78125 22.5H 1.21875q-0.51563 0-0.86719-0.35156T 0 21.28125V 7.21875q 0-0.51563 0.35156-0.86719T 1.21875 6h 10.78125V 2.71875q 0-0.51563 0.35156-0.86719T 13.21875 1.5h 9.5625zm-1.17188 6.89063h-2.39063v 2.10938h 2.39063v-2.10938zm-4.82813 0h-2.39063v 2.10938h 2.39063v-2.10938zm-2.39063 6.60938h 2.39063v-2.10938h-2.39063v 2.10938zm 4.82813 0h 2.39063v-2.10938h-2.39063v 2.10938zm 2.39063-11.10938h-2.39063v 2.10938h 2.39063V 3.89063zm-7.21875 2.10938h 2.39063V 3.89063h-2.39063v 2.10938zM 2.39063 8.39063v 9.375q 1.17188-1.26563 3-1.26563h 3.60938q 1.82813 0 3 1.26563V 8.39063H 2.39063zm 14.39063 11.71875v-2.71875h-2.39063v 2.71875h 2.39063zm 4.82813 0v-2.71875h-2.39063v 2.71875h 2.39063zM 6.75 15q-0.9375 0-1.59375-0.65625t-0.65625-1.59375 0.65625-1.59375 1.59375-0.65625 1.59375 0.65625 0.65625 1.59375-0.65625 1.59375-1.59375 0.65625z" size="xsmall"></spl-icon>
+          </spl-tooltip>
+        </p>
+      </a>
+    </li>
+  </ul>
+</section>
+<section data-qty="14" class="openings-section opening opening--grouped js-group">
+  <header class="opening-header">
+    <ul class="list--dotted title-list">
+      <li>
+        <h3 class="opening-title title display--inline-block text--default">San Mateo, CA</h3>
+      </li>
+      <li>
+        <span class="title">14 jobs</span>
+      </li>
+    </ul>
+  </header>
+  <ul class="opening-jobs grid--gutter padding--none js-group-list">
+    <li class="opening-job job column wide-7of16 medium-1of2">
+      <a href="https://jobs.smartrecruiters.com/Freshworks/744000126224420-full-stack-ai-software-engineer" aria-label="Full Stack AI Software Engineer - REF8666K" class="link--block details js-job-ad-link">
+        <h4 class="details-title job-title link--block-target">Full Stack AI Software Engineer</h4>
+        <p class="details-desc job-desc">
+          <span class="margin--right--s">Full-time</span>
+          <spl-tooltip content="Employees can work remotely">
+            <spl-icon src="M 12 0q 2.48438 0 4.66406 0.9375T 20.48438 3.51563t 2.57813 3.82031 0.9375 4.66406-0.9375 4.66406-2.57813 3.82031-3.82031 2.57813-4.66406 0.9375-4.66406-0.9375T 3.51563 20.48438t-2.57813-3.82031T 0 12t 0.9375-4.66406T 3.51563 3.51563t 3.82031-2.57813T 12 0zm 6.84375 18.75q 1.26563-1.3125 2.01563-3.04688t 0.75-3.70313q 0-1.59375-0.49219-3.04688t-1.35938-2.625T 17.67188 4.26563t-2.67188-1.35938v 1.92188q 0 0.51563-0.32813 0.84375t-0.84375 0.32813h-3.32813v 1.82813q 0 0.51563-0.32813 0.84375t-0.84375 0.32813h-1.96875l 2.53125 3h 3.9375q 0.51563 0 0.84375 0.35156t 0.32813 0.86719v 3.28125h 0.32813q 1.17188 0 2.08594 0.63281T 18.84375 18.75zM 2.39063 12q 0 1.82813 0.65625 3.46875t 1.78125 2.90625 2.67188 2.08594 3.32813 1.05469v-2.48438q-1.21875-0.375-2.03906-1.33594T 7.82813 15.51563L 2.625 9.9375q-0.23438 1.07813-0.23438 2.0625z" size="xsmall"></spl-icon>
+          </spl-tooltip>
+        </p>
+      </a>
+    </li>
+    <li class="opening-job job column wide-7of16 medium-1of2">
+      <a href="https://jobs.smartrecruiters.com/Freshworks/744000126166169-lead-software-engineer-backend" aria-label="Lead Software Engineer - Backend - P102686" class="link--block details js-job-ad-link">
+        <h4 class="details-title job-title link--block-target">Lead Software Engineer - Backend</h4>
+        <p class="details-desc job-desc">
+          <span class="margin--right--s">Full-time</span>
+          <spl-tooltip content="Employees work in a hybrid mode">
+            <spl-icon src="M 22.78125 1.5q 0.51563 0 0.86719 0.35156T 24 2.71875v 18.5625q 0 0.51563-0.35156 0.86719T 22.78125 22.5H 1.21875q-0.51563 0-0.86719-0.35156T 0 21.28125V 7.21875q 0-0.51563 0.35156-0.86719T 1.21875 6h 10.78125V 2.71875q 0-0.51563 0.35156-0.86719T 13.21875 1.5h 9.5625zm-1.17188 6.89063h-2.39063v 2.10938h 2.39063v-2.10938zm-4.82813 0h-2.39063v 2.10938h 2.39063v-2.10938zm-2.39063 6.60938h 2.39063v-2.10938h-2.39063v 2.10938zm 4.82813 0h 2.39063v-2.10938h-2.39063v 2.10938zm 2.39063-11.10938h-2.39063v 2.10938h 2.39063V 3.89063zm-7.21875 2.10938h 2.39063V 3.89063h-2.39063v 2.10938zM 2.39063 8.39063v 9.375q 1.17188-1.26563 3-1.26563h 3.60938q 1.82813 0 3 1.26563V 8.39063H 2.39063zm 14.39063 11.71875v-2.71875h-2.39063v 2.71875h 2.39063zm 4.82813 0v-2.71875h-2.39063v 2.71875h 2.39063zM 6.75 15q-0.9375 0-1.59375-0.65625t-0.65625-1.59375 0.65625-1.59375 1.59375-0.65625 1.59375 0.65625 0.65625 1.59375-0.65625 1.59375-1.59375 0.65625z" size="xsmall"></spl-icon>
+          </spl-tooltip>
+        </p>
+      </a>
+    </li>
+    <li class="opening-job job column wide-7of16 medium-1of2">
+      <a href="https://jobs.smartrecruiters.com/Freshworks/744000126151341-account-manager-mid-market" aria-label="Account Manager - Mid Market - REF8724W" class="link--block details js-job-ad-link">
+        <h4 class="details-title job-title link--block-target">Account Manager - Mid Market</h4>
+        <p class="details-desc job-desc">
+          <span class="margin--right--s">Full-time</span>
+          <spl-tooltip content="Employees work in a hybrid mode">
+            <spl-icon src="M 22.78125 1.5q 0.51563 0 0.86719 0.35156T 24 2.71875v 18.5625q 0 0.51563-0.35156 0.86719T 22.78125 22.5H 1.21875q-0.51563 0-0.86719-0.35156T 0 21.28125V 7.21875q 0-0.51563 0.35156-0.86719T 1.21875 6h 10.78125V 2.71875q 0-0.51563 0.35156-0.86719T 13.21875 1.5h 9.5625zm-1.17188 6.89063h-2.39063v 2.10938h 2.39063v-2.10938zm-4.82813 0h-2.39063v 2.10938h 2.39063v-2.10938zm-2.39063 6.60938h 2.39063v-2.10938h-2.39063v 2.10938zm 4.82813 0h 2.39063v-2.10938h-2.39063v 2.10938zm 2.39063-11.10938h-2.39063v 2.10938h 2.39063V 3.89063zm-7.21875 2.10938h 2.39063V 3.89063h-2.39063v 2.10938zM 2.39063 8.39063v 9.375q 1.17188-1.26563 3-1.26563h 3.60938q 1.82813 0 3 1.26563V 8.39063H 2.39063zm 14.39063 11.71875v-2.71875h-2.39063v 2.71875h 2.39063zm 4.82813 0v-2.71875h-2.39063v 2.71875h 2.39063zM 6.75 15q-0.9375 0-1.59375-0.65625t-0.65625-1.59375 0.65625-1.59375 1.59375-0.65625 1.59375 0.65625 0.65625 1.59375-0.65625 1.59375-1.59375 0.65625z" size="xsmall"></spl-icon>
+          </spl-tooltip>
+        </p>
+      </a>
+    </li>
+    <li class="opening-job job column wide-7of16 medium-1of2">
+      <a href="https://jobs.smartrecruiters.com/Freshworks/744000124512454-senior-manager-technical-revenue-accounting-" aria-label="Senior Manager, Technical Revenue Accounting  - P-1005268_1" class="link--block details js-job-ad-link">
+        <h4 class="details-title job-title link--block-target">Senior Manager, Technical Revenue Accounting </h4>
+        <p class="details-desc job-desc">
+          <span class="margin--right--s">Full-time</span>
+          <spl-tooltip content="Employees work in a hybrid mode">
+            <spl-icon src="M 22.78125 1.5q 0.51563 0 0.86719 0.35156T 24 2.71875v 18.5625q 0 0.51563-0.35156 0.86719T 22.78125 22.5H 1.21875q-0.51563 0-0.86719-0.35156T 0 21.28125V 7.21875q 0-0.51563 0.35156-0.86719T 1.21875 6h 10.78125V 2.71875q 0-0.51563 0.35156-0.86719T 13.21875 1.5h 9.5625zm-1.17188 6.89063h-2.39063v 2.10938h 2.39063v-2.10938zm-4.82813 0h-2.39063v 2.10938h 2.39063v-2.10938zm-2.39063 6.60938h 2.39063v-2.10938h-2.39063v 2.10938zm 4.82813 0h 2.39063v-2.10938h-2.39063v 2.10938zm 2.39063-11.10938h-2.39063v 2.10938h 2.39063V 3.89063zm-7.21875 2.10938h 2.39063V 3.89063h-2.39063v 2.10938zM 2.39063 8.39063v 9.375q 1.17188-1.26563 3-1.26563h 3.60938q 1.82813 0 3 1.26563V 8.39063H 2.39063zm 14.39063 11.71875v-2.71875h-2.39063v 2.71875h 2.39063zm 4.82813 0v-2.71875h-2.39063v 2.71875h 2.39063zM 6.75 15q-0.9375 0-1.59375-0.65625t-0.65625-1.59375 0.65625-1.59375 1.59375-0.65625 1.59375 0.65625 0.65625 1.59375-0.65625 1.59375-1.59375 0.65625z" size="xsmall"></spl-icon>
+          </spl-tooltip>
+        </p>
+      </a>
+    </li>
+    <li class="opening-job job column wide-7of16 medium-1of2">
+      <a href="https://jobs.smartrecruiters.com/Freshworks/744000123792624-fp-a-ai-summer-associate" aria-label="FP&amp;A AI Summer Associate - REF8749P" class="link--block details js-job-ad-link">
+        <h4 class="details-title job-title link--block-target">FP&amp;A AI Summer Associate</h4>
+        <p class="details-desc job-desc">
+          <span class="margin--right--s">Full-time</span>
+          <spl-tooltip content="Employees work in a hybrid mode">
+            <spl-icon src="M 22.78125 1.5q 0.51563 0 0.86719 0.35156T 24 2.71875v 18.5625q 0 0.51563-0.35156 0.86719T 22.78125 22.5H 1.21875q-0.51563 0-0.86719-0.35156T 0 21.28125V 7.21875q 0-0.51563 0.35156-0.86719T 1.21875 6h 10.78125V 2.71875q 0-0.51563 0.35156-0.86719T 13.21875 1.5h 9.5625zm-1.17188 6.89063h-2.39063v 2.10938h 2.39063v-2.10938zm-4.82813 0h-2.39063v 2.10938h 2.39063v-2.10938zm-2.39063 6.60938h 2.39063v-2.10938h-2.39063v 2.10938zm 4.82813 0h 2.39063v-2.10938h-2.39063v 2.10938zm 2.39063-11.10938h-2.39063v 2.10938h 2.39063V 3.89063zm-7.21875 2.10938h 2.39063V 3.89063h-2.39063v 2.10938zM 2.39063 8.39063v 9.375q 1.17188-1.26563 3-1.26563h 3.60938q 1.82813 0 3 1.26563V 8.39063H 2.39063zm 14.39063 11.71875v-2.71875h-2.39063v 2.71875h 2.39063zm 4.82813 0v-2.71875h-2.39063v 2.71875h 2.39063zM 6.75 15q-0.9375 0-1.59375-0.65625t-0.65625-1.59375 0.65625-1.59375 1.59375-0.65625 1.59375 0.65625 0.65625 1.59375-0.65625 1.59375-1.59375 0.65625z" size="xsmall"></spl-icon>
+          </spl-tooltip>
+        </p>
+      </a>
+    </li>
+    <li class="opening-job job column wide-7of16 medium-1of2">
+      <a href="https://jobs.smartrecruiters.com/Freshworks/744000121841117-director-solution-engineering" aria-label="Director - Solution Engineering - P-1002734_2" class="link--block details js-job-ad-link">
+        <h4 class="details-title job-title link--block-target">Director - Solution Engineering</h4>
+        <p class="details-desc job-desc">
+          <span class="margin--right--s">Full-time</span>
+          <spl-tooltip content="Employees work in a hybrid mode">
+            <spl-icon src="M 22.78125 1.5q 0.51563 0 0.86719 0.35156T 24 2.71875v 18.5625q 0 0.51563-0.35156 0.86719T 22.78125 22.5H 1.21875q-0.51563 0-0.86719-0.35156T 0 21.28125V 7.21875q 0-0.51563 0.35156-0.86719T 1.21875 6h 10.78125V 2.71875q 0-0.51563 0.35156-0.86719T 13.21875 1.5h 9.5625zm-1.17188 6.89063h-2.39063v 2.10938h 2.39063v-2.10938zm-4.82813 0h-2.39063v 2.10938h 2.39063v-2.10938zm-2.39063 6.60938h 2.39063v-2.10938h-2.39063v 2.10938zm 4.82813 0h 2.39063v-2.10938h-2.39063v 2.10938zm 2.39063-11.10938h-2.39063v 2.10938h 2.39063V 3.89063zm-7.21875 2.10938h 2.39063V 3.89063h-2.39063v 2.10938zM 2.39063 8.39063v 9.375q 1.17188-1.26563 3-1.26563h 3.60938q 1.82813 0 3 1.26563V 8.39063H 2.39063zm 14.39063 11.71875v-2.71875h-2.39063v 2.71875h 2.39063zm 4.82813 0v-2.71875h-2.39063v 2.71875h 2.39063zM 6.75 15q-0.9375 0-1.59375-0.65625t-0.65625-1.59375 0.65625-1.59375 1.59375-0.65625 1.59375 0.65625 0.65625 1.59375-0.65625 1.59375-1.59375 0.65625z" size="xsmall"></spl-icon>
+          </spl-tooltip>
+        </p>
+      </a>
+    </li>
+    <li class="opening-job job column wide-7of16 medium-1of2">
+      <a href="https://jobs.smartrecruiters.com/Freshworks/744000121531947-lead-solution-engineer" aria-label="Lead - Solution Engineer - P102291" class="link--block details js-job-ad-link">
+        <h4 class="details-title job-title link--block-target">Lead - Solution Engineer</h4>
+        <p class="details-desc job-desc">
+          <span class="margin--right--s">Full-time</span>
+          <spl-tooltip content="Employees work in a hybrid mode">
+            <spl-icon src="M 22.78125 1.5q 0.51563 0 0.86719 0.35156T 24 2.71875v 18.5625q 0 0.51563-0.35156 0.86719T 22.78125 22.5H 1.21875q-0.51563 0-0.86719-0.35156T 0 21.28125V 7.21875q 0-0.51563 0.35156-0.86719T 1.21875 6h 10.78125V 2.71875q 0-0.51563 0.35156-0.86719T 13.21875 1.5h 9.5625zm-1.17188 6.89063h-2.39063v 2.10938h 2.39063v-2.10938zm-4.82813 0h-2.39063v 2.10938h 2.39063v-2.10938zm-2.39063 6.60938h 2.39063v-2.10938h-2.39063v 2.10938zm 4.82813 0h 2.39063v-2.10938h-2.39063v 2.10938zm 2.39063-11.10938h-2.39063v 2.10938h 2.39063V 3.89063zm-7.21875 2.10938h 2.39063V 3.89063h-2.39063v 2.10938zM 2.39063 8.39063v 9.375q 1.17188-1.26563 3-1.26563h 3.60938q 1.82813 0 3 1.26563V 8.39063H 2.39063zm 14.39063 11.71875v-2.71875h-2.39063v 2.71875h 2.39063zm 4.82813 0v-2.71875h-2.39063v 2.71875h 2.39063zM 6.75 15q-0.9375 0-1.59375-0.65625t-0.65625-1.59375 0.65625-1.59375 1.59375-0.65625 1.59375 0.65625 0.65625 1.59375-0.65625 1.59375-1.59375 0.65625z" size="xsmall"></spl-icon>
+          </spl-tooltip>
+        </p>
+      </a>
+    </li>
+    <li class="opening-job job column wide-7of16 medium-1of2">
+      <a href="https://jobs.smartrecruiters.com/Freshworks/744000121473945-senior-director-engineering" aria-label="Senior Director - Engineering - P102620_1" class="link--block details js-job-ad-link">
+        <h4 class="details-title job-title link--block-target">Senior Director - Engineering</h4>
+        <p class="details-desc job-desc">
+          <span class="margin--right--s">Full-time</span>
+          <spl-tooltip content="Employees work in a hybrid mode">
+            <spl-icon src="M 22.78125 1.5q 0.51563 0 0.86719 0.35156T 24 2.71875v 18.5625q 0 0.51563-0.35156 0.86719T 22.78125 22.5H 1.21875q-0.51563 0-0.86719-0.35156T 0 21.28125V 7.21875q 0-0.51563 0.35156-0.86719T 1.21875 6h 10.78125V 2.71875q 0-0.51563 0.35156-0.86719T 13.21875 1.5h 9.5625zm-1.17188 6.89063h-2.39063v 2.10938h 2.39063v-2.10938zm-4.82813 0h-2.39063v 2.10938h 2.39063v-2.10938zm-2.39063 6.60938h 2.39063v-2.10938h-2.39063v 2.10938zm 4.82813 0h 2.39063v-2.10938h-2.39063v 2.10938zm 2.39063-11.10938h-2.39063v 2.10938h 2.39063V 3.89063zm-7.21875 2.10938h 2.39063V 3.89063h-2.39063v 2.10938zM 2.39063 8.39063v 9.375q 1.17188-1.26563 3-1.26563h 3.60938q 1.82813 0 3 1.26563V 8.39063H 2.39063zm 14.39063 11.71875v-2.71875h-2.39063v 2.71875h 2.39063zm 4.82813 0v-2.71875h-2.39063v 2.71875h 2.39063zM 6.75 15q-0.9375 0-1.59375-0.65625t-0.65625-1.59375 0.65625-1.59375 1.59375-0.65625 1.59375 0.65625 0.65625 1.59375-0.65625 1.59375-1.59375 0.65625z" size="xsmall"></spl-icon>
+          </spl-tooltip>
+        </p>
+      </a>
+    </li>
+    <li class="opening-job job column wide-7of16 medium-1of2">
+      <a href="https://jobs.smartrecruiters.com/Freshworks/744000121302302-hr-technology-ai-architect" aria-label="HR Technology AI Architect - P101320_1" class="link--block details js-job-ad-link">
+        <h4 class="details-title job-title link--block-target">HR Technology AI Architect</h4>
+        <p class="details-desc job-desc">
+          <span class="margin--right--s">Full-time</span>
+          <spl-tooltip content="Employees work in a hybrid mode">
+            <spl-icon src="M 22.78125 1.5q 0.51563 0 0.86719 0.35156T 24 2.71875v 18.5625q 0 0.51563-0.35156 0.86719T 22.78125 22.5H 1.21875q-0.51563 0-0.86719-0.35156T 0 21.28125V 7.21875q 0-0.51563 0.35156-0.86719T 1.21875 6h 10.78125V 2.71875q 0-0.51563 0.35156-0.86719T 13.21875 1.5h 9.5625zm-1.17188 6.89063h-2.39063v 2.10938h 2.39063v-2.10938zm-4.82813 0h-2.39063v 2.10938h 2.39063v-2.10938zm-2.39063 6.60938h 2.39063v-2.10938h-2.39063v 2.10938zm 4.82813 0h 2.39063v-2.10938h-2.39063v 2.10938zm 2.39063-11.10938h-2.39063v 2.10938h 2.39063V 3.89063zm-7.21875 2.10938h 2.39063V 3.89063h-2.39063v 2.10938zM 2.39063 8.39063v 9.375q 1.17188-1.26563 3-1.26563h 3.60938q 1.82813 0 3 1.26563V 8.39063H 2.39063zm 14.39063 11.71875v-2.71875h-2.39063v 2.71875h 2.39063zm 4.82813 0v-2.71875h-2.39063v 2.71875h 2.39063zM 6.75 15q-0.9375 0-1.59375-0.65625t-0.65625-1.59375 0.65625-1.59375 1.59375-0.65625 1.59375 0.65625 0.65625 1.59375-0.65625 1.59375-1.59375 0.65625z" size="xsmall"></spl-icon>
+          </spl-tooltip>
+        </p>
+      </a>
+    </li>
+    <li class="opening-job job column wide-7of16 medium-1of2 js-more-container">
+      <ul class="list--dotted">
+        <li class="link--block-target">
+          <a data-page="0" data-value="San%20Mateo%2C%20CA%2C%20US" data-type="location" data-more="/Freshworks/api/more" href="?search=&amp;page=0&amp;location=San%20Mateo%2C%20CA%2C%20US" class="link details-desc js-more">Show more jobs</a>
+        </li>
+      </ul>
+    </li>
+  </ul>
+</section>
+<section data-qty="1" class="openings-section opening opening--grouped js-group">
+  <header class="opening-header">
+    <ul class="list--dotted title-list">
+      <li>
+        <h3 class="opening-title title display--inline-block text--default">Toronto, Canada</h3>
+      </li>
+      <li>
+        <span class="title">1 job</span>
+      </li>
+    </ul>
+  </header>
+  <ul class="opening-jobs grid--gutter padding--none js-group-list">
+    <li class="opening-job job column wide-7of16 medium-1of2">
+      <a href="https://jobs.smartrecruiters.com/Freshworks/744000122754224-account-executive-enterprise-" aria-label="Account Executive - Enterprise  - P-1008025" class="link--block details js-job-ad-link">
+        <h4 class="details-title job-title link--block-target">Account Executive - Enterprise </h4>
+        <p class="details-desc job-desc">
+          <span class="margin--right--s">Contract</span>
+          <spl-tooltip content="Employees can work remotely">
+            <spl-icon src="M 12 0q 2.48438 0 4.66406 0.9375T 20.48438 3.51563t 2.57813 3.82031 0.9375 4.66406-0.9375 4.66406-2.57813 3.82031-3.82031 2.57813-4.66406 0.9375-4.66406-0.9375T 3.51563 20.48438t-2.57813-3.82031T 0 12t 0.9375-4.66406T 3.51563 3.51563t 3.82031-2.57813T 12 0zm 6.84375 18.75q 1.26563-1.3125 2.01563-3.04688t 0.75-3.70313q 0-1.59375-0.49219-3.04688t-1.35938-2.625T 17.67188 4.26563t-2.67188-1.35938v 1.92188q 0 0.51563-0.32813 0.84375t-0.84375 0.32813h-3.32813v 1.82813q 0 0.51563-0.32813 0.84375t-0.84375 0.32813h-1.96875l 2.53125 3h 3.9375q 0.51563 0 0.84375 0.35156t 0.32813 0.86719v 3.28125h 0.32813q 1.17188 0 2.08594 0.63281T 18.84375 18.75zM 2.39063 12q 0 1.82813 0.65625 3.46875t 1.78125 2.90625 2.67188 2.08594 3.32813 1.05469v-2.48438q-1.21875-0.375-2.03906-1.33594T 7.82813 15.51563L 2.625 9.9375q-0.23438 1.07813-0.23438 2.0625z" size="xsmall"></spl-icon>
+          </spl-tooltip>
+        </p>
+      </a>
+    </li>
+  </ul>
+</section>

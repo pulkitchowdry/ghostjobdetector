@@ -1,0 +1,3595 @@
+{
+  "jobs": [
+    {
+      "absolute_url": "https://www.catonetworks.com/careers/careers-post/4853636101?gh_jid=4853636101",
+      "data_compliance": [
+        {
+          "type": "gdpr",
+          "requires_consent": false,
+          "requires_processing_consent": false,
+          "requires_retention_consent": false,
+          "retention_period": null,
+          "demographic_data_consent_applies": false
+        }
+      ],
+      "internal_job_id": 4462856101,
+      "location": {
+        "name": "Tel Aviv District, Israel"
+      },
+      "metadata": null,
+      "id": 4853636101,
+      "updated_at": "2026-05-06T08:22:35-04:00",
+      "requisition_id": "1805",
+      "title": "Agentic AI Engineer ",
+      "company_name": "Cato Networks",
+      "first_published": "2026-05-03T10:21:57-04:00",
+      "language": "en",
+      "application_deadline": null
+    },
+    {
+      "absolute_url": "https://www.catonetworks.com/careers/careers-post/4863034101?gh_jid=4863034101",
+      "data_compliance": [
+        {
+          "type": "gdpr",
+          "requires_consent": false,
+          "requires_processing_consent": false,
+          "requires_retention_consent": false,
+          "retention_period": null,
+          "demographic_data_consent_applies": false
+        }
+      ],
+      "internal_job_id": 4467706101,
+      "location": {
+        "name": "Tel Aviv District, Israel"
+      },
+      "metadata": null,
+      "id": 4863034101,
+      "updated_at": "2026-05-10T11:15:10-04:00",
+      "requisition_id": "1830",
+      "title": "Agentic AI Engineer (IS Team)",
+      "company_name": "Cato Networks",
+      "first_published": "2026-05-10T11:01:19-04:00",
+      "language": "en",
+      "application_deadline": null
+    },
+    {
+      "absolute_url": "https://www.catonetworks.com/careers/careers-post/4769033101?gh_jid=4769033101",
+      "data_compliance": [
+        {
+          "type": "gdpr",
+          "requires_consent": false,
+          "requires_processing_consent": false,
+          "requires_retention_consent": false,
+          "retention_period": null,
+          "demographic_data_consent_applies": false
+        }
+      ],
+      "internal_job_id": 4423632101,
+      "location": {
+        "name": "Tel Aviv District, Israel"
+      },
+      "metadata": null,
+      "id": 4769033101,
+      "updated_at": "2026-05-03T04:01:42-04:00",
+      "requisition_id": "1618",
+      "title": "AI Security - Field AI Engineer",
+      "company_name": "Cato Networks",
+      "first_published": "2026-02-08T10:32:43-05:00",
+      "language": "en",
+      "application_deadline": null
+    },
+    {
+      "absolute_url": "https://www.catonetworks.com/careers/careers-post/4865348101?gh_jid=4865348101",
+      "data_compliance": [
+        {
+          "type": "gdpr",
+          "requires_consent": false,
+          "requires_processing_consent": false,
+          "requires_retention_consent": false,
+          "retention_period": null,
+          "demographic_data_consent_applies": false
+        }
+      ],
+      "internal_job_id": 4469095101,
+      "location": {
+        "name": "USA"
+      },
+      "metadata": null,
+      "id": 4865348101,
+      "updated_at": "2026-05-12T17:36:58-04:00",
+      "requisition_id": "1835",
+      "title": "AI Security Field CTO, Americas",
+      "company_name": "Cato Networks",
+      "first_published": "2026-05-12T17:24:34-04:00",
+      "language": "en",
+      "application_deadline": null
+    },
+    {
+      "absolute_url": "https://www.catonetworks.com/careers/careers-post/4784152101?gh_jid=4784152101",
+      "data_compliance": [
+        {
+          "type": "gdpr",
+          "requires_consent": false,
+          "requires_processing_consent": false,
+          "requires_retention_consent": false,
+          "retention_period": null,
+          "demographic_data_consent_applies": false
+        }
+      ],
+      "internal_job_id": 4430768101,
+      "location": {
+        "name": "Tel Aviv District, Israel"
+      },
+      "metadata": null,
+      "id": 4784152101,
+      "updated_at": "2026-03-19T09:00:04-04:00",
+      "requisition_id": "1659",
+      "title": "AI Security - Senior Data Scientist",
+      "company_name": "Cato Networks",
+      "first_published": "2026-02-19T12:07:00-05:00",
+      "language": "en",
+      "application_deadline": null
+    },
+    {
+      "absolute_url": "https://www.catonetworks.com/careers/careers-post/4702426101?gh_jid=4702426101",
+      "data_compliance": [
+        {
+          "type": "gdpr",
+          "requires_consent": false,
+          "requires_processing_consent": false,
+          "requires_retention_consent": false,
+          "retention_period": null,
+          "demographic_data_consent_applies": false
+        }
+      ],
+      "internal_job_id": 4393592101,
+      "location": {
+        "name": "Tel Aviv District, Israel"
+      },
+      "metadata": null,
+      "id": 4702426101,
+      "updated_at": "2026-03-19T09:00:04-04:00",
+      "requisition_id": "1410",
+      "title": "AI Security - Senior Software Engineer",
+      "company_name": "Cato Networks",
+      "first_published": "2025-10-30T12:29:38-04:00",
+      "language": "en",
+      "application_deadline": null
+    },
+    {
+      "absolute_url": "https://www.catonetworks.com/careers/careers-post/4863044101?gh_jid=4863044101",
+      "data_compliance": [
+        {
+          "type": "gdpr",
+          "requires_consent": false,
+          "requires_processing_consent": false,
+          "requires_retention_consent": false,
+          "retention_period": null,
+          "demographic_data_consent_applies": false
+        }
+      ],
+      "internal_job_id": 4467709101,
+      "location": {
+        "name": "Tel Aviv District, Israel"
+      },
+      "metadata": null,
+      "id": 4863044101,
+      "updated_at": "2026-05-10T11:09:19-04:00",
+      "requisition_id": "1831",
+      "title": "AI Team Lead ",
+      "company_name": "Cato Networks",
+      "first_published": "2026-05-10T11:01:42-04:00",
+      "language": "en",
+      "application_deadline": null
+    },
+    {
+      "absolute_url": "https://www.catonetworks.com/careers/careers-post/4252047101?gh_jid=4252047101",
+      "data_compliance": [
+        {
+          "type": "gdpr",
+          "requires_consent": false,
+          "requires_processing_consent": false,
+          "requires_retention_consent": false,
+          "retention_period": null,
+          "demographic_data_consent_applies": false
+        }
+      ],
+      "internal_job_id": 4164023101,
+      "location": {
+        "name": "Tel Aviv District, Israel"
+      },
+      "metadata": null,
+      "id": 4252047101,
+      "updated_at": "2026-03-19T09:00:04-04:00",
+      "requisition_id": "371",
+      "title": " Application Security Researcher ",
+      "company_name": "Cato Networks",
+      "first_published": "2024-04-25T09:41:02-04:00",
+      "language": "en",
+      "application_deadline": null
+    },
+    {
+      "absolute_url": "https://www.catonetworks.com/careers/careers-post/4754084101?gh_jid=4754084101",
+      "data_compliance": [
+        {
+          "type": "gdpr",
+          "requires_consent": false,
+          "requires_processing_consent": false,
+          "requires_retention_consent": false,
+          "retention_period": null,
+          "demographic_data_consent_applies": false
+        }
+      ],
+      "internal_job_id": 4415733101,
+      "location": {
+        "name": "Chicago, Illinois, United States"
+      },
+      "metadata": null,
+      "id": 4754084101,
+      "updated_at": "2026-05-06T13:24:12-04:00",
+      "requisition_id": "1594",
+      "title": "Area Sales Director, IL/WI",
+      "company_name": "Cato Networks",
+      "first_published": "2026-01-15T07:36:31-05:00",
+      "language": "en",
+      "application_deadline": null
+    },
+    {
+      "absolute_url": "https://www.catonetworks.com/careers/careers-post/4210101101?gh_jid=4210101101",
+      "data_compliance": [
+        {
+          "type": "gdpr",
+          "requires_consent": false,
+          "requires_processing_consent": false,
+          "requires_retention_consent": false,
+          "retention_period": null,
+          "demographic_data_consent_applies": false
+        }
+      ],
+      "internal_job_id": 4139015101,
+      "location": {
+        "name": "Tel Aviv District, Israel"
+      },
+      "metadata": null,
+      "id": 4210101101,
+      "updated_at": "2026-03-31T07:08:50-04:00",
+      "requisition_id": "1754",
+      "title": "Assistant Controller",
+      "company_name": "Cato Networks",
+      "first_published": "2023-09-03T07:12:47-04:00",
+      "language": "en",
+      "application_deadline": null
+    },
+    {
+      "absolute_url": "https://www.catonetworks.com/careers/careers-post/4850425101?gh_jid=4850425101",
+      "data_compliance": [
+        {
+          "type": "gdpr",
+          "requires_consent": false,
+          "requires_processing_consent": false,
+          "requires_retention_consent": false,
+          "retention_period": null,
+          "demographic_data_consent_applies": false
+        }
+      ],
+      "internal_job_id": 4461701101,
+      "location": {
+        "name": "Tel Aviv District, Israel"
+      },
+      "metadata": null,
+      "id": 4850425101,
+      "updated_at": "2026-04-30T04:02:04-04:00",
+      "requisition_id": "1798",
+      "title": "Automation Engineer – Browser Security",
+      "company_name": "Cato Networks",
+      "first_published": "2026-04-30T04:02:04-04:00",
+      "language": "en",
+      "application_deadline": null
+    },
+    {
+      "absolute_url": "https://www.catonetworks.com/careers/careers-post/4850423101?gh_jid=4850423101",
+      "data_compliance": [
+        {
+          "type": "gdpr",
+          "requires_consent": false,
+          "requires_processing_consent": false,
+          "requires_retention_consent": false,
+          "retention_period": null,
+          "demographic_data_consent_applies": false
+        }
+      ],
+      "internal_job_id": 4461700101,
+      "location": {
+        "name": "Tel Aviv District, Israel"
+      },
+      "metadata": null,
+      "id": 4850423101,
+      "updated_at": "2026-05-07T05:51:02-04:00",
+      "requisition_id": "1797",
+      "title": "Automation Engineer - Mobile (IOS/Android)",
+      "company_name": "Cato Networks",
+      "first_published": "2026-05-07T05:51:02-04:00",
+      "language": "en",
+      "application_deadline": null
+    },
+    {
+      "absolute_url": "https://www.catonetworks.com/careers/careers-post/4839932101?gh_jid=4839932101",
+      "data_compliance": [
+        {
+          "type": "gdpr",
+          "requires_consent": false,
+          "requires_processing_consent": false,
+          "requires_retention_consent": false,
+          "retention_period": null,
+          "demographic_data_consent_applies": false
+        }
+      ],
+      "internal_job_id": 4457040101,
+      "location": {
+        "name": "New York, New York, United States"
+      },
+      "metadata": null,
+      "id": 4839932101,
+      "updated_at": "2026-04-17T23:35:49-04:00",
+      "requisition_id": "P51075",
+      "title": "AVP, Global Service Providers",
+      "company_name": "Cato Networks",
+      "first_published": "2026-04-17T09:34:27-04:00",
+      "language": "en",
+      "application_deadline": null
+    },
+    {
+      "absolute_url": "https://www.catonetworks.com/careers/careers-post/4841986101?gh_jid=4841986101",
+      "data_compliance": [
+        {
+          "type": "gdpr",
+          "requires_consent": false,
+          "requires_processing_consent": false,
+          "requires_retention_consent": false,
+          "retention_period": null,
+          "demographic_data_consent_applies": false
+        }
+      ],
+      "internal_job_id": 4457999101,
+      "location": {
+        "name": "Japan"
+      },
+      "metadata": null,
+      "id": 4841986101,
+      "updated_at": "2026-04-23T06:09:48-04:00",
+      "requisition_id": "P51767",
+      "title": "Channel Account Manager",
+      "company_name": "Cato Networks",
+      "first_published": "2026-04-23T06:09:48-04:00",
+      "language": "en",
+      "application_deadline": null
+    },
+    {
+      "absolute_url": "https://www.catonetworks.com/careers/careers-post/4809317101?gh_jid=4809317101",
+      "data_compliance": [
+        {
+          "type": "gdpr",
+          "requires_consent": false,
+          "requires_processing_consent": false,
+          "requires_retention_consent": false,
+          "retention_period": null,
+          "demographic_data_consent_applies": false
+        }
+      ],
+      "internal_job_id": 4442367101,
+      "location": {
+        "name": "Germany"
+      },
+      "metadata": null,
+      "id": 4809317101,
+      "updated_at": "2026-03-19T09:00:04-04:00",
+      "requisition_id": "P51763",
+      "title": "Channel Account Manager",
+      "company_name": "Cato Networks",
+      "first_published": "2026-03-17T10:37:11-04:00",
+      "language": "en",
+      "application_deadline": null
+    },
+    {
+      "absolute_url": "https://www.catonetworks.com/careers/careers-post/4841974101?gh_jid=4841974101",
+      "data_compliance": [
+        {
+          "type": "gdpr",
+          "requires_consent": false,
+          "requires_processing_consent": false,
+          "requires_retention_consent": false,
+          "retention_period": null,
+          "demographic_data_consent_applies": false
+        }
+      ],
+      "internal_job_id": 4457995101,
+      "location": {
+        "name": "Bangkok, Bangkok, Thailand"
+      },
+      "metadata": null,
+      "id": 4841974101,
+      "updated_at": "2026-04-24T08:57:37-04:00",
+      "requisition_id": "P51766",
+      "title": "Channel Account Manager",
+      "company_name": "Cato Networks",
+      "first_published": "2026-04-24T08:57:37-04:00",
+      "language": "en",
+      "application_deadline": null
+    },
+    {
+      "absolute_url": "https://www.catonetworks.com/careers/careers-post/4816885101?gh_jid=4816885101",
+      "data_compliance": [
+        {
+          "type": "gdpr",
+          "requires_consent": false,
+          "requires_processing_consent": false,
+          "requires_retention_consent": false,
+          "retention_period": null,
+          "demographic_data_consent_applies": false
+        }
+      ],
+      "internal_job_id": 4445883101,
+      "location": {
+        "name": "Seattle"
+      },
+      "metadata": null,
+      "id": 4816885101,
+      "updated_at": "2026-04-21T11:25:28-04:00",
+      "requisition_id": "1731",
+      "title": "Channel Account Manager - Pacific Northwest ",
+      "company_name": "Cato Networks",
+      "first_published": "2026-03-24T19:08:39-04:00",
+      "language": "en",
+      "application_deadline": null
+    },
+    {
+      "absolute_url": "https://www.catonetworks.com/careers/careers-post/4808604101?gh_jid=4808604101",
+      "data_compliance": [
+        {
+          "type": "gdpr",
+          "requires_consent": false,
+          "requires_processing_consent": false,
+          "requires_retention_consent": false,
+          "retention_period": null,
+          "demographic_data_consent_applies": false
+        }
+      ],
+      "internal_job_id": 4441982101,
+      "location": {
+        "name": "Tokyo Prefecture, Japan"
+      },
+      "metadata": null,
+      "id": 4808604101,
+      "updated_at": "2026-03-19T09:00:04-04:00",
+      "requisition_id": "P51761",
+      "title": "Channel Account Manager, Service Providers",
+      "company_name": "Cato Networks",
+      "first_published": "2026-03-17T02:06:23-04:00",
+      "language": "en",
+      "application_deadline": null
+    },
+    {
+      "absolute_url": "https://www.catonetworks.com/careers/careers-post/4856358101?gh_jid=4856358101",
+      "data_compliance": [
+        {
+          "type": "gdpr",
+          "requires_consent": false,
+          "requires_processing_consent": false,
+          "requires_retention_consent": false,
+          "retention_period": null,
+          "demographic_data_consent_applies": false
+        }
+      ],
+      "internal_job_id": 4463635101,
+      "location": {
+        "name": "Dallas, Texas, United States"
+      },
+      "metadata": null,
+      "id": 4856358101,
+      "updated_at": "2026-05-05T10:38:08-04:00",
+      "requisition_id": "1811",
+      "title": "Channel Account Manager - TOLA",
+      "company_name": "Cato Networks",
+      "first_published": "2026-05-05T10:38:08-04:00",
+      "language": "en",
+      "application_deadline": null
+    },
+    {
+      "absolute_url": "https://www.catonetworks.com/careers/careers-post/4829595101?gh_jid=4829595101",
+      "data_compliance": [
+        {
+          "type": "gdpr",
+          "requires_consent": false,
+          "requires_processing_consent": false,
+          "requires_retention_consent": false,
+          "retention_period": null,
+          "demographic_data_consent_applies": false
+        }
+      ],
+      "internal_job_id": 4451923101,
+      "location": {
+        "name": "USA"
+      },
+      "metadata": null,
+      "id": 4829595101,
+      "updated_at": "2026-04-03T11:29:29-04:00",
+      "requisition_id": "P51709",
+      "title": "Channel Revenue Operations Specialist ",
+      "company_name": "Cato Networks",
+      "first_published": "2026-04-03T11:29:29-04:00",
+      "language": "en",
+      "application_deadline": null
+    },
+    {
+      "absolute_url": "https://www.catonetworks.com/careers/careers-post/4817149101?gh_jid=4817149101",
+      "data_compliance": [
+        {
+          "type": "gdpr",
+          "requires_consent": false,
+          "requires_processing_consent": false,
+          "requires_retention_consent": false,
+          "retention_period": null,
+          "demographic_data_consent_applies": false
+        }
+      ],
+      "internal_job_id": 4446000101,
+      "location": {
+        "name": "Hong Kong"
+      },
+      "metadata": null,
+      "id": 4817149101,
+      "updated_at": "2026-04-23T23:28:27-04:00",
+      "requisition_id": "P51845",
+      "title": "Channel Sales Engineer",
+      "company_name": "Cato Networks",
+      "first_published": "2026-04-23T23:28:27-04:00",
+      "language": "en",
+      "application_deadline": null
+    },
+    {
+      "absolute_url": "https://www.catonetworks.com/careers/careers-post/4835838101?gh_jid=4835838101",
+      "data_compliance": [
+        {
+          "type": "gdpr",
+          "requires_consent": false,
+          "requires_processing_consent": false,
+          "requires_retention_consent": false,
+          "retention_period": null,
+          "demographic_data_consent_applies": false
+        }
+      ],
+      "internal_job_id": 4455154101,
+      "location": {
+        "name": "Atlanta, Georgia, United States"
+      },
+      "metadata": null,
+      "id": 4835838101,
+      "updated_at": "2026-05-07T11:04:11-04:00",
+      "requisition_id": "1768",
+      "title": "Channel Sales Engineer, AI Security - East",
+      "company_name": "Cato Networks",
+      "first_published": "2026-04-13T18:17:52-04:00",
+      "language": "en",
+      "application_deadline": null
+    },
+    {
+      "absolute_url": "https://www.catonetworks.com/careers/careers-post/4792185101?gh_jid=4792185101",
+      "data_compliance": [
+        {
+          "type": "gdpr",
+          "requires_consent": false,
+          "requires_processing_consent": false,
+          "requires_retention_consent": false,
+          "retention_period": null,
+          "demographic_data_consent_applies": false
+        }
+      ],
+      "internal_job_id": 4434536101,
+      "location": {
+        "name": "Melbourne, Victoria, Australia; Sydney, New South Wales, Australia"
+      },
+      "metadata": null,
+      "id": 4792185101,
+      "updated_at": "2026-04-20T10:20:30-04:00",
+      "requisition_id": "P51988",
+      "title": "Channel Sales Engineer, Service Providers",
+      "company_name": "Cato Networks",
+      "first_published": "2026-03-17T02:06:59-04:00",
+      "language": "en",
+      "application_deadline": null
+    },
+    {
+      "absolute_url": "https://www.catonetworks.com/careers/careers-post/4841230101?gh_jid=4841230101",
+      "data_compliance": [
+        {
+          "type": "gdpr",
+          "requires_consent": false,
+          "requires_processing_consent": false,
+          "requires_retention_consent": false,
+          "retention_period": null,
+          "demographic_data_consent_applies": false
+        }
+      ],
+      "internal_job_id": 4457640101,
+      "location": {
+        "name": "Milano, Milan, Italy"
+      },
+      "metadata": null,
+      "id": 4841230101,
+      "updated_at": "2026-04-20T03:40:02-04:00",
+      "requisition_id": "P51556",
+      "title": "Commercial Account Executive",
+      "company_name": "Cato Networks",
+      "first_published": "2026-04-20T03:40:02-04:00",
+      "language": "en",
+      "application_deadline": null
+    },
+    {
+      "absolute_url": "https://www.catonetworks.com/careers/careers-post/4784838101?gh_jid=4784838101",
+      "data_compliance": [
+        {
+          "type": "gdpr",
+          "requires_consent": false,
+          "requires_processing_consent": false,
+          "requires_retention_consent": false,
+          "retention_period": null,
+          "demographic_data_consent_applies": false
+        }
+      ],
+      "internal_job_id": 4431065101,
+      "location": {
+        "name": "Japan"
+      },
+      "metadata": null,
+      "id": 4784838101,
+      "updated_at": "2026-03-19T09:00:04-04:00",
+      "requisition_id": "P51819",
+      "title": "Commercial Account Executive",
+      "company_name": "Cato Networks",
+      "first_published": "2026-03-05T22:14:38-05:00",
+      "language": "en",
+      "application_deadline": null
+    },
+    {
+      "absolute_url": "https://www.catonetworks.com/careers/careers-post/4841242101?gh_jid=4841242101",
+      "data_compliance": [
+        {
+          "type": "gdpr",
+          "requires_consent": false,
+          "requires_processing_consent": false,
+          "requires_retention_consent": false,
+          "retention_period": null,
+          "demographic_data_consent_applies": false
+        }
+      ],
+      "internal_job_id": 4457650101,
+      "location": {
+        "name": "Lisboa, Lisbon, Portugal"
+      },
+      "metadata": null,
+      "id": 4841242101,
+      "updated_at": "2026-04-28T09:57:55-04:00",
+      "requisition_id": "P51826",
+      "title": "Commercial Account Executive",
+      "company_name": "Cato Networks",
+      "first_published": "2026-04-20T03:42:58-04:00",
+      "language": "en",
+      "application_deadline": null
+    },
+    {
+      "absolute_url": "https://www.catonetworks.com/careers/careers-post/4850103101?gh_jid=4850103101",
+      "data_compliance": [
+        {
+          "type": "gdpr",
+          "requires_consent": false,
+          "requires_processing_consent": false,
+          "requires_retention_consent": false,
+          "retention_period": null,
+          "demographic_data_consent_applies": false
+        }
+      ],
+      "internal_job_id": 4461560101,
+      "location": {
+        "name": "Amsterdam, North Holland, Netherlands; London, England, United Kingdom; München, Bavaria, Germany"
+      },
+      "metadata": null,
+      "id": 4850103101,
+      "updated_at": "2026-04-28T07:37:00-04:00",
+      "requisition_id": "P51737",
+      "title": "Commercial Legal Counsel",
+      "company_name": "Cato Networks",
+      "first_published": "2026-04-28T07:37:00-04:00",
+      "language": "en",
+      "application_deadline": null
+    },
+    {
+      "absolute_url": "https://www.catonetworks.com/careers/careers-post/4822171101?gh_jid=4822171101",
+      "data_compliance": [
+        {
+          "type": "gdpr",
+          "requires_consent": false,
+          "requires_processing_consent": false,
+          "requires_retention_consent": false,
+          "retention_period": null,
+          "demographic_data_consent_applies": false
+        }
+      ],
+      "internal_job_id": 4448361101,
+      "location": {
+        "name": "Tel Aviv District, Israel"
+      },
+      "metadata": null,
+      "id": 4822171101,
+      "updated_at": "2026-03-31T03:15:29-04:00",
+      "requisition_id": "1746",
+      "title": "Compensation and Benefits Partner",
+      "company_name": "Cato Networks",
+      "first_published": "2026-03-26T05:44:19-04:00",
+      "language": "en",
+      "application_deadline": null
+    },
+    {
+      "absolute_url": "https://www.catonetworks.com/careers/careers-post/4849935101?gh_jid=4849935101",
+      "data_compliance": [
+        {
+          "type": "gdpr",
+          "requires_consent": false,
+          "requires_processing_consent": false,
+          "requires_retention_consent": false,
+          "retention_period": null,
+          "demographic_data_consent_applies": false
+        }
+      ],
+      "internal_job_id": 4461486101,
+      "location": {
+        "name": "Seoul, Seoul, South Korea"
+      },
+      "metadata": null,
+      "id": 4849935101,
+      "updated_at": "2026-04-28T03:32:28-04:00",
+      "requisition_id": "P50094",
+      "title": "Country Manager",
+      "company_name": "Cato Networks",
+      "first_published": "2026-04-28T03:32:28-04:00",
+      "language": "en",
+      "application_deadline": null
+    },
+    {
+      "absolute_url": "https://www.catonetworks.com/careers/careers-post/4776412101?gh_jid=4776412101",
+      "data_compliance": [
+        {
+          "type": "gdpr",
+          "requires_consent": false,
+          "requires_processing_consent": false,
+          "requires_retention_consent": false,
+          "retention_period": null,
+          "demographic_data_consent_applies": false
+        }
+      ],
+      "internal_job_id": 4427082101,
+      "location": {
+        "name": "Singapore"
+      },
+      "metadata": null,
+      "id": 4776412101,
+      "updated_at": "2026-04-02T10:27:57-04:00",
+      "requisition_id": "P50471",
+      "title": "Customer Success Associate",
+      "company_name": "Cato Networks",
+      "first_published": "2026-03-30T10:54:04-04:00",
+      "language": "en",
+      "application_deadline": null
+    },
+    {
+      "absolute_url": "https://www.catonetworks.com/careers/careers-post/4836216101?gh_jid=4836216101",
+      "data_compliance": [
+        {
+          "type": "gdpr",
+          "requires_consent": false,
+          "requires_processing_consent": false,
+          "requires_retention_consent": false,
+          "retention_period": null,
+          "demographic_data_consent_applies": false
+        }
+      ],
+      "internal_job_id": 4455349101,
+      "location": {
+        "name": "Tokyo Prefecture, Japan"
+      },
+      "metadata": null,
+      "id": 4836216101,
+      "updated_at": "2026-04-10T02:25:45-04:00",
+      "requisition_id": "P51780",
+      "title": "Customer Success Manager",
+      "company_name": "Cato Networks",
+      "first_published": "2026-04-10T02:25:45-04:00",
+      "language": "en",
+      "application_deadline": null
+    },
+    {
+      "absolute_url": "https://www.catonetworks.com/careers/careers-post/4844988101?gh_jid=4844988101",
+      "data_compliance": [
+        {
+          "type": "gdpr",
+          "requires_consent": false,
+          "requires_processing_consent": false,
+          "requires_retention_consent": false,
+          "retention_period": null,
+          "demographic_data_consent_applies": false
+        }
+      ],
+      "internal_job_id": 4455848101,
+      "location": {
+        "name": "Mexico City, Mexico City, Mexico"
+      },
+      "metadata": null,
+      "id": 4844988101,
+      "updated_at": "2026-04-22T14:09:42-04:00",
+      "requisition_id": "P51932",
+      "title": "Customer Success Manager",
+      "company_name": "Cato Networks",
+      "first_published": "2026-04-22T13:40:21-04:00",
+      "language": "en",
+      "application_deadline": null
+    },
+    {
+      "absolute_url": "https://www.catonetworks.com/careers/careers-post/4837407101?gh_jid=4837407101",
+      "data_compliance": [
+        {
+          "type": "gdpr",
+          "requires_consent": false,
+          "requires_processing_consent": false,
+          "requires_retention_consent": false,
+          "retention_period": null,
+          "demographic_data_consent_applies": false
+        }
+      ],
+      "internal_job_id": 4455848101,
+      "location": {
+        "name": "Bogotá, Bogotá, Colombia"
+      },
+      "metadata": null,
+      "id": 4837407101,
+      "updated_at": "2026-04-20T14:50:22-04:00",
+      "requisition_id": "P51932",
+      "title": "Customer Success Manager",
+      "company_name": "Cato Networks",
+      "first_published": "2026-04-20T14:50:22-04:00",
+      "language": "en",
+      "application_deadline": null
+    },
+    {
+      "absolute_url": "https://www.catonetworks.com/careers/careers-post/4826795101?gh_jid=4826795101",
+      "data_compliance": [
+        {
+          "type": "gdpr",
+          "requires_consent": false,
+          "requires_processing_consent": false,
+          "requires_retention_consent": false,
+          "retention_period": null,
+          "demographic_data_consent_applies": false
+        }
+      ],
+      "internal_job_id": 4450433101,
+      "location": {
+        "name": "Amsterdam, North Holland, Netherlands"
+      },
+      "metadata": null,
+      "id": 4826795101,
+      "updated_at": "2026-03-31T11:59:08-04:00",
+      "requisition_id": "P50247",
+      "title": "Customer Success Manager",
+      "company_name": "Cato Networks",
+      "first_published": "2026-03-31T11:22:19-04:00",
+      "language": "en",
+      "application_deadline": null
+    },
+    {
+      "absolute_url": "https://www.catonetworks.com/careers/careers-post/4848229101?gh_jid=4848229101",
+      "data_compliance": [
+        {
+          "type": "gdpr",
+          "requires_consent": false,
+          "requires_processing_consent": false,
+          "requires_retention_consent": false,
+          "retention_period": null,
+          "demographic_data_consent_applies": false
+        }
+      ],
+      "internal_job_id": 4460888101,
+      "location": {
+        "name": "Tel Aviv District, Israel"
+      },
+      "metadata": null,
+      "id": 4848229101,
+      "updated_at": "2026-05-03T05:25:08-04:00",
+      "requisition_id": "1792",
+      "title": "Data Scientist",
+      "company_name": "Cato Networks",
+      "first_published": "2026-04-26T07:50:34-04:00",
+      "language": "en",
+      "application_deadline": null
+    },
+    {
+      "absolute_url": "https://www.catonetworks.com/careers/careers-post/4844663101?gh_jid=4844663101",
+      "data_compliance": [
+        {
+          "type": "gdpr",
+          "requires_consent": false,
+          "requires_processing_consent": false,
+          "requires_retention_consent": false,
+          "retention_period": null,
+          "demographic_data_consent_applies": false
+        }
+      ],
+      "internal_job_id": 4459346101,
+      "location": {
+        "name": "USA"
+      },
+      "metadata": null,
+      "id": 4844663101,
+      "updated_at": "2026-04-21T09:02:32-04:00",
+      "requisition_id": "1786",
+      "title": "Deal Desk Analyst",
+      "company_name": "Cato Networks",
+      "first_published": "2026-04-21T09:02:32-04:00",
+      "language": "en",
+      "application_deadline": null
+    },
+    {
+      "absolute_url": "https://www.catonetworks.com/careers/careers-post/4793785101?gh_jid=4793785101",
+      "data_compliance": [
+        {
+          "type": "gdpr",
+          "requires_consent": false,
+          "requires_processing_consent": false,
+          "requires_retention_consent": false,
+          "retention_period": null,
+          "demographic_data_consent_applies": false
+        }
+      ],
+      "internal_job_id": 4435240101,
+      "location": {
+        "name": "London, England, United Kingdom"
+      },
+      "metadata": null,
+      "id": 4793785101,
+      "updated_at": "2026-05-05T10:12:24-04:00",
+      "requisition_id": "AIM1139-2",
+      "title": "Demand Generation Manager ",
+      "company_name": "Cato Networks",
+      "first_published": "2026-03-03T07:45:53-05:00",
+      "language": "en",
+      "application_deadline": null
+    },
+    {
+      "absolute_url": "https://www.catonetworks.com/careers/careers-post/4769418101?gh_jid=4769418101",
+      "data_compliance": [
+        {
+          "type": "gdpr",
+          "requires_consent": false,
+          "requires_processing_consent": false,
+          "requires_retention_consent": false,
+          "retention_period": null,
+          "demographic_data_consent_applies": false
+        }
+      ],
+      "internal_job_id": 4423841101,
+      "location": {
+        "name": "Tel Aviv District, Israel"
+      },
+      "metadata": null,
+      "id": 4769418101,
+      "updated_at": "2026-03-22T15:07:24-04:00",
+      "requisition_id": "1619",
+      "title": "Director of Financial Planning & Analysis",
+      "company_name": "Cato Networks",
+      "first_published": "2026-03-11T09:01:00-04:00",
+      "language": "en",
+      "application_deadline": null
+    },
+    {
+      "absolute_url": "https://www.catonetworks.com/careers/careers-post/4745772101?gh_jid=4745772101",
+      "data_compliance": [
+        {
+          "type": "gdpr",
+          "requires_consent": false,
+          "requires_processing_consent": false,
+          "requires_retention_consent": false,
+          "retention_period": null,
+          "demographic_data_consent_applies": false
+        }
+      ],
+      "internal_job_id": 4411895101,
+      "location": {
+        "name": "Tel Aviv District, Israel"
+      },
+      "metadata": null,
+      "id": 4745772101,
+      "updated_at": "2026-03-19T09:00:04-04:00",
+      "requisition_id": "1561",
+      "title": "Director Of Product Management - Networking",
+      "company_name": "Cato Networks",
+      "first_published": "2026-01-04T02:56:18-05:00",
+      "language": "en",
+      "application_deadline": null
+    },
+    {
+      "absolute_url": "https://www.catonetworks.com/careers/careers-post/4795321101?gh_jid=4795321101",
+      "data_compliance": [
+        {
+          "type": "gdpr",
+          "requires_consent": false,
+          "requires_processing_consent": false,
+          "requires_retention_consent": false,
+          "retention_period": null,
+          "demographic_data_consent_applies": false
+        }
+      ],
+      "internal_job_id": 4435913101,
+      "location": {
+        "name": "London, England, United Kingdom"
+      },
+      "metadata": null,
+      "id": 4795321101,
+      "updated_at": "2026-03-31T11:31:31-04:00",
+      "requisition_id": "P50510",
+      "title": "Director Product Marketing, EMEA",
+      "company_name": "Cato Networks",
+      "first_published": "2026-03-19T14:19:55-04:00",
+      "language": "en",
+      "application_deadline": null
+    },
+    {
+      "absolute_url": "https://www.catonetworks.com/careers/careers-post/4856732101?gh_jid=4856732101",
+      "data_compliance": [
+        {
+          "type": "gdpr",
+          "requires_consent": false,
+          "requires_processing_consent": false,
+          "requires_retention_consent": false,
+          "retention_period": null,
+          "demographic_data_consent_applies": false
+        }
+      ],
+      "internal_job_id": 4463837101,
+      "location": {
+        "name": "USA"
+      },
+      "metadata": null,
+      "id": 4856732101,
+      "updated_at": "2026-05-05T14:24:14-04:00",
+      "requisition_id": "1812",
+      "title": "Director, Product & Technology Partnerships",
+      "company_name": "Cato Networks",
+      "first_published": "2026-05-04T15:53:58-04:00",
+      "language": "en",
+      "application_deadline": null
+    },
+    {
+      "absolute_url": "https://www.catonetworks.com/careers/careers-post/4845105101?gh_jid=4845105101",
+      "data_compliance": [
+        {
+          "type": "gdpr",
+          "requires_consent": false,
+          "requires_processing_consent": false,
+          "requires_retention_consent": false,
+          "retention_period": null,
+          "demographic_data_consent_applies": false
+        }
+      ],
+      "internal_job_id": 4459504101,
+      "location": {
+        "name": "Tel Aviv District, Israel"
+      },
+      "metadata": null,
+      "id": 4845105101,
+      "updated_at": "2026-04-20T06:23:26-04:00",
+      "requisition_id": "1788",
+      "title": "Engineering Team Lead",
+      "company_name": "Cato Networks",
+      "first_published": "2026-04-20T06:22:49-04:00",
+      "language": "en",
+      "application_deadline": null
+    },
+    {
+      "absolute_url": "https://www.catonetworks.com/careers/careers-post/4803510101?gh_jid=4803510101",
+      "data_compliance": [
+        {
+          "type": "gdpr",
+          "requires_consent": false,
+          "requires_processing_consent": false,
+          "requires_retention_consent": false,
+          "retention_period": null,
+          "demographic_data_consent_applies": false
+        }
+      ],
+      "internal_job_id": 4439670101,
+      "location": {
+        "name": "Tel Aviv District, Israel"
+      },
+      "metadata": null,
+      "id": 4803510101,
+      "updated_at": "2026-04-15T03:05:02-04:00",
+      "requisition_id": "1718",
+      "title": "Engineering Team Leader – RBI ",
+      "company_name": "Cato Networks",
+      "first_published": "2026-04-15T03:05:02-04:00",
+      "language": "en",
+      "application_deadline": null
+    },
+    {
+      "absolute_url": "https://www.catonetworks.com/careers/careers-post/4805318101?gh_jid=4805318101",
+      "data_compliance": [
+        {
+          "type": "gdpr",
+          "requires_consent": false,
+          "requires_processing_consent": false,
+          "requires_retention_consent": false,
+          "retention_period": null,
+          "demographic_data_consent_applies": false
+        }
+      ],
+      "internal_job_id": 4440485101,
+      "location": {
+        "name": "Zürich, Zürich, Switzerland"
+      },
+      "metadata": null,
+      "id": 4805318101,
+      "updated_at": "2026-03-19T09:00:04-04:00",
+      "requisition_id": "P51427",
+      "title": "Enterprise Sales Director",
+      "company_name": "Cato Networks",
+      "first_published": "2026-03-17T10:36:28-04:00",
+      "language": "en",
+      "application_deadline": null
+    },
+    {
+      "absolute_url": "https://www.catonetworks.com/careers/careers-post/4793332101?gh_jid=4793332101",
+      "data_compliance": [
+        {
+          "type": "gdpr",
+          "requires_consent": false,
+          "requires_processing_consent": false,
+          "requires_retention_consent": false,
+          "retention_period": null,
+          "demographic_data_consent_applies": false
+        }
+      ],
+      "internal_job_id": 4435038101,
+      "location": {
+        "name": "Berlin, Berlin, Germany; Frankfurt am Main, Hesse, Germany; Hamburg, Hamburg, Germany"
+      },
+      "metadata": null,
+      "id": 4793332101,
+      "updated_at": "2026-03-19T09:00:04-04:00",
+      "requisition_id": "P51986",
+      "title": "Field Chief Technical Architect",
+      "company_name": "Cato Networks",
+      "first_published": "2026-03-03T12:24:46-05:00",
+      "language": "en",
+      "application_deadline": null
+    },
+    {
+      "absolute_url": "https://www.catonetworks.com/careers/careers-post/4853323101?gh_jid=4853323101",
+      "data_compliance": [
+        {
+          "type": "gdpr",
+          "requires_consent": false,
+          "requires_processing_consent": false,
+          "requires_retention_consent": false,
+          "retention_period": null,
+          "demographic_data_consent_applies": false
+        }
+      ],
+      "internal_job_id": 4462736101,
+      "location": {
+        "name": "Tel Aviv District, Israel"
+      },
+      "metadata": null,
+      "id": 4853323101,
+      "updated_at": "2026-05-06T10:07:31-04:00",
+      "requisition_id": "1804",
+      "title": "Full Stack Developer ",
+      "company_name": "Cato Networks",
+      "first_published": "2026-05-04T07:57:36-04:00",
+      "language": "en",
+      "application_deadline": null
+    },
+    {
+      "absolute_url": "https://www.catonetworks.com/careers/careers-post/4787959101?gh_jid=4787959101",
+      "data_compliance": [
+        {
+          "type": "gdpr",
+          "requires_consent": false,
+          "requires_processing_consent": false,
+          "requires_retention_consent": false,
+          "retention_period": null,
+          "demographic_data_consent_applies": false
+        }
+      ],
+      "internal_job_id": 4432662101,
+      "location": {
+        "name": "Tel Aviv District, Israel"
+      },
+      "metadata": null,
+      "id": 4787959101,
+      "updated_at": "2026-05-12T05:00:27-04:00",
+      "requisition_id": "1677",
+      "title": "Full Stack Engineer",
+      "company_name": "Cato Networks",
+      "first_published": "2026-02-24T07:18:46-05:00",
+      "language": "en",
+      "application_deadline": null
+    },
+    {
+      "absolute_url": "https://www.catonetworks.com/careers/careers-post/4802046101?gh_jid=4802046101",
+      "data_compliance": [
+        {
+          "type": "gdpr",
+          "requires_consent": false,
+          "requires_processing_consent": false,
+          "requires_retention_consent": false,
+          "retention_period": null,
+          "demographic_data_consent_applies": false
+        }
+      ],
+      "internal_job_id": 4438998101,
+      "location": {
+        "name": "Tel Aviv District, Israel"
+      },
+      "metadata": null,
+      "id": 4802046101,
+      "updated_at": "2026-03-19T11:45:51-04:00",
+      "requisition_id": "1715",
+      "title": "Full Stack Engineer",
+      "company_name": "Cato Networks",
+      "first_published": "2026-03-10T14:39:34-04:00",
+      "language": "en",
+      "application_deadline": null
+    },
+    {
+      "absolute_url": "https://www.catonetworks.com/careers/careers-post/4839946101?gh_jid=4839946101",
+      "data_compliance": [
+        {
+          "type": "gdpr",
+          "requires_consent": false,
+          "requires_processing_consent": false,
+          "requires_retention_consent": false,
+          "retention_period": null,
+          "demographic_data_consent_applies": false
+        }
+      ],
+      "internal_job_id": 4457049101,
+      "location": {
+        "name": "London, England, United Kingdom"
+      },
+      "metadata": null,
+      "id": 4839946101,
+      "updated_at": "2026-04-16T16:13:59-04:00",
+      "requisition_id": "1781",
+      "title": "Full Stack Engineer",
+      "company_name": "Cato Networks",
+      "first_published": "2026-04-14T05:26:37-04:00",
+      "language": "en",
+      "application_deadline": null
+    },
+    {
+      "absolute_url": "https://www.catonetworks.com/careers/careers-post/4852680101?gh_jid=4852680101",
+      "data_compliance": [
+        {
+          "type": "gdpr",
+          "requires_consent": false,
+          "requires_processing_consent": false,
+          "requires_retention_consent": false,
+          "retention_period": null,
+          "demographic_data_consent_applies": false
+        }
+      ],
+      "internal_job_id": 4462484101,
+      "location": {
+        "name": "Tel Aviv District, Israel"
+      },
+      "metadata": null,
+      "id": 4852680101,
+      "updated_at": "2026-04-28T10:18:10-04:00",
+      "requisition_id": "1803",
+      "title": "Global Growth and Localization (Maternity Leave Replacement) ",
+      "company_name": "Cato Networks",
+      "first_published": "2026-04-28T10:17:28-04:00",
+      "language": "en",
+      "application_deadline": null
+    },
+    {
+      "absolute_url": "https://www.catonetworks.com/careers/careers-post/4804383101?gh_jid=4804383101",
+      "data_compliance": [
+        {
+          "type": "gdpr",
+          "requires_consent": false,
+          "requires_processing_consent": false,
+          "requires_retention_consent": false,
+          "retention_period": null,
+          "demographic_data_consent_applies": false
+        }
+      ],
+      "internal_job_id": 4440048101,
+      "location": {
+        "name": "USA"
+      },
+      "metadata": null,
+      "id": 4804383101,
+      "updated_at": "2026-04-17T09:48:08-04:00",
+      "requisition_id": "1719",
+      "title": "Global Partner Alliance Manager, GSI",
+      "company_name": "Cato Networks",
+      "first_published": "2026-03-13T08:48:39-04:00",
+      "language": "en",
+      "application_deadline": null
+    },
+    {
+      "absolute_url": "https://www.catonetworks.com/careers/careers-post/4794084101?gh_jid=4794084101",
+      "data_compliance": [
+        {
+          "type": "gdpr",
+          "requires_consent": false,
+          "requires_processing_consent": false,
+          "requires_retention_consent": false,
+          "retention_period": null,
+          "demographic_data_consent_applies": false
+        }
+      ],
+      "internal_job_id": 4435372101,
+      "location": {
+        "name": "Atlanta, Georgia, United States"
+      },
+      "metadata": null,
+      "id": 4794084101,
+      "updated_at": "2026-03-22T15:08:19-04:00",
+      "requisition_id": "P51991",
+      "title": "GTM Finance Business Partner ",
+      "company_name": "Cato Networks",
+      "first_published": "2026-03-03T12:18:49-05:00",
+      "language": "en",
+      "application_deadline": null
+    },
+    {
+      "absolute_url": "https://www.catonetworks.com/careers/careers-post/4592943101?gh_jid=4592943101",
+      "data_compliance": [
+        {
+          "type": "gdpr",
+          "requires_consent": false,
+          "requires_processing_consent": false,
+          "requires_retention_consent": false,
+          "retention_period": null,
+          "demographic_data_consent_applies": false
+        }
+      ],
+      "internal_job_id": 4338108101,
+      "location": {
+        "name": "Tel Aviv District, Israel"
+      },
+      "metadata": null,
+      "id": 4592943101,
+      "updated_at": "2026-03-29T10:56:09-04:00",
+      "requisition_id": "1084",
+      "title": "Information System Analyst",
+      "company_name": "Cato Networks",
+      "first_published": "2025-05-22T07:56:00-04:00",
+      "language": "en",
+      "application_deadline": null
+    },
+    {
+      "absolute_url": "https://www.catonetworks.com/careers/careers-post/4832252101?gh_jid=4832252101",
+      "data_compliance": [
+        {
+          "type": "gdpr",
+          "requires_consent": false,
+          "requires_processing_consent": false,
+          "requires_retention_consent": false,
+          "retention_period": null,
+          "demographic_data_consent_applies": false
+        }
+      ],
+      "internal_job_id": 4453134101,
+      "location": {
+        "name": "Tel Aviv District, Israel"
+      },
+      "metadata": null,
+      "id": 4832252101,
+      "updated_at": "2026-04-09T03:59:55-04:00",
+      "requisition_id": "1764",
+      "title": "IT Support Specialist",
+      "company_name": "Cato Networks",
+      "first_published": "2026-04-09T03:59:55-04:00",
+      "language": "en",
+      "application_deadline": null
+    },
+    {
+      "absolute_url": "https://www.catonetworks.com/careers/careers-post/4821505101?gh_jid=4821505101",
+      "data_compliance": [
+        {
+          "type": "gdpr",
+          "requires_consent": false,
+          "requires_processing_consent": false,
+          "requires_retention_consent": false,
+          "retention_period": null,
+          "demographic_data_consent_applies": false
+        }
+      ],
+      "internal_job_id": 4448057101,
+      "location": {
+        "name": "Tel Aviv District, Israel"
+      },
+      "metadata": null,
+      "id": 4821505101,
+      "updated_at": "2026-04-16T05:06:00-04:00",
+      "requisition_id": "1745",
+      "title": "IT Support Specialist - Temporary position",
+      "company_name": "Cato Networks",
+      "first_published": "2026-03-29T06:43:07-04:00",
+      "language": "en",
+      "application_deadline": null
+    },
+    {
+      "absolute_url": "https://www.catonetworks.com/careers/careers-post/4785881101?gh_jid=4785881101",
+      "data_compliance": [
+        {
+          "type": "gdpr",
+          "requires_consent": false,
+          "requires_processing_consent": false,
+          "requires_retention_consent": false,
+          "retention_period": null,
+          "demographic_data_consent_applies": false
+        }
+      ],
+      "internal_job_id": 4431628101,
+      "location": {
+        "name": "Tel Aviv District, Israel"
+      },
+      "metadata": null,
+      "id": 4785881101,
+      "updated_at": "2026-05-12T09:23:10-04:00",
+      "requisition_id": "1670",
+      "title": "Learning & Development Partner",
+      "company_name": "Cato Networks",
+      "first_published": "2026-02-24T05:06:16-05:00",
+      "language": "en",
+      "application_deadline": null
+    },
+    {
+      "absolute_url": "https://www.catonetworks.com/careers/careers-post/4352164101?gh_jid=4352164101",
+      "data_compliance": [
+        {
+          "type": "gdpr",
+          "requires_consent": false,
+          "requires_processing_consent": false,
+          "requires_retention_consent": false,
+          "retention_period": null,
+          "demographic_data_consent_applies": false
+        }
+      ],
+      "internal_job_id": 4218401101,
+      "location": {
+        "name": "Tel Aviv District, Israel"
+      },
+      "metadata": null,
+      "id": 4352164101,
+      "updated_at": "2026-03-22T04:20:49-04:00",
+      "requisition_id": "584",
+      "title": "macOS/iOS SW Engineer",
+      "company_name": "Cato Networks",
+      "first_published": "2024-06-17T06:10:26-04:00",
+      "language": "en",
+      "application_deadline": null
+    },
+    {
+      "absolute_url": "https://www.catonetworks.com/careers/careers-post/4720898101?gh_jid=4720898101",
+      "data_compliance": [
+        {
+          "type": "gdpr",
+          "requires_consent": false,
+          "requires_processing_consent": false,
+          "requires_retention_consent": false,
+          "retention_period": null,
+          "demographic_data_consent_applies": false
+        }
+      ],
+      "internal_job_id": 4399535101,
+      "location": {
+        "name": "Paris, Paris, France"
+      },
+      "metadata": null,
+      "id": 4720898101,
+      "updated_at": "2026-03-19T09:00:04-04:00",
+      "requisition_id": "1451",
+      "title": "Major Sales Director",
+      "company_name": "Cato Networks",
+      "first_published": "2025-11-28T12:41:54-05:00",
+      "language": "en",
+      "application_deadline": null
+    },
+    {
+      "absolute_url": "https://www.catonetworks.com/careers/careers-post/4677389101?gh_jid=4677389101",
+      "data_compliance": [
+        {
+          "type": "gdpr",
+          "requires_consent": false,
+          "requires_processing_consent": false,
+          "requires_retention_consent": false,
+          "retention_period": null,
+          "demographic_data_consent_applies": false
+        }
+      ],
+      "internal_job_id": 4381306101,
+      "location": {
+        "name": "Japan"
+      },
+      "metadata": null,
+      "id": 4677389101,
+      "updated_at": "2026-04-30T05:16:44-04:00",
+      "requisition_id": "AIM1130",
+      "title": "Major Sales Engineer, Japan ",
+      "company_name": "Cato Networks",
+      "first_published": "2025-10-02T04:46:05-04:00",
+      "language": "en",
+      "application_deadline": null
+    },
+    {
+      "absolute_url": "https://www.catonetworks.com/careers/careers-post/4230008101?gh_jid=4230008101",
+      "data_compliance": [
+        {
+          "type": "gdpr",
+          "requires_consent": false,
+          "requires_processing_consent": false,
+          "requires_retention_consent": false,
+          "retention_period": null,
+          "demographic_data_consent_applies": false
+        }
+      ],
+      "internal_job_id": 4151515101,
+      "location": {
+        "name": "Bogotá, Bogotá, Colombia"
+      },
+      "metadata": null,
+      "id": 4230008101,
+      "updated_at": "2026-03-19T09:00:04-04:00",
+      "requisition_id": "334",
+      "title": "MDR Security Analyst (Threat Hunting)",
+      "company_name": "Cato Networks",
+      "first_published": "2023-10-15T09:20:29-04:00",
+      "language": "en",
+      "application_deadline": null
+    },
+    {
+      "absolute_url": "https://www.catonetworks.com/careers/careers-post/4672344101?gh_jid=4672344101",
+      "data_compliance": [
+        {
+          "type": "gdpr",
+          "requires_consent": false,
+          "requires_processing_consent": false,
+          "requires_retention_consent": false,
+          "retention_period": null,
+          "demographic_data_consent_applies": false
+        }
+      ],
+      "internal_job_id": 4378890101,
+      "location": {
+        "name": "Tel Aviv District, Israel"
+      },
+      "metadata": null,
+      "id": 4672344101,
+      "updated_at": "2026-03-19T09:00:04-04:00",
+      "requisition_id": "1315",
+      "title": "Network & Security Researcher",
+      "company_name": "Cato Networks",
+      "first_published": "2025-09-16T05:24:41-04:00",
+      "language": "en",
+      "application_deadline": null
+    },
+    {
+      "absolute_url": "https://www.catonetworks.com/careers/careers-post/4561100101?gh_jid=4561100101",
+      "data_compliance": [
+        {
+          "type": "gdpr",
+          "requires_consent": false,
+          "requires_processing_consent": false,
+          "requires_retention_consent": false,
+          "retention_period": null,
+          "demographic_data_consent_applies": false
+        }
+      ],
+      "internal_job_id": 4321712101,
+      "location": {
+        "name": "Prague, Czech Republic"
+      },
+      "metadata": null,
+      "id": 4561100101,
+      "updated_at": "2026-05-06T03:38:27-04:00",
+      "requisition_id": "991",
+      "title": "NOCaaS L1 Engineer",
+      "company_name": "Cato Networks",
+      "first_published": "2025-03-23T04:27:14-04:00",
+      "language": "en",
+      "application_deadline": null
+    },
+    {
+      "absolute_url": "https://www.catonetworks.com/careers/careers-post/4813924101?gh_jid=4813924101",
+      "data_compliance": [
+        {
+          "type": "gdpr",
+          "requires_consent": false,
+          "requires_processing_consent": false,
+          "requires_retention_consent": false,
+          "retention_period": null,
+          "demographic_data_consent_applies": false
+        }
+      ],
+      "internal_job_id": 4444494101,
+      "location": {
+        "name": "USA"
+      },
+      "metadata": null,
+      "id": 4813924101,
+      "updated_at": "2026-04-30T11:56:36-04:00",
+      "requisition_id": "1728",
+      "title": "Product Enablement Data Engineer",
+      "company_name": "Cato Networks",
+      "first_published": "2026-03-23T12:40:31-04:00",
+      "language": "en",
+      "application_deadline": null
+    },
+    {
+      "absolute_url": "https://www.catonetworks.com/careers/careers-post/4813869101?gh_jid=4813869101",
+      "data_compliance": [
+        {
+          "type": "gdpr",
+          "requires_consent": false,
+          "requires_processing_consent": false,
+          "requires_retention_consent": false,
+          "retention_period": null,
+          "demographic_data_consent_applies": false
+        }
+      ],
+      "internal_job_id": 4444468101,
+      "location": {
+        "name": "Canada; USA"
+      },
+      "metadata": null,
+      "id": 4813869101,
+      "updated_at": "2026-04-29T13:56:29-04:00",
+      "requisition_id": "1727",
+      "title": "Product Enablement Engineer ",
+      "company_name": "Cato Networks",
+      "first_published": "2026-03-23T12:41:12-04:00",
+      "language": "en",
+      "application_deadline": null
+    },
+    {
+      "absolute_url": "https://www.catonetworks.com/careers/careers-post/4633928101?gh_jid=4633928101",
+      "data_compliance": [
+        {
+          "type": "gdpr",
+          "requires_consent": false,
+          "requires_processing_consent": false,
+          "requires_retention_consent": false,
+          "retention_period": null,
+          "demographic_data_consent_applies": false
+        }
+      ],
+      "internal_job_id": 4358576101,
+      "location": {
+        "name": "Tel Aviv District, Israel"
+      },
+      "metadata": null,
+      "id": 4633928101,
+      "updated_at": "2026-03-19T09:00:04-04:00",
+      "requisition_id": "1180",
+      "title": "Product Manager - Access",
+      "company_name": "Cato Networks",
+      "first_published": "2025-07-14T03:20:32-04:00",
+      "language": "en",
+      "application_deadline": null
+    },
+    {
+      "absolute_url": "https://www.catonetworks.com/careers/careers-post/4791177101?gh_jid=4791177101",
+      "data_compliance": [
+        {
+          "type": "gdpr",
+          "requires_consent": false,
+          "requires_processing_consent": false,
+          "requires_retention_consent": false,
+          "retention_period": null,
+          "demographic_data_consent_applies": false
+        }
+      ],
+      "internal_job_id": 4434094101,
+      "location": {
+        "name": "London, England, United Kingdom"
+      },
+      "metadata": null,
+      "id": 4791177101,
+      "updated_at": "2026-03-19T09:00:04-04:00",
+      "requisition_id": "1696",
+      "title": "Product Manager - Access ",
+      "company_name": "Cato Networks",
+      "first_published": "2026-02-26T07:18:33-05:00",
+      "language": "en",
+      "application_deadline": null
+    },
+    {
+      "absolute_url": "https://www.catonetworks.com/careers/careers-post/4530664101?gh_jid=4530664101",
+      "data_compliance": [
+        {
+          "type": "gdpr",
+          "requires_consent": false,
+          "requires_processing_consent": false,
+          "requires_retention_consent": false,
+          "retention_period": null,
+          "demographic_data_consent_applies": false
+        }
+      ],
+      "internal_job_id": 4306744101,
+      "location": {
+        "name": "Tel Aviv District, Israel"
+      },
+      "metadata": null,
+      "id": 4530664101,
+      "updated_at": "2026-03-19T09:00:04-04:00",
+      "requisition_id": "928",
+      "title": "Product Manager - Network",
+      "company_name": "Cato Networks",
+      "first_published": "2025-02-06T09:35:17-05:00",
+      "language": "en",
+      "application_deadline": null
+    },
+    {
+      "absolute_url": "https://www.catonetworks.com/careers/careers-post/4791200101?gh_jid=4791200101",
+      "data_compliance": [
+        {
+          "type": "gdpr",
+          "requires_consent": false,
+          "requires_processing_consent": false,
+          "requires_retention_consent": false,
+          "retention_period": null,
+          "demographic_data_consent_applies": false
+        }
+      ],
+      "internal_job_id": 4434103101,
+      "location": {
+        "name": "London, England, United Kingdom"
+      },
+      "metadata": null,
+      "id": 4791200101,
+      "updated_at": "2026-03-19T09:00:04-04:00",
+      "requisition_id": "1698",
+      "title": "Product Manager - Network ",
+      "company_name": "Cato Networks",
+      "first_published": "2026-02-26T07:19:12-05:00",
+      "language": "en",
+      "application_deadline": null
+    },
+    {
+      "absolute_url": "https://www.catonetworks.com/careers/careers-post/4777185101?gh_jid=4777185101",
+      "data_compliance": [
+        {
+          "type": "gdpr",
+          "requires_consent": false,
+          "requires_processing_consent": false,
+          "requires_retention_consent": false,
+          "retention_period": null,
+          "demographic_data_consent_applies": false
+        }
+      ],
+      "internal_job_id": 4427444101,
+      "location": {
+        "name": "London, England, United Kingdom"
+      },
+      "metadata": null,
+      "id": 4777185101,
+      "updated_at": "2026-03-19T09:00:04-04:00",
+      "requisition_id": "1634",
+      "title": "Product Manager - Security",
+      "company_name": "Cato Networks",
+      "first_published": "2026-02-09T07:35:01-05:00",
+      "language": "en",
+      "application_deadline": null
+    },
+    {
+      "absolute_url": "https://www.catonetworks.com/careers/careers-post/4588160101?gh_jid=4588160101",
+      "data_compliance": [
+        {
+          "type": "gdpr",
+          "requires_consent": false,
+          "requires_processing_consent": false,
+          "requires_retention_consent": false,
+          "retention_period": null,
+          "demographic_data_consent_applies": false
+        }
+      ],
+      "internal_job_id": 4335622101,
+      "location": {
+        "name": "Tel Aviv District, Israel"
+      },
+      "metadata": null,
+      "id": 4588160101,
+      "updated_at": "2026-03-19T09:00:04-04:00",
+      "requisition_id": "1061",
+      "title": "Product Manager - Security",
+      "company_name": "Cato Networks",
+      "first_published": "2025-05-13T10:13:43-04:00",
+      "language": "en",
+      "application_deadline": null
+    },
+    {
+      "absolute_url": "https://www.catonetworks.com/careers/careers-post/4783081101?gh_jid=4783081101",
+      "data_compliance": [
+        {
+          "type": "gdpr",
+          "requires_consent": false,
+          "requires_processing_consent": false,
+          "requires_retention_consent": false,
+          "retention_period": null,
+          "demographic_data_consent_applies": false
+        }
+      ],
+      "internal_job_id": 4430378101,
+      "location": {
+        "name": "Tel Aviv District, Israel"
+      },
+      "metadata": null,
+      "id": 4783081101,
+      "updated_at": "2026-03-19T09:00:04-04:00",
+      "requisition_id": "1654",
+      "title": "Product Manager - XDR & Observability",
+      "company_name": "Cato Networks",
+      "first_published": "2026-02-25T04:25:23-05:00",
+      "language": "en",
+      "application_deadline": null
+    },
+    {
+      "absolute_url": "https://www.catonetworks.com/careers/careers-post/4791193101?gh_jid=4791193101",
+      "data_compliance": [
+        {
+          "type": "gdpr",
+          "requires_consent": false,
+          "requires_processing_consent": false,
+          "requires_retention_consent": false,
+          "retention_period": null,
+          "demographic_data_consent_applies": false
+        }
+      ],
+      "internal_job_id": 4434100101,
+      "location": {
+        "name": "London, England, United Kingdom"
+      },
+      "metadata": null,
+      "id": 4791193101,
+      "updated_at": "2026-03-19T09:00:04-04:00",
+      "requisition_id": "1697",
+      "title": "Product Manager - XDR & Observability",
+      "company_name": "Cato Networks",
+      "first_published": "2026-02-26T07:19:37-05:00",
+      "language": "en",
+      "application_deadline": null
+    },
+    {
+      "absolute_url": "https://www.catonetworks.com/careers/careers-post/4851121101?gh_jid=4851121101",
+      "data_compliance": [
+        {
+          "type": "gdpr",
+          "requires_consent": false,
+          "requires_processing_consent": false,
+          "requires_retention_consent": false,
+          "retention_period": null,
+          "demographic_data_consent_applies": false
+        }
+      ],
+      "internal_job_id": 4461858101,
+      "location": {
+        "name": "Tel Aviv District, Israel"
+      },
+      "metadata": null,
+      "id": 4851121101,
+      "updated_at": "2026-04-29T04:24:16-04:00",
+      "requisition_id": "1801",
+      "title": "Product Operations",
+      "company_name": "Cato Networks",
+      "first_published": "2026-04-29T04:24:16-04:00",
+      "language": "en",
+      "application_deadline": null
+    },
+    {
+      "absolute_url": "https://www.catonetworks.com/careers/careers-post/4727401101?gh_jid=4727401101",
+      "data_compliance": [
+        {
+          "type": "gdpr",
+          "requires_consent": false,
+          "requires_processing_consent": false,
+          "requires_retention_consent": false,
+          "retention_period": null,
+          "demographic_data_consent_applies": false
+        }
+      ],
+      "internal_job_id": 4405805101,
+      "location": {
+        "name": "Tel Aviv District, Israel"
+      },
+      "metadata": null,
+      "id": 4727401101,
+      "updated_at": "2026-04-28T04:59:03-04:00",
+      "requisition_id": "1495",
+      "title": "Product Support Engineer – Junior T3 ",
+      "company_name": "Cato Networks",
+      "first_published": "2025-12-14T06:23:46-05:00",
+      "language": "en",
+      "application_deadline": null
+    },
+    {
+      "absolute_url": "https://www.catonetworks.com/careers/careers-post/4820239101?gh_jid=4820239101",
+      "data_compliance": [
+        {
+          "type": "gdpr",
+          "requires_consent": false,
+          "requires_processing_consent": false,
+          "requires_retention_consent": false,
+          "retention_period": null,
+          "demographic_data_consent_applies": false
+        }
+      ],
+      "internal_job_id": 4447495101,
+      "location": {
+        "name": "Tokyo Prefecture, Japan"
+      },
+      "metadata": null,
+      "id": 4820239101,
+      "updated_at": "2026-05-11T05:05:20-04:00",
+      "requisition_id": "P51097",
+      "title": "Product Support Engineer, Tier 3",
+      "company_name": "Cato Networks",
+      "first_published": "2026-05-11T05:05:20-04:00",
+      "language": "en",
+      "application_deadline": null
+    },
+    {
+      "absolute_url": "https://www.catonetworks.com/careers/careers-post/4781403101?gh_jid=4781403101",
+      "data_compliance": [
+        {
+          "type": "gdpr",
+          "requires_consent": false,
+          "requires_processing_consent": false,
+          "requires_retention_consent": false,
+          "retention_period": null,
+          "demographic_data_consent_applies": false
+        }
+      ],
+      "internal_job_id": 4429458101,
+      "location": {
+        "name": "Singapore"
+      },
+      "metadata": null,
+      "id": 4781403101,
+      "updated_at": "2026-05-07T10:47:10-04:00",
+      "requisition_id": "P51883",
+      "title": "Product Support Manager",
+      "company_name": "Cato Networks",
+      "first_published": "2026-02-17T08:33:10-05:00",
+      "language": "en",
+      "application_deadline": null
+    },
+    {
+      "absolute_url": "https://www.catonetworks.com/careers/careers-post/4781323101?gh_jid=4781323101",
+      "data_compliance": [
+        {
+          "type": "gdpr",
+          "requires_consent": false,
+          "requires_processing_consent": false,
+          "requires_retention_consent": false,
+          "retention_period": null,
+          "demographic_data_consent_applies": false
+        }
+      ],
+      "internal_job_id": 4429417101,
+      "location": {
+        "name": "Warsaw, Masovian Voivodeship, Poland"
+      },
+      "metadata": null,
+      "id": 4781323101,
+      "updated_at": "2026-03-19T09:00:04-04:00",
+      "requisition_id": "P51820",
+      "title": "Regional Sales Director",
+      "company_name": "Cato Networks",
+      "first_published": "2026-02-23T03:59:16-05:00",
+      "language": "en",
+      "application_deadline": null
+    },
+    {
+      "absolute_url": "https://www.catonetworks.com/careers/careers-post/4817154101?gh_jid=4817154101",
+      "data_compliance": [
+        {
+          "type": "gdpr",
+          "requires_consent": false,
+          "requires_processing_consent": false,
+          "requires_retention_consent": false,
+          "retention_period": null,
+          "demographic_data_consent_applies": false
+        }
+      ],
+      "internal_job_id": 4446002101,
+      "location": {
+        "name": "Stockholm, Stockholm, Sweden"
+      },
+      "metadata": null,
+      "id": 4817154101,
+      "updated_at": "2026-03-25T14:19:47-04:00",
+      "requisition_id": "P51824",
+      "title": "Regional Sales Director",
+      "company_name": "Cato Networks",
+      "first_published": "2026-03-25T14:19:47-04:00",
+      "language": "en",
+      "application_deadline": null
+    },
+    {
+      "absolute_url": "https://www.catonetworks.com/careers/careers-post/4817161101?gh_jid=4817161101",
+      "data_compliance": [
+        {
+          "type": "gdpr",
+          "requires_consent": false,
+          "requires_processing_consent": false,
+          "requires_retention_consent": false,
+          "retention_period": null,
+          "demographic_data_consent_applies": false
+        }
+      ],
+      "internal_job_id": 4446006101,
+      "location": {
+        "name": "Oslo, Oslo, Norway"
+      },
+      "metadata": null,
+      "id": 4817161101,
+      "updated_at": "2026-03-25T14:20:41-04:00",
+      "requisition_id": "P51825",
+      "title": "Regional Sales Director",
+      "company_name": "Cato Networks",
+      "first_published": "2026-03-25T14:20:41-04:00",
+      "language": "en",
+      "application_deadline": null
+    },
+    {
+      "absolute_url": "https://www.catonetworks.com/careers/careers-post/4779177101?gh_jid=4779177101",
+      "data_compliance": [
+        {
+          "type": "gdpr",
+          "requires_consent": false,
+          "requires_processing_consent": false,
+          "requires_retention_consent": false,
+          "retention_period": null,
+          "demographic_data_consent_applies": false
+        }
+      ],
+      "internal_job_id": 4428314101,
+      "location": {
+        "name": "London, England, United Kingdom"
+      },
+      "metadata": null,
+      "id": 4779177101,
+      "updated_at": "2026-03-19T09:00:04-04:00",
+      "requisition_id": "P51822",
+      "title": "Regional Sales Director",
+      "company_name": "Cato Networks",
+      "first_published": "2026-02-18T03:40:35-05:00",
+      "language": "en",
+      "application_deadline": null
+    },
+    {
+      "absolute_url": "https://www.catonetworks.com/careers/careers-post/4829777101?gh_jid=4829777101",
+      "data_compliance": [
+        {
+          "type": "gdpr",
+          "requires_consent": false,
+          "requires_processing_consent": false,
+          "requires_retention_consent": false,
+          "retention_period": null,
+          "demographic_data_consent_applies": false
+        }
+      ],
+      "internal_job_id": 4452007101,
+      "location": {
+        "name": "Reston, Virginia, United States"
+      },
+      "metadata": null,
+      "id": 4829777101,
+      "updated_at": "2026-05-11T12:43:56-04:00",
+      "requisition_id": "P50783",
+      "title": "Regional Sales Director ",
+      "company_name": "Cato Networks",
+      "first_published": "2026-05-11T12:43:56-04:00",
+      "language": "en",
+      "application_deadline": null
+    },
+    {
+      "absolute_url": "https://www.catonetworks.com/careers/careers-post/4831041101?gh_jid=4831041101",
+      "data_compliance": [
+        {
+          "type": "gdpr",
+          "requires_consent": false,
+          "requires_processing_consent": false,
+          "requires_retention_consent": false,
+          "retention_period": null,
+          "demographic_data_consent_applies": false
+        }
+      ],
+      "internal_job_id": 4452562101,
+      "location": {
+        "name": "Denver, Colorado, United States"
+      },
+      "metadata": null,
+      "id": 4831041101,
+      "updated_at": "2026-04-17T11:51:47-04:00",
+      "requisition_id": "P50251",
+      "title": "Regional Sales Director ",
+      "company_name": "Cato Networks",
+      "first_published": "2026-04-13T10:42:39-04:00",
+      "language": "en",
+      "application_deadline": null
+    },
+    {
+      "absolute_url": "https://www.catonetworks.com/careers/careers-post/4844709101?gh_jid=4844709101",
+      "data_compliance": [
+        {
+          "type": "gdpr",
+          "requires_consent": false,
+          "requires_processing_consent": false,
+          "requires_retention_consent": false,
+          "retention_period": null,
+          "demographic_data_consent_applies": false
+        }
+      ],
+      "internal_job_id": 4459355101,
+      "location": {
+        "name": "Cleveland"
+      },
+      "metadata": null,
+      "id": 4844709101,
+      "updated_at": "2026-04-20T12:07:18-04:00",
+      "requisition_id": "1787",
+      "title": "Regional Sales Director, Cleveland",
+      "company_name": "Cato Networks",
+      "first_published": "2026-04-20T12:07:18-04:00",
+      "language": "en",
+      "application_deadline": null
+    },
+    {
+      "absolute_url": "https://www.catonetworks.com/careers/careers-post/4792541101?gh_jid=4792541101",
+      "data_compliance": [
+        {
+          "type": "gdpr",
+          "requires_consent": false,
+          "requires_processing_consent": false,
+          "requires_retention_consent": false,
+          "retention_period": null,
+          "demographic_data_consent_applies": false
+        }
+      ],
+      "internal_job_id": 4434221101,
+      "location": {
+        "name": "Columbus"
+      },
+      "metadata": null,
+      "id": 4792541101,
+      "updated_at": "2026-04-17T13:07:12-04:00",
+      "requisition_id": "1702",
+      "title": "Regional Sales Director, Columbus",
+      "company_name": "Cato Networks",
+      "first_published": "2026-02-27T13:22:26-05:00",
+      "language": "en",
+      "application_deadline": null
+    },
+    {
+      "absolute_url": "https://www.catonetworks.com/careers/careers-post/4791488101?gh_jid=4791488101",
+      "data_compliance": [
+        {
+          "type": "gdpr",
+          "requires_consent": false,
+          "requires_processing_consent": false,
+          "requires_retention_consent": false,
+          "retention_period": null,
+          "demographic_data_consent_applies": false
+        }
+      ],
+      "internal_job_id": 4434221101,
+      "location": {
+        "name": "Columbus"
+      },
+      "metadata": null,
+      "id": 4791488101,
+      "updated_at": "2026-04-17T13:06:57-04:00",
+      "requisition_id": "1702",
+      "title": "Regional Sales Director, Columbus",
+      "company_name": "Cato Networks",
+      "first_published": "2026-02-26T16:58:54-05:00",
+      "language": "en",
+      "application_deadline": null
+    },
+    {
+      "absolute_url": "https://www.catonetworks.com/careers/careers-post/4746809101?gh_jid=4746809101",
+      "data_compliance": [
+        {
+          "type": "gdpr",
+          "requires_consent": false,
+          "requires_processing_consent": false,
+          "requires_retention_consent": false,
+          "retention_period": null,
+          "demographic_data_consent_applies": false
+        }
+      ],
+      "internal_job_id": 4412424101,
+      "location": {
+        "name": "Tokyo Prefecture, Japan"
+      },
+      "metadata": null,
+      "id": 4746809101,
+      "updated_at": "2026-04-30T05:17:02-04:00",
+      "requisition_id": "P51813",
+      "title": "Regional Sales Director - Japan",
+      "company_name": "Cato Networks",
+      "first_published": "2026-02-16T00:32:01-05:00",
+      "language": "en",
+      "application_deadline": null
+    },
+    {
+      "absolute_url": "https://www.catonetworks.com/careers/careers-post/4745963101?gh_jid=4745963101",
+      "data_compliance": [
+        {
+          "type": "gdpr",
+          "requires_consent": false,
+          "requires_processing_consent": false,
+          "requires_retention_consent": false,
+          "retention_period": null,
+          "demographic_data_consent_applies": false
+        }
+      ],
+      "internal_job_id": 4411992101,
+      "location": {
+        "name": "Los Angeles, California, United States"
+      },
+      "metadata": null,
+      "id": 4745963101,
+      "updated_at": "2026-03-19T09:00:04-04:00",
+      "requisition_id": "P50755",
+      "title": "Regional Sales Director, Los Angeles",
+      "company_name": "Cato Networks",
+      "first_published": "2026-01-12T11:54:08-05:00",
+      "language": "en",
+      "application_deadline": null
+    },
+    {
+      "absolute_url": "https://www.catonetworks.com/careers/careers-post/4843447101?gh_jid=4843447101",
+      "data_compliance": [
+        {
+          "type": "gdpr",
+          "requires_consent": false,
+          "requires_processing_consent": false,
+          "requires_retention_consent": false,
+          "retention_period": null,
+          "demographic_data_consent_applies": false
+        }
+      ],
+      "internal_job_id": 4458766101,
+      "location": {
+        "name": "Montréal, Quebec, Canada"
+      },
+      "metadata": null,
+      "id": 4843447101,
+      "updated_at": "2026-04-27T11:55:51-04:00",
+      "requisition_id": "1785",
+      "title": "Regional Sales Director, Montreal",
+      "company_name": "Cato Networks",
+      "first_published": "2026-04-17T12:48:16-04:00",
+      "language": "en",
+      "application_deadline": null
+    },
+    {
+      "absolute_url": "https://www.catonetworks.com/careers/careers-post/4831210101?gh_jid=4831210101",
+      "data_compliance": [
+        {
+          "type": "gdpr",
+          "requires_consent": false,
+          "requires_processing_consent": false,
+          "requires_retention_consent": false,
+          "retention_period": null,
+          "demographic_data_consent_applies": false
+        }
+      ],
+      "internal_job_id": 4452643101,
+      "location": {
+        "name": "Vancouver, British Columbia, Canada"
+      },
+      "metadata": null,
+      "id": 4831210101,
+      "updated_at": "2026-04-09T11:21:09-04:00",
+      "requisition_id": "1762",
+      "title": "Regional Sales Director, Vancouver",
+      "company_name": "Cato Networks",
+      "first_published": "2026-04-06T08:51:06-04:00",
+      "language": "en",
+      "application_deadline": null
+    },
+    {
+      "absolute_url": "https://www.catonetworks.com/careers/careers-post/4746816101?gh_jid=4746816101",
+      "data_compliance": [
+        {
+          "type": "gdpr",
+          "requires_consent": false,
+          "requires_processing_consent": false,
+          "requires_retention_consent": false,
+          "retention_period": null,
+          "demographic_data_consent_applies": false
+        }
+      ],
+      "internal_job_id": 4412427101,
+      "location": {
+        "name": "Tokyo Prefecture, Japan"
+      },
+      "metadata": null,
+      "id": 4746816101,
+      "updated_at": "2026-04-30T05:17:18-04:00",
+      "requisition_id": "P51815",
+      "title": "Regional Sales Manager - Japan",
+      "company_name": "Cato Networks",
+      "first_published": "2026-02-04T00:24:33-05:00",
+      "language": "en",
+      "application_deadline": null
+    },
+    {
+      "absolute_url": "https://www.catonetworks.com/careers/careers-post/4812341101?gh_jid=4812341101",
+      "data_compliance": [
+        {
+          "type": "gdpr",
+          "requires_consent": false,
+          "requires_processing_consent": false,
+          "requires_retention_consent": false,
+          "retention_period": null,
+          "demographic_data_consent_applies": false
+        }
+      ],
+      "internal_job_id": 4443786101,
+      "location": {
+        "name": "Tel Aviv District, Israel"
+      },
+      "metadata": null,
+      "id": 4812341101,
+      "updated_at": "2026-04-27T10:01:02-04:00",
+      "requisition_id": "1724",
+      "title": "Research Engineer (Cyber security)",
+      "company_name": "Cato Networks",
+      "first_published": "2026-03-18T08:42:57-04:00",
+      "language": "en",
+      "application_deadline": null
+    },
+    {
+      "absolute_url": "https://www.catonetworks.com/careers/careers-post/4850403101?gh_jid=4850403101",
+      "data_compliance": [
+        {
+          "type": "gdpr",
+          "requires_consent": false,
+          "requires_processing_consent": false,
+          "requires_retention_consent": false,
+          "retention_period": null,
+          "demographic_data_consent_applies": false
+        }
+      ],
+      "internal_job_id": 4461691101,
+      "location": {
+        "name": "Tel Aviv District, Israel"
+      },
+      "metadata": null,
+      "id": 4850403101,
+      "updated_at": "2026-04-27T10:02:56-04:00",
+      "requisition_id": "1795",
+      "title": "Research Engineer (Network)",
+      "company_name": "Cato Networks",
+      "first_published": "2026-04-26T05:21:02-04:00",
+      "language": "en",
+      "application_deadline": null
+    },
+    {
+      "absolute_url": "https://www.catonetworks.com/careers/careers-post/4780547101?gh_jid=4780547101",
+      "data_compliance": [
+        {
+          "type": "gdpr",
+          "requires_consent": false,
+          "requires_processing_consent": false,
+          "requires_retention_consent": false,
+          "retention_period": null,
+          "demographic_data_consent_applies": false
+        }
+      ],
+      "internal_job_id": 4429011101,
+      "location": {
+        "name": "Tel Aviv District, Israel"
+      },
+      "metadata": null,
+      "id": 4780547101,
+      "updated_at": "2026-03-19T09:00:04-04:00",
+      "requisition_id": "1643",
+      "title": "Research Team Lead",
+      "company_name": "Cato Networks",
+      "first_published": "2026-03-02T05:25:03-05:00",
+      "language": "en",
+      "application_deadline": null
+    },
+    {
+      "absolute_url": "https://www.catonetworks.com/careers/careers-post/4858493101?gh_jid=4858493101",
+      "data_compliance": [
+        {
+          "type": "gdpr",
+          "requires_consent": false,
+          "requires_processing_consent": false,
+          "requires_retention_consent": false,
+          "retention_period": null,
+          "demographic_data_consent_applies": false
+        }
+      ],
+      "internal_job_id": 4464767101,
+      "location": {
+        "name": "München, Bavaria, Germany"
+      },
+      "metadata": null,
+      "id": 4858493101,
+      "updated_at": "2026-05-07T06:55:37-04:00",
+      "requisition_id": "P50953A",
+      "title": "Sales Development Representative Manager DACH",
+      "company_name": "Cato Networks",
+      "first_published": "2026-05-07T06:44:09-04:00",
+      "language": "en",
+      "application_deadline": null
+    },
+    {
+      "absolute_url": "https://www.catonetworks.com/careers/careers-post/4853202101?gh_jid=4853202101",
+      "data_compliance": [
+        {
+          "type": "gdpr",
+          "requires_consent": false,
+          "requires_processing_consent": false,
+          "requires_retention_consent": false,
+          "retention_period": null,
+          "demographic_data_consent_applies": false
+        }
+      ],
+      "internal_job_id": 4462687101,
+      "location": {
+        "name": "München, Bavaria, Germany"
+      },
+      "metadata": null,
+      "id": 4853202101,
+      "updated_at": "2026-05-05T10:30:58-04:00",
+      "requisition_id": "P50937",
+      "title": "Sales Engineer",
+      "company_name": "Cato Networks",
+      "first_published": "2026-05-05T04:40:44-04:00",
+      "language": "en",
+      "application_deadline": null
+    },
+    {
+      "absolute_url": "https://www.catonetworks.com/careers/careers-post/4821114101?gh_jid=4821114101",
+      "data_compliance": [
+        {
+          "type": "gdpr",
+          "requires_consent": false,
+          "requires_processing_consent": false,
+          "requires_retention_consent": false,
+          "retention_period": null,
+          "demographic_data_consent_applies": false
+        }
+      ],
+      "internal_job_id": 4447842101,
+      "location": {
+        "name": "Tokyo Prefecture, Japan"
+      },
+      "metadata": null,
+      "id": 4821114101,
+      "updated_at": "2026-03-30T23:42:54-04:00",
+      "requisition_id": "P51843",
+      "title": "Sales Engineer",
+      "company_name": "Cato Networks",
+      "first_published": "2026-03-30T23:42:53-04:00",
+      "language": "en",
+      "application_deadline": null
+    },
+    {
+      "absolute_url": "https://www.catonetworks.com/careers/careers-post/4841914101?gh_jid=4841914101",
+      "data_compliance": [
+        {
+          "type": "gdpr",
+          "requires_consent": false,
+          "requires_processing_consent": false,
+          "requires_retention_consent": false,
+          "retention_period": null,
+          "demographic_data_consent_applies": false
+        }
+      ],
+      "internal_job_id": 4457967101,
+      "location": {
+        "name": "Mumbai Central, Maharashtra, India"
+      },
+      "metadata": null,
+      "id": 4841914101,
+      "updated_at": "2026-04-21T00:15:25-04:00",
+      "requisition_id": "P50941",
+      "title": "Sales Engineer",
+      "company_name": "Cato Networks",
+      "first_published": "2026-04-21T00:15:25-04:00",
+      "language": "en",
+      "application_deadline": null
+    },
+    {
+      "absolute_url": "https://www.catonetworks.com/careers/careers-post/4851554101?gh_jid=4851554101",
+      "data_compliance": [
+        {
+          "type": "gdpr",
+          "requires_consent": false,
+          "requires_processing_consent": false,
+          "requires_retention_consent": false,
+          "retention_period": null,
+          "demographic_data_consent_applies": false
+        }
+      ],
+      "internal_job_id": 4446245101,
+      "location": {
+        "name": "Baltimore, Maryland, United States; Richmond, Virginia, United States; Washington, District of Columbia, United States"
+      },
+      "metadata": null,
+      "id": 4851554101,
+      "updated_at": "2026-04-27T16:26:15-04:00",
+      "requisition_id": "P51497",
+      "title": "Sales Engineer",
+      "company_name": "Cato Networks",
+      "first_published": "2026-04-27T11:04:44-04:00",
+      "language": "en",
+      "application_deadline": null
+    },
+    {
+      "absolute_url": "https://www.catonetworks.com/careers/careers-post/4795335101?gh_jid=4795335101",
+      "data_compliance": [
+        {
+          "type": "gdpr",
+          "requires_consent": false,
+          "requires_processing_consent": false,
+          "requires_retention_consent": false,
+          "retention_period": null,
+          "demographic_data_consent_applies": false
+        }
+      ],
+      "internal_job_id": 4435920101,
+      "location": {
+        "name": "Poland"
+      },
+      "metadata": null,
+      "id": 4795335101,
+      "updated_at": "2026-04-20T06:39:27-04:00",
+      "requisition_id": "P51852",
+      "title": "Sales Engineer, Eastern Europe",
+      "company_name": "Cato Networks",
+      "first_published": "2026-04-20T06:39:27-04:00",
+      "language": "en",
+      "application_deadline": null
+    },
+    {
+      "absolute_url": "https://www.catonetworks.com/careers/careers-post/4773575101?gh_jid=4773575101",
+      "data_compliance": [
+        {
+          "type": "gdpr",
+          "requires_consent": false,
+          "requires_processing_consent": false,
+          "requires_retention_consent": false,
+          "retention_period": null,
+          "demographic_data_consent_applies": false
+        }
+      ],
+      "internal_job_id": 4425713101,
+      "location": {
+        "name": "Dallas, Texas, United States"
+      },
+      "metadata": null,
+      "id": 4773575101,
+      "updated_at": "2026-05-07T11:11:46-04:00",
+      "requisition_id": "1630",
+      "title": "Sales Engineer Manager, South Central",
+      "company_name": "Cato Networks",
+      "first_published": "2026-02-11T18:46:41-05:00",
+      "language": "en",
+      "application_deadline": null
+    },
+    {
+      "absolute_url": "https://www.catonetworks.com/careers/careers-post/4746225101?gh_jid=4746225101",
+      "data_compliance": [
+        {
+          "type": "gdpr",
+          "requires_consent": false,
+          "requires_processing_consent": false,
+          "requires_retention_consent": false,
+          "retention_period": null,
+          "demographic_data_consent_applies": false
+        }
+      ],
+      "internal_job_id": 4412119101,
+      "location": {
+        "name": "San Francisco, California, United States"
+      },
+      "metadata": null,
+      "id": 4746225101,
+      "updated_at": "2026-04-13T18:24:32-04:00",
+      "requisition_id": "1562",
+      "title": "Sales Engineer, NorCal",
+      "company_name": "Cato Networks",
+      "first_published": "2026-01-13T11:28:13-05:00",
+      "language": "en",
+      "application_deadline": null
+    },
+    {
+      "absolute_url": "https://www.catonetworks.com/careers/careers-post/4861927101?gh_jid=4861927101",
+      "data_compliance": [
+        {
+          "type": "gdpr",
+          "requires_consent": false,
+          "requires_processing_consent": false,
+          "requires_retention_consent": false,
+          "retention_period": null,
+          "demographic_data_consent_applies": false
+        }
+      ],
+      "internal_job_id": 4466671101,
+      "location": {
+        "name": "Raleigh"
+      },
+      "metadata": null,
+      "id": 4861927101,
+      "updated_at": "2026-05-11T10:58:55-04:00",
+      "requisition_id": "1828",
+      "title": "Sales Engineer, Raleigh",
+      "company_name": "Cato Networks",
+      "first_published": "2026-05-11T10:48:18-04:00",
+      "language": "en",
+      "application_deadline": null
+    },
+    {
+      "absolute_url": "https://www.catonetworks.com/careers/careers-post/4861925101?gh_jid=4861925101",
+      "data_compliance": [
+        {
+          "type": "gdpr",
+          "requires_consent": false,
+          "requires_processing_consent": false,
+          "requires_retention_consent": false,
+          "retention_period": null,
+          "demographic_data_consent_applies": false
+        }
+      ],
+      "internal_job_id": 4466671101,
+      "location": {
+        "name": "Raleigh"
+      },
+      "metadata": null,
+      "id": 4861925101,
+      "updated_at": "2026-05-11T10:58:37-04:00",
+      "requisition_id": "1828",
+      "title": "Sales Engineer, Raleigh",
+      "company_name": "Cato Networks",
+      "first_published": "2026-05-11T10:48:16-04:00",
+      "language": "en",
+      "application_deadline": null
+    },
+    {
+      "absolute_url": "https://www.catonetworks.com/careers/careers-post/4835851101?gh_jid=4835851101",
+      "data_compliance": [
+        {
+          "type": "gdpr",
+          "requires_consent": false,
+          "requires_processing_consent": false,
+          "requires_retention_consent": false,
+          "retention_period": null,
+          "demographic_data_consent_applies": false
+        }
+      ],
+      "internal_job_id": 4455161101,
+      "location": {
+        "name": "Los Angeles, California, United States"
+      },
+      "metadata": null,
+      "id": 4835851101,
+      "updated_at": "2026-05-07T11:07:10-04:00",
+      "requisition_id": "1770",
+      "title": "Sales Engineer, SoCal",
+      "company_name": "Cato Networks",
+      "first_published": "2026-04-13T18:18:06-04:00",
+      "language": "en",
+      "application_deadline": null
+    },
+    {
+      "absolute_url": "https://www.catonetworks.com/careers/careers-post/4752487101?gh_jid=4752487101",
+      "data_compliance": [
+        {
+          "type": "gdpr",
+          "requires_consent": false,
+          "requires_processing_consent": false,
+          "requires_retention_consent": false,
+          "retention_period": null,
+          "demographic_data_consent_applies": false
+        }
+      ],
+      "internal_job_id": 4414984101,
+      "location": {
+        "name": "Prague, Czech Republic"
+      },
+      "metadata": null,
+      "id": 4752487101,
+      "updated_at": "2026-03-19T09:00:04-04:00",
+      "requisition_id": "1588",
+      "title": "Salesforce Business Analyst ",
+      "company_name": "Cato Networks",
+      "first_published": "2026-01-14T05:08:43-05:00",
+      "language": "en",
+      "application_deadline": null
+    },
+    {
+      "absolute_url": "https://www.catonetworks.com/careers/careers-post/4839355101?gh_jid=4839355101",
+      "data_compliance": [
+        {
+          "type": "gdpr",
+          "requires_consent": false,
+          "requires_processing_consent": false,
+          "requires_retention_consent": false,
+          "retention_period": null,
+          "demographic_data_consent_applies": false
+        }
+      ],
+      "internal_job_id": 4456732101,
+      "location": {
+        "name": "Tel Aviv District, Israel"
+      },
+      "metadata": null,
+      "id": 4839355101,
+      "updated_at": "2026-04-20T10:06:55-04:00",
+      "requisition_id": "1779",
+      "title": "Security Analyst ",
+      "company_name": "Cato Networks",
+      "first_published": "2026-04-20T07:12:00-04:00",
+      "language": "en",
+      "application_deadline": null
+    },
+    {
+      "absolute_url": "https://www.catonetworks.com/careers/careers-post/4812173101?gh_jid=4812173101",
+      "data_compliance": [
+        {
+          "type": "gdpr",
+          "requires_consent": false,
+          "requires_processing_consent": false,
+          "requires_retention_consent": false,
+          "retention_period": null,
+          "demographic_data_consent_applies": false
+        }
+      ],
+      "internal_job_id": 4443723101,
+      "location": {
+        "name": "Prague, Czech Republic"
+      },
+      "metadata": null,
+      "id": 4812173101,
+      "updated_at": "2026-03-19T09:00:04-04:00",
+      "requisition_id": "P51903",
+      "title": "Security Researcher",
+      "company_name": "Cato Networks",
+      "first_published": "2026-03-18T09:21:45-04:00",
+      "language": "en",
+      "application_deadline": null
+    },
+    {
+      "absolute_url": "https://www.catonetworks.com/careers/careers-post/4785275101?gh_jid=4785275101",
+      "data_compliance": [
+        {
+          "type": "gdpr",
+          "requires_consent": false,
+          "requires_processing_consent": false,
+          "requires_retention_consent": false,
+          "retention_period": null,
+          "demographic_data_consent_applies": false
+        }
+      ],
+      "internal_job_id": 4431285101,
+      "location": {
+        "name": "Tel Aviv District, Israel"
+      },
+      "metadata": null,
+      "id": 4785275101,
+      "updated_at": "2026-03-26T12:12:56-04:00",
+      "requisition_id": "1667",
+      "title": "Senior Automation Engineer - Networking ",
+      "company_name": "Cato Networks",
+      "first_published": "2026-03-03T03:59:04-05:00",
+      "language": "en",
+      "application_deadline": null
+    },
+    {
+      "absolute_url": "https://www.catonetworks.com/careers/careers-post/4722956101?gh_jid=4722956101",
+      "data_compliance": [
+        {
+          "type": "gdpr",
+          "requires_consent": false,
+          "requires_processing_consent": false,
+          "requires_retention_consent": false,
+          "retention_period": null,
+          "demographic_data_consent_applies": false
+        }
+      ],
+      "internal_job_id": 4403780101,
+      "location": {
+        "name": "Prague, Czech Republic"
+      },
+      "metadata": null,
+      "id": 4722956101,
+      "updated_at": "2026-05-11T03:45:32-04:00",
+      "requisition_id": "1470",
+      "title": "Senior Frontend Developer",
+      "company_name": "Cato Networks",
+      "first_published": "2025-12-08T07:39:39-05:00",
+      "language": "en",
+      "application_deadline": null
+    },
+    {
+      "absolute_url": "https://www.catonetworks.com/careers/careers-post/4853980101?gh_jid=4853980101",
+      "data_compliance": [
+        {
+          "type": "gdpr",
+          "requires_consent": false,
+          "requires_processing_consent": false,
+          "requires_retention_consent": false,
+          "retention_period": null,
+          "demographic_data_consent_applies": false
+        }
+      ],
+      "internal_job_id": 4462884101,
+      "location": {
+        "name": "United Kingdom"
+      },
+      "metadata": null,
+      "id": 4853980101,
+      "updated_at": "2026-05-07T10:35:22-04:00",
+      "requisition_id": "P51475",
+      "title": "Senior Manager, SDR Enablement ",
+      "company_name": "Cato Networks",
+      "first_published": "2026-05-07T10:35:22-04:00",
+      "language": "en",
+      "application_deadline": null
+    },
+    {
+      "absolute_url": "https://www.catonetworks.com/careers/careers-post/4720026101?gh_jid=4720026101",
+      "data_compliance": [
+        {
+          "type": "gdpr",
+          "requires_consent": false,
+          "requires_processing_consent": false,
+          "requires_retention_consent": false,
+          "retention_period": null,
+          "demographic_data_consent_applies": false
+        }
+      ],
+      "internal_job_id": 4402443101,
+      "location": {
+        "name": "Tel Aviv District, Israel"
+      },
+      "metadata": null,
+      "id": 4720026101,
+      "updated_at": "2026-04-20T06:01:11-04:00",
+      "requisition_id": "1775",
+      "title": "Senior Software Engineer",
+      "company_name": "Cato Networks",
+      "first_published": "2025-11-27T10:28:45-05:00",
+      "language": "en",
+      "application_deadline": null
+    },
+    {
+      "absolute_url": "https://www.catonetworks.com/careers/careers-post/4334129101?gh_jid=4334129101",
+      "data_compliance": [
+        {
+          "type": "gdpr",
+          "requires_consent": false,
+          "requires_processing_consent": false,
+          "requires_retention_consent": false,
+          "retention_period": null,
+          "demographic_data_consent_applies": false
+        }
+      ],
+      "internal_job_id": 4209152101,
+      "location": {
+        "name": "Prague, Czech Republic"
+      },
+      "metadata": null,
+      "id": 4334129101,
+      "updated_at": "2026-03-22T15:03:34-04:00",
+      "requisition_id": "548",
+      "title": "Senior Software Engineer",
+      "company_name": "Cato Networks",
+      "first_published": "2024-05-09T06:42:30-04:00",
+      "language": "en",
+      "application_deadline": null
+    },
+    {
+      "absolute_url": "https://www.catonetworks.com/careers/careers-post/4861512101?gh_jid=4861512101",
+      "data_compliance": [
+        {
+          "type": "gdpr",
+          "requires_consent": false,
+          "requires_processing_consent": false,
+          "requires_retention_consent": false,
+          "retention_period": null,
+          "demographic_data_consent_applies": false
+        }
+      ],
+      "internal_job_id": 4466473101,
+      "location": {
+        "name": "Tel Aviv District, Israel"
+      },
+      "metadata": null,
+      "id": 4861512101,
+      "updated_at": "2026-05-11T15:44:41-04:00",
+      "requisition_id": "1826",
+      "title": "Senior Software Engineer – Cato Apps Team (AI) ",
+      "company_name": "Cato Networks",
+      "first_published": "2026-05-11T15:44:41-04:00",
+      "language": "en",
+      "application_deadline": null
+    },
+    {
+      "absolute_url": "https://www.catonetworks.com/careers/careers-post/4206436101?gh_jid=4206436101",
+      "data_compliance": [
+        {
+          "type": "gdpr",
+          "requires_consent": false,
+          "requires_processing_consent": false,
+          "requires_retention_consent": false,
+          "retention_period": null,
+          "demographic_data_consent_applies": false
+        }
+      ],
+      "internal_job_id": 4136847101,
+      "location": {
+        "name": "Tel Aviv District, Israel"
+      },
+      "metadata": null,
+      "id": 4206436101,
+      "updated_at": "2026-05-13T07:20:27-04:00",
+      "requisition_id": "1832",
+      "title": "Site Reliability Engineer",
+      "company_name": "Cato Networks",
+      "first_published": "2023-08-13T07:55:42-04:00",
+      "language": "en",
+      "application_deadline": null
+    },
+    {
+      "absolute_url": "https://www.catonetworks.com/careers/careers-post/4822789101?gh_jid=4822789101",
+      "data_compliance": [
+        {
+          "type": "gdpr",
+          "requires_consent": false,
+          "requires_processing_consent": false,
+          "requires_retention_consent": false,
+          "retention_period": null,
+          "demographic_data_consent_applies": false
+        }
+      ],
+      "internal_job_id": 4448654101,
+      "location": {
+        "name": "San Francisco, California, United States"
+      },
+      "metadata": null,
+      "id": 4822789101,
+      "updated_at": "2026-04-13T10:11:04-04:00",
+      "requisition_id": "1752",
+      "title": "Social Media Manager ",
+      "company_name": "Cato Networks",
+      "first_published": "2026-04-13T09:49:21-04:00",
+      "language": "en",
+      "application_deadline": null
+    },
+    {
+      "absolute_url": "https://www.catonetworks.com/careers/careers-post/4632362101?gh_jid=4632362101",
+      "data_compliance": [
+        {
+          "type": "gdpr",
+          "requires_consent": false,
+          "requires_processing_consent": false,
+          "requires_retention_consent": false,
+          "retention_period": null,
+          "demographic_data_consent_applies": false
+        }
+      ],
+      "internal_job_id": 4357936101,
+      "location": {
+        "name": "Tel Aviv District, Israel"
+      },
+      "metadata": null,
+      "id": 4632362101,
+      "updated_at": "2026-03-19T09:00:04-04:00",
+      "requisition_id": "1165",
+      "title": "Software Architect",
+      "company_name": "Cato Networks",
+      "first_published": "2025-07-10T04:32:36-04:00",
+      "language": "en",
+      "application_deadline": null
+    },
+    {
+      "absolute_url": "https://www.catonetworks.com/careers/careers-post/4839551101?gh_jid=4839551101",
+      "data_compliance": [
+        {
+          "type": "gdpr",
+          "requires_consent": false,
+          "requires_processing_consent": false,
+          "requires_retention_consent": false,
+          "retention_period": null,
+          "demographic_data_consent_applies": false
+        }
+      ],
+      "internal_job_id": 4456830101,
+      "location": {
+        "name": "Tel Aviv District, Israel"
+      },
+      "metadata": null,
+      "id": 4839551101,
+      "updated_at": "2026-04-20T05:38:05-04:00",
+      "requisition_id": "1780",
+      "title": "Software Engineer",
+      "company_name": "Cato Networks",
+      "first_published": "2026-04-20T05:38:05-04:00",
+      "language": "en",
+      "application_deadline": null
+    },
+    {
+      "absolute_url": "https://www.catonetworks.com/careers/careers-post/4153135101?gh_jid=4153135101",
+      "data_compliance": [
+        {
+          "type": "gdpr",
+          "requires_consent": false,
+          "requires_processing_consent": false,
+          "requires_retention_consent": false,
+          "retention_period": null,
+          "demographic_data_consent_applies": false
+        }
+      ],
+      "internal_job_id": 4104931101,
+      "location": {
+        "name": "Tel Aviv District, Israel"
+      },
+      "metadata": null,
+      "id": 4153135101,
+      "updated_at": "2026-04-26T07:10:00-04:00",
+      "requisition_id": "122",
+      "title": "Software Engineer - Data Platform",
+      "company_name": "Cato Networks",
+      "first_published": "2023-05-01T10:22:35-04:00",
+      "language": "en",
+      "application_deadline": null
+    },
+    {
+      "absolute_url": "https://www.catonetworks.com/careers/careers-post/4149762101?gh_jid=4149762101",
+      "data_compliance": [
+        {
+          "type": "gdpr",
+          "requires_consent": false,
+          "requires_processing_consent": false,
+          "requires_retention_consent": false,
+          "retention_period": null,
+          "demographic_data_consent_applies": false
+        }
+      ],
+      "internal_job_id": 4103250101,
+      "location": {
+        "name": "Tel Aviv District, Israel"
+      },
+      "metadata": null,
+      "id": 4149762101,
+      "updated_at": "2026-03-19T09:00:04-04:00",
+      "requisition_id": "115",
+      "title": "Software Engineer (Windows Client)",
+      "company_name": "Cato Networks",
+      "first_published": "2023-04-03T07:14:50-04:00",
+      "language": "en",
+      "application_deadline": null
+    },
+    {
+      "absolute_url": "https://www.catonetworks.com/careers/careers-post/4708002101?gh_jid=4708002101",
+      "data_compliance": [
+        {
+          "type": "gdpr",
+          "requires_consent": false,
+          "requires_processing_consent": false,
+          "requires_retention_consent": false,
+          "retention_period": null,
+          "demographic_data_consent_applies": false
+        }
+      ],
+      "internal_job_id": 4396297101,
+      "location": {
+        "name": "Tel Aviv District, Israel"
+      },
+      "metadata": null,
+      "id": 4708002101,
+      "updated_at": "2026-05-13T02:53:38-04:00",
+      "requisition_id": "1432",
+      "title": "Software Team Lead",
+      "company_name": "Cato Networks",
+      "first_published": "2026-04-13T15:33:22-04:00",
+      "language": "en",
+      "application_deadline": null
+    },
+    {
+      "absolute_url": "https://www.catonetworks.com/careers/careers-post/4787965101?gh_jid=4787965101",
+      "data_compliance": [
+        {
+          "type": "gdpr",
+          "requires_consent": false,
+          "requires_processing_consent": false,
+          "requires_retention_consent": false,
+          "retention_period": null,
+          "demographic_data_consent_applies": false
+        }
+      ],
+      "internal_job_id": 4432665101,
+      "location": {
+        "name": "Tel Aviv District, Israel"
+      },
+      "metadata": null,
+      "id": 4787965101,
+      "updated_at": "2026-03-19T09:00:04-04:00",
+      "requisition_id": "1678",
+      "title": "Software Team Lead - DEM",
+      "company_name": "Cato Networks",
+      "first_published": "2026-03-03T09:57:15-05:00",
+      "language": "en",
+      "application_deadline": null
+    },
+    {
+      "absolute_url": "https://www.catonetworks.com/careers/careers-post/4603397101?gh_jid=4603397101",
+      "data_compliance": [
+        {
+          "type": "gdpr",
+          "requires_consent": false,
+          "requires_processing_consent": false,
+          "requires_retention_consent": false,
+          "retention_period": null,
+          "demographic_data_consent_applies": false
+        }
+      ],
+      "internal_job_id": 4343250101,
+      "location": {
+        "name": "Tel Aviv District, Israel"
+      },
+      "metadata": null,
+      "id": 4603397101,
+      "updated_at": "2026-03-19T09:00:04-04:00",
+      "requisition_id": "1118",
+      "title": "Software Team Leader (C)",
+      "company_name": "Cato Networks",
+      "first_published": "2025-06-19T03:25:53-04:00",
+      "language": "en",
+      "application_deadline": null
+    },
+    {
+      "absolute_url": "https://www.catonetworks.com/careers/careers-post/4839002101?gh_jid=4839002101",
+      "data_compliance": [
+        {
+          "type": "gdpr",
+          "requires_consent": false,
+          "requires_processing_consent": false,
+          "requires_retention_consent": false,
+          "retention_period": null,
+          "demographic_data_consent_applies": false
+        }
+      ],
+      "internal_job_id": 4456592101,
+      "location": {
+        "name": "Tel Aviv District, Israel"
+      },
+      "metadata": null,
+      "id": 4839002101,
+      "updated_at": "2026-04-12T12:57:14-04:00",
+      "requisition_id": "1774",
+      "title": "Solutions Architect – Communication Service Providers",
+      "company_name": "Cato Networks",
+      "first_published": "2026-04-12T12:57:14-04:00",
+      "language": "en",
+      "application_deadline": null
+    },
+    {
+      "absolute_url": "https://www.catonetworks.com/careers/careers-post/4841183101?gh_jid=4841183101",
+      "data_compliance": [
+        {
+          "type": "gdpr",
+          "requires_consent": false,
+          "requires_processing_consent": false,
+          "requires_retention_consent": false,
+          "retention_period": null,
+          "demographic_data_consent_applies": false
+        }
+      ],
+      "internal_job_id": 4456375101,
+      "location": {
+        "name": "Philadelphia, Pennsylvania, United States"
+      },
+      "metadata": null,
+      "id": 4841183101,
+      "updated_at": "2026-04-20T21:56:02-04:00",
+      "requisition_id": "P51776",
+      "title": "Sr. Customer Success Manager",
+      "company_name": "Cato Networks",
+      "first_published": "2026-04-14T10:11:19-04:00",
+      "language": "en",
+      "application_deadline": null
+    },
+    {
+      "absolute_url": "https://www.catonetworks.com/careers/careers-post/4840269101?gh_jid=4840269101",
+      "data_compliance": [
+        {
+          "type": "gdpr",
+          "requires_consent": false,
+          "requires_processing_consent": false,
+          "requires_retention_consent": false,
+          "retention_period": null,
+          "demographic_data_consent_applies": false
+        }
+      ],
+      "internal_job_id": 4456375101,
+      "location": {
+        "name": "New Jersey, United States"
+      },
+      "metadata": null,
+      "id": 4840269101,
+      "updated_at": "2026-04-20T21:55:48-04:00",
+      "requisition_id": "P51776",
+      "title": "Sr. Customer Success Manager",
+      "company_name": "Cato Networks",
+      "first_published": "2026-04-13T18:53:19-04:00",
+      "language": "en",
+      "application_deadline": null
+    },
+    {
+      "absolute_url": "https://www.catonetworks.com/careers/careers-post/4838559101?gh_jid=4838559101",
+      "data_compliance": [
+        {
+          "type": "gdpr",
+          "requires_consent": false,
+          "requires_processing_consent": false,
+          "requires_retention_consent": false,
+          "retention_period": null,
+          "demographic_data_consent_applies": false
+        }
+      ],
+      "internal_job_id": 4456375101,
+      "location": {
+        "name": "New York, New York, United States"
+      },
+      "metadata": null,
+      "id": 4838559101,
+      "updated_at": "2026-04-20T21:55:32-04:00",
+      "requisition_id": "P51776",
+      "title": "Sr. Customer Success Manager",
+      "company_name": "Cato Networks",
+      "first_published": "2026-04-13T18:52:58-04:00",
+      "language": "en",
+      "application_deadline": null
+    },
+    {
+      "absolute_url": "https://www.catonetworks.com/careers/careers-post/4863705101?gh_jid=4863705101",
+      "data_compliance": [
+        {
+          "type": "gdpr",
+          "requires_consent": false,
+          "requires_processing_consent": false,
+          "requires_retention_consent": false,
+          "retention_period": null,
+          "demographic_data_consent_applies": false
+        }
+      ],
+      "internal_job_id": 4468147101,
+      "location": {
+        "name": "New York, New York, United States"
+      },
+      "metadata": null,
+      "id": 4863705101,
+      "updated_at": "2026-05-11T14:47:20-04:00",
+      "requisition_id": "P50909",
+      "title": "Sr. Customer Success Manager",
+      "company_name": "Cato Networks",
+      "first_published": "2026-05-11T14:46:31-04:00",
+      "language": "en",
+      "application_deadline": null
+    },
+    {
+      "absolute_url": "https://www.catonetworks.com/careers/careers-post/4863706101?gh_jid=4863706101",
+      "data_compliance": [
+        {
+          "type": "gdpr",
+          "requires_consent": false,
+          "requires_processing_consent": false,
+          "requires_retention_consent": false,
+          "retention_period": null,
+          "demographic_data_consent_applies": false
+        }
+      ],
+      "internal_job_id": 4468147101,
+      "location": {
+        "name": "New Jersey, United States"
+      },
+      "metadata": null,
+      "id": 4863706101,
+      "updated_at": "2026-05-11T14:52:48-04:00",
+      "requisition_id": "P50909",
+      "title": "Sr. Customer Success Manager",
+      "company_name": "Cato Networks",
+      "first_published": "2026-05-11T14:52:48-04:00",
+      "language": "en",
+      "application_deadline": null
+    },
+    {
+      "absolute_url": "https://www.catonetworks.com/careers/careers-post/4863707101?gh_jid=4863707101",
+      "data_compliance": [
+        {
+          "type": "gdpr",
+          "requires_consent": false,
+          "requires_processing_consent": false,
+          "requires_retention_consent": false,
+          "retention_period": null,
+          "demographic_data_consent_applies": false
+        }
+      ],
+      "internal_job_id": 4468147101,
+      "location": {
+        "name": "Philadelphia, Pennsylvania, United States"
+      },
+      "metadata": null,
+      "id": 4863707101,
+      "updated_at": "2026-05-11T14:53:05-04:00",
+      "requisition_id": "P50909",
+      "title": "Sr. Customer Success Manager",
+      "company_name": "Cato Networks",
+      "first_published": "2026-05-11T14:53:05-04:00",
+      "language": "en",
+      "application_deadline": null
+    },
+    {
+      "absolute_url": "https://www.catonetworks.com/careers/careers-post/4851636101?gh_jid=4851636101",
+      "data_compliance": [
+        {
+          "type": "gdpr",
+          "requires_consent": false,
+          "requires_processing_consent": false,
+          "requires_retention_consent": false,
+          "retention_period": null,
+          "demographic_data_consent_applies": false
+        }
+      ],
+      "internal_job_id": 4462038101,
+      "location": {
+        "name": "Prague, Czech Republic"
+      },
+      "metadata": null,
+      "id": 4851636101,
+      "updated_at": "2026-05-06T03:37:03-04:00",
+      "requisition_id": "1802",
+      "title": "Support Engineer - Tier1",
+      "company_name": "Cato Networks",
+      "first_published": "2026-04-29T15:14:52-04:00",
+      "language": "en",
+      "application_deadline": null
+    },
+    {
+      "absolute_url": "https://www.catonetworks.com/careers/careers-post/4648864101?gh_jid=4648864101",
+      "data_compliance": [
+        {
+          "type": "gdpr",
+          "requires_consent": false,
+          "requires_processing_consent": false,
+          "requires_retention_consent": false,
+          "retention_period": null,
+          "demographic_data_consent_applies": false
+        }
+      ],
+      "internal_job_id": 4366078101,
+      "location": {
+        "name": "Tel Aviv District, Israel"
+      },
+      "metadata": null,
+      "id": 4648864101,
+      "updated_at": "2026-03-22T04:26:29-04:00",
+      "requisition_id": "1231",
+      "title": "SW Engineer ",
+      "company_name": "Cato Networks",
+      "first_published": "2026-02-23T10:29:46-05:00",
+      "language": "en",
+      "application_deadline": null
+    },
+    {
+      "absolute_url": "https://www.catonetworks.com/careers/careers-post/4850164101?gh_jid=4850164101",
+      "data_compliance": [
+        {
+          "type": "gdpr",
+          "requires_consent": false,
+          "requires_processing_consent": false,
+          "requires_retention_consent": false,
+          "retention_period": null,
+          "demographic_data_consent_applies": false
+        }
+      ],
+      "internal_job_id": 4461595101,
+      "location": {
+        "name": "USA"
+      },
+      "metadata": null,
+      "id": 4850164101,
+      "updated_at": "2026-05-01T10:49:35-04:00",
+      "requisition_id": "1794",
+      "title": "Technical Enablement Associate",
+      "company_name": "Cato Networks",
+      "first_published": "2026-04-29T08:15:25-04:00",
+      "language": "en",
+      "application_deadline": null
+    },
+    {
+      "absolute_url": "https://www.catonetworks.com/careers/careers-post/4825364101?gh_jid=4825364101",
+      "data_compliance": [
+        {
+          "type": "gdpr",
+          "requires_consent": false,
+          "requires_processing_consent": false,
+          "requires_retention_consent": false,
+          "retention_period": null,
+          "demographic_data_consent_applies": false
+        }
+      ],
+      "internal_job_id": 4449775101,
+      "location": {
+        "name": "Ottawa, Ontario, Canada"
+      },
+      "metadata": null,
+      "id": 4825364101,
+      "updated_at": "2026-05-12T11:49:00-04:00",
+      "requisition_id": "P51998",
+      "title": "Training Content Developer",
+      "company_name": "Cato Networks",
+      "first_published": "2026-03-31T17:22:02-04:00",
+      "language": "en",
+      "application_deadline": null
+    },
+    {
+      "absolute_url": "https://www.catonetworks.com/careers/careers-post/4831288101?gh_jid=4831288101",
+      "data_compliance": [
+        {
+          "type": "gdpr",
+          "requires_consent": false,
+          "requires_processing_consent": false,
+          "requires_retention_consent": false,
+          "retention_period": null,
+          "demographic_data_consent_applies": false
+        }
+      ],
+      "internal_job_id": 4449775101,
+      "location": {
+        "name": "Raleigh"
+      },
+      "metadata": null,
+      "id": 4831288101,
+      "updated_at": "2026-05-12T11:49:00-04:00",
+      "requisition_id": "P51998",
+      "title": "Training Content Developer",
+      "company_name": "Cato Networks",
+      "first_published": "2026-04-02T19:02:50-04:00",
+      "language": "en",
+      "application_deadline": null
+    },
+    {
+      "absolute_url": "https://www.catonetworks.com/careers/careers-post/4831289101?gh_jid=4831289101",
+      "data_compliance": [
+        {
+          "type": "gdpr",
+          "requires_consent": false,
+          "requires_processing_consent": false,
+          "requires_retention_consent": false,
+          "retention_period": null,
+          "demographic_data_consent_applies": false
+        }
+      ],
+      "internal_job_id": 4449778101,
+      "location": {
+        "name": "Raleigh"
+      },
+      "metadata": null,
+      "id": 4831289101,
+      "updated_at": "2026-05-12T11:53:08-04:00",
+      "requisition_id": "P51999",
+      "title": "Training Content Development Manager",
+      "company_name": "Cato Networks",
+      "first_published": "2026-04-02T19:03:30-04:00",
+      "language": "en",
+      "application_deadline": null
+    },
+    {
+      "absolute_url": "https://www.catonetworks.com/careers/careers-post/4825372101?gh_jid=4825372101",
+      "data_compliance": [
+        {
+          "type": "gdpr",
+          "requires_consent": false,
+          "requires_processing_consent": false,
+          "requires_retention_consent": false,
+          "retention_period": null,
+          "demographic_data_consent_applies": false
+        }
+      ],
+      "internal_job_id": 4449778101,
+      "location": {
+        "name": "Ottawa, Ontario, Canada"
+      },
+      "metadata": null,
+      "id": 4825372101,
+      "updated_at": "2026-05-12T11:53:08-04:00",
+      "requisition_id": "P51999",
+      "title": "Training Content Development Manager",
+      "company_name": "Cato Networks",
+      "first_published": "2026-03-31T17:23:24-04:00",
+      "language": "en",
+      "application_deadline": null
+    },
+    {
+      "absolute_url": "https://www.catonetworks.com/careers/careers-post/4850123101?gh_jid=4850123101",
+      "data_compliance": [
+        {
+          "type": "gdpr",
+          "requires_consent": false,
+          "requires_processing_consent": false,
+          "requires_retention_consent": false,
+          "retention_period": null,
+          "demographic_data_consent_applies": false
+        }
+      ],
+      "internal_job_id": 4461571101,
+      "location": {
+        "name": "Paris, Paris, France"
+      },
+      "metadata": null,
+      "id": 4850123101,
+      "updated_at": "2026-05-01T05:44:08-04:00",
+      "requisition_id": "P52000",
+      "title": "Training & Education Certification Program Manager ",
+      "company_name": "Cato Networks",
+      "first_published": "2026-05-01T05:44:08-04:00",
+      "language": "en",
+      "application_deadline": null
+    },
+    {
+      "absolute_url": "https://www.catonetworks.com/careers/careers-post/4802152101?gh_jid=4802152101",
+      "data_compliance": [
+        {
+          "type": "gdpr",
+          "requires_consent": false,
+          "requires_processing_consent": false,
+          "requires_retention_consent": false,
+          "retention_period": null,
+          "demographic_data_consent_applies": false
+        }
+      ],
+      "internal_job_id": 4439037101,
+      "location": {
+        "name": "Tel Aviv District, Israel"
+      },
+      "metadata": null,
+      "id": 4802152101,
+      "updated_at": "2026-04-29T04:02:15-04:00",
+      "requisition_id": "1716",
+      "title": "VP Product Management",
+      "company_name": "Cato Networks",
+      "first_published": "2026-04-05T06:50:22-04:00",
+      "language": "en",
+      "application_deadline": null
+    }
+  ],
+  "meta": {
+    "total": 138
+  }
+}

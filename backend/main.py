@@ -17,12 +17,11 @@ from bs4 import BeautifulSoup
 from dataclasses import dataclass
 from typing import Optional
 from rapidfuzz import fuzz
+from core import setup_logging
 import logging
+from services.ats import verify_ats
 
-logging.basicConfig(
-    level = logging.INFO,
-    format = "%(asctime)s | %(levelname)s | %(name)s | %(message)s"
-)
+setup_logging()
 
 app = fastapi.FastAPI(
     title="Ghost Job Detector API",
@@ -92,118 +91,119 @@ class AnalysisResponse(BaseModel):
 # Dataclass models
 # ============================================================================
 
-@dataclass
-class ATSResult:
-    exists: Optional[bool]
-    confidence: float
-    url: Optional[str]
-    source: str
-    reason: str
+# @dataclass
+# class ATSResult:
+#     exists: Optional[bool]
+#     confidence: float
+#     url: Optional[str]
+#     source: str
+#     reason: str
 
-class ATSAdapter:
-    async def verify(self, company: str, job_title: str) -> ATSResult:
-        raise NotImplementedError
+# class ATSAdapter:
+#     async def verify(self, company: str, job_title: str) -> ATSResult:
+#         raise NotImplementedError
 
-class SmartRecruitersAdapter(ATSAdapter):
-    async def verify(self, company: str, job_title: str) -> ATSResult:
-        url = f"https://careers.smartrecruiters.com/{company}/api/groups?page=1"
+# Need to implement pagination, find dateposted from the specific job posting details page
+# class SmartRecruitersAdapter(ATSAdapter):
+#     async def verify(self, company: str, job_title: str) -> ATSResult:
+#         url = f"https://careers.smartrecruiters.com/{company}/api/groups?page=1"
 
-        try:
-            async with httpx.AsyncClient(timeout=10.0) as client:
-                response = await client.get(url)
+#         try:
+#             async with httpx.AsyncClient(timeout=10.0) as client:
+#                 response = await client.get(url)
 
-            if response.status_code != 200:
-                return ATSResult(
-                    exists=None,
-                    confidence=0.0,
-                    url=None,
-                    source="smartrecruiters",
-                    reason="Failed to fetch ATS page"
-                )
+#             if response.status_code != 200:
+#                 return ATSResult(
+#                     exists=None,
+#                     confidence=0.0,
+#                     url=None,
+#                     source="smartrecruiters",
+#                     reason="Failed to fetch ATS page"
+#                 )
 
-            soup = BeautifulSoup(response.text, "html.parser")
+#             soup = BeautifulSoup(response.text, "html.parser")
 
-            best_score = 0.0
-            best_url = None
-            best_title = None
-            location_hint = None
+#             best_score = 0.0
+#             best_url = None
+#             best_title = None
+#             location_hint = None
 
-            sections = soup.select("section.openings-section")
+#             sections = soup.select("section.openings-section")
 
-            for section in sections:
-                location_el = section.select_one("h3.opening-title")
-                location_hint = location_el.text.strip() if location_el else None
+#             for section in sections:
+#                 location_el = section.select_one("h3.opening-title")
+#                 location_hint = location_el.text.strip() if location_el else None
 
-                jobs = section.select("li.opening-job")
+#                 jobs = section.select("li.opening-job")
 
-                for job in jobs:
-                    title_el = job.select_one("h4.job-title")
-                    link_el = job.select_one("a")
+#                 for job in jobs:
+#                     title_el = job.select_one("h4.job-title")
+#                     link_el = job.select_one("a")
 
-                    if not title_el or not link_el:
-                        continue
+#                     if not title_el or not link_el:
+#                         continue
 
-                    title = title_el.text.strip()
-                    href = link_el.get("href")
+#                     title = title_el.text.strip()
+#                     href = link_el.get("href")
 
-                    score = match_score(title, job_title)
+#                     score = match_score(title, job_title)
 
-                    if score > best_score:
-                        best_score = score
-                        best_url = href
-                        best_title = title
+#                     if score > best_score:
+#                         best_score = score
+#                         best_url = href
+#                         best_title = title
 
-            # decision threshold (tune this later)
-            exists = best_score >= 0.85
+#             # decision threshold (tune this later)
+#             exists = best_score >= 0.85
 
-            return ATSResult(
-                exists=exists,
-                confidence=best_score,
-                url=best_url,
-                source="smartrecruiters",
-                reason=f"Best match: {best_title} in {location_hint}"
-            )
+#             return ATSResult(
+#                 exists=exists,
+#                 confidence=best_score,
+#                 url=best_url,
+#                 source="smartrecruiters",
+#                 reason=f"Best match: {best_title} in {location_hint}"
+#             )
 
-        except Exception as e:
-            return ATSResult(
-                exists=None,
-                confidence=0.0,
-                url=None,
-                source="smartrecruiters",
-                reason=f"Exception: {str(e)}"
-            )
+#         except Exception as e:
+#             return ATSResult(
+#                 exists=None,
+#                 confidence=0.0,
+#                 url=None,
+#                 source="smartrecruiters",
+#                 reason=f"Exception: {str(e)}"
+#             )
 
-class GreenhouseAdapter(ATSAdapter):
-    async def verify(self, company: str, job_title: str) -> ATSResult:
-        url = f"https://boards-api.greenhouse.io/v1/boards/{company}/jobs"
+# class GreenhouseAdapter(ATSAdapter):
+#     async def verify(self, company: str, job_title: str) -> ATSResult:
+#         url = f"https://boards-api.greenhouse.io/v1/boards/{company}/jobs"
 
-        async with httpx.AsyncClient(timeout=10.0) as client:
-            response = await client.get(url)
+#         async with httpx.AsyncClient(timeout=10.0) as client:
+#             response = await client.get(url)
 
-        if response.status_code != 200:
-            return ATSResult(None, 0.0, None, "greenhouse", "API failed")
+#         if response.status_code != 200:
+#             return ATSResult(None, 0.0, None, "greenhouse", "API failed")
 
-        jobs = response.json().get("jobs", [])
+#         jobs = response.json().get("jobs", [])
 
-        best_score = 0.0
-        best_url = None
-        best_title = None
+#         best_score = 0.0
+#         best_url = None
+#         best_title = None
 
-        for job in jobs:
-            score = match_score(job.get("title", ""), job_title)
+#         for job in jobs:
+#             score = match_score(job.get("title", ""), job_title)
 
-            if score > best_score:
-                best_score = score
-                best_title = job.get("title")
-                best_url = job.get("absolute_url")
+#             if score > best_score:
+#                 best_score = score
+#                 best_title = job.get("title")
+#                 best_url = job.get("absolute_url")
 
-        return ATSResult(
-            exists=best_score >= 0.85,
-            confidence=best_score,
-            url=best_url,
-            source="greenhouse",
-            reason=f"Best match: {best_title}"
-        )
+#         return ATSResult(
+#             exists=best_score >= 0.85,
+#             confidence=best_score,
+#             url=best_url,
+#             source="greenhouse",
+#             reason=f"Best match: {best_title}"
+#         )
 
 # ============================================================================
 # NLP Analysis Functions (Heuristic-based, production-ready without ML deps)
@@ -257,62 +257,148 @@ RED_FLAGS = [
     r"be\s+your\s+own\s+boss",
 ]
 
+# def analyze_description_quality(description: str) -> tuple[int, list[str]]:
+#     """
+#     Analyze job description for specificity vs generic content.
+#     Returns score (0-100) and list of indicators found.
+#     """
+#     description_lower = description.lower()
+#     indicators = []
+    
+#     # Count generic phrases (decreases score)
+#     generic_count = sum(1 for phrase in GENERIC_PHRASES if phrase in description_lower)
+    
+#     # Count specific indicators (increases score)
+#     specific_count = 0
+#     for pattern in SPECIFIC_INDICATORS:
+#         matches = re.findall(pattern, description_lower, re.IGNORECASE)
+#         if matches:
+#             specific_count += len(matches)
+#             indicators.append(f"Found specific detail: {pattern[:30]}...")
+    
+#     # Check for red flags
+#     red_flag_count = 0
+#     for pattern in RED_FLAGS:
+#         if re.search(pattern, description_lower, re.IGNORECASE):
+#             red_flag_count += 1
+#             indicators.append(f"Warning: Red flag pattern detected")
+    
+#     # Description length analysis
+#     word_count = len(description.split())
+#     if word_count < 100:
+#         indicators.append("Very short description (under 100 words)")
+#     elif word_count > 300:
+#         indicators.append("Detailed description (300+ words)")
+    
+#     # Calculate score
+#     # Start at 50, adjust based on findings
+#     base_score = 50
+    
+#     # Penalize generic content (-3 per generic phrase, max -30)
+#     generic_penalty = min(generic_count * 3, 30)
+    
+#     # Reward specific content (+5 per specific indicator, max +40)
+#     specific_bonus = min(specific_count * 5, 40)
+    
+#     # Penalize red flags heavily (-15 per flag)
+#     red_flag_penalty = red_flag_count * 15
+    
+#     # Length bonus/penalty
+#     length_modifier = 0
+#     if word_count < 100:
+#         length_modifier = -10
+#     elif word_count > 300:
+#         length_modifier = 10
+    
+#     score = base_score - generic_penalty + specific_bonus - red_flag_penalty + length_modifier
+#     score = max(0, min(100, score))
+    
+#     return score, indicators
+
 def analyze_description_quality(description: str) -> tuple[int, list[str]]:
-    """
-    Analyze job description for specificity vs generic content.
-    Returns score (0-100) and list of indicators found.
-    """
-    description_lower = description.lower()
+    logger = logging.getLogger(__name__)
+    text = description.lower()
     indicators = []
-    
-    # Count generic phrases (decreases score)
-    generic_count = sum(1 for phrase in GENERIC_PHRASES if phrase in description_lower)
-    
-    # Count specific indicators (increases score)
-    specific_count = 0
-    for pattern in SPECIFIC_INDICATORS:
-        matches = re.findall(pattern, description_lower, re.IGNORECASE)
-        if matches:
-            specific_count += len(matches)
-            indicators.append(f"Found specific detail: {pattern[:30]}...")
-    
-    # Check for red flags
-    red_flag_count = 0
-    for pattern in RED_FLAGS:
-        if re.search(pattern, description_lower, re.IGNORECASE):
-            red_flag_count += 1
-            indicators.append(f"Warning: Red flag pattern detected")
-    
-    # Description length analysis
-    word_count = len(description.split())
-    if word_count < 100:
-        indicators.append("Very short description (under 100 words)")
-    elif word_count > 300:
-        indicators.append("Detailed description (300+ words)")
-    
-    # Calculate score
-    # Start at 50, adjust based on findings
-    base_score = 50
-    
-    # Penalize generic content (-3 per generic phrase, max -30)
-    generic_penalty = min(generic_count * 3, 30)
-    
-    # Reward specific content (+5 per specific indicator, max +40)
-    specific_bonus = min(specific_count * 5, 40)
-    
-    # Penalize red flags heavily (-15 per flag)
-    red_flag_penalty = red_flag_count * 15
-    
-    # Length bonus/penalty
-    length_modifier = 0
-    if word_count < 100:
-        length_modifier = -10
-    elif word_count > 300:
-        length_modifier = 10
-    
-    score = base_score - generic_penalty + specific_bonus - red_flag_penalty + length_modifier
+
+    words = text.split()
+    word_count = len(words)
+
+    # ---------------------------
+    # 1. Generic signal (weak penalty)
+    # ---------------------------
+    generic_hits = sum(1 for phrase in GENERIC_PHRASES if phrase in text)
+    generic_score = min(generic_hits * 2, 20)
+
+    logger.info(f"generic_hits: {generic_hits}, generic_score: {generic_score}")
+    # ---------------------------
+    # 2. Specific signal (strong reward)
+    # ---------------------------
+    tech_hits = sum(
+        1 for pattern in SPECIFIC_INDICATORS
+        if re.search(pattern, text, re.IGNORECASE)
+    )
+    specific_score = min(tech_hits * 5, 40)
+
+    logger.info(f"tech_hits: {tech_hits}")
+    # ---------------------------
+    # 3. Red flags (strong penalty)
+    # ---------------------------
+    red_flags = sum(
+        1 for pattern in RED_FLAGS
+        if re.search(pattern, text, re.IGNORECASE)
+    )
+    red_flag_score = red_flags * 15
+    logger.info(f"red_flag: {red_flag_score}")
+    # ---------------------------
+    # 4. Structure score
+    # ---------------------------
+    structure_score = 0
+    for section in ["responsibilities", "requirements", "qualifications"]:
+        if section in text:
+            structure_score += 10
+
+    logger.info(f"struc: {structure_score}")
+    # ---------------------------
+    # 5. Filler ratio
+    # ---------------------------
+    filler_words = generic_hits
+    filler_ratio = filler_words / max(word_count, 1)
+
+    filler_penalty = int(filler_ratio * 30)
+    logger.info(f"filler: {filler_penalty}")
+
+    # ---------------------------
+    # 6. Length signal
+    # ---------------------------
+    if word_count < 80:
+        length_score = -10
+        indicators.append("Very short description")
+    elif word_count > 250:
+        length_score = 10
+    else:
+        length_score = 0
+
+    logger.info(f"len: {length_score}")
+    # ---------------------------
+    # FINAL SCORE
+    # ---------------------------
+    score = (
+        50
+        + specific_score
+        + structure_score
+        - generic_score
+        - red_flag_score
+        - filler_penalty
+        + length_score
+    )
+
     score = max(0, min(100, score))
-    
+    logger.info(f"description_score: {score}")
+
+    indicators.append(f"Generic phrases: {generic_hits}")
+    indicators.append(f"Specific signals: {tech_hits}")
+    indicators.append(f"Red flags: {red_flags}")
+
     return score, indicators
 
 def calculate_freshness_score(posted_date: Optional[str]) -> tuple[int, str]:
@@ -504,28 +590,28 @@ def get_community_score(job_id: str) -> tuple[int, dict]:
 # ATS Verification
 # ============================================================================
 
-ATS_PATTERNS = {
-    "greenhouse": {
-        "url_pattern": r"boards\.greenhouse\.io/([^/]+)",
-        "api_template": "https://boards-api.greenhouse.io/v1/boards/{company}/jobs",
-    },
-    "lever": {
-        "url_pattern": r"jobs\.lever\.co/([^/]+)",
-        "api_template": "https://api.lever.co/v0/postings/{company}",
-    },
-    "workday": {
-        "url_pattern": r"([^.]+)\.wd\d+\.myworkdayjobs\.com",
-        "career_url": "https://{company}.wd5.myworkdayjobs.com/careers",
-    },
-    "ashby": {
-        "url_pattern": r"jobs\.ashbyhq\.com/([^/]+)",
-        "api_template": "https://jobs.ashbyhq.com/api/non-user-graphql",
-    },
-    "smartrecruiters" : {
-        "url_pattern": r"careers\.smartrecruiters\.com/([^/]+)",
-        "api_template": "https://careers.smartrecruiters.com/{company}/api/groups"
-    }
-}
+# ATS_PATTERNS = {
+#     "greenhouse": {
+#         "url_pattern": r"boards\.greenhouse\.io/([^/]+)",
+#         "api_template": "https://boards-api.greenhouse.io/v1/boards/{company}/jobs",
+#     },
+#     "lever": {
+#         "url_pattern": r"jobs\.lever\.co/([^/]+)",
+#         "api_template": "https://api.lever.co/v0/postings/{company}",
+#     },
+#     "workday": {
+#         "url_pattern": r"([^.]+)\.wd\d+\.myworkdayjobs\.com",
+#         "career_url": "https://{company}.wd5.myworkdayjobs.com/careers",
+#     },
+#     "ashby": {
+#         "url_pattern": r"jobs\.ashbyhq\.com/([^/]+)",
+#         "api_template": "https://jobs.ashbyhq.com/api/non-user-graphql",
+#     },
+#     "smartrecruiters" : {
+#         "url_pattern": r"careers\.smartrecruiters\.com/([^/]+)",
+#         "api_template": "https://careers.smartrecruiters.com/{company}/api/groups"
+#     }
+# }
 
 # Company to ATS mapping (expand this in production)
 COMPANY_ATS_MAP = {
@@ -567,45 +653,45 @@ COMPANY_ATS_MAP = {
                     },
 }
 
-ATS_ADAPTERS = {
-    "smartrecruiters": SmartRecruitersAdapter(),
-    "greenhouse": GreenhouseAdapter(),
-    # "lever": LeverAdapter(),
-}
+# ATS_ADAPTERS = {
+#     "smartrecruiters": SmartRecruitersAdapter(),
+#     "greenhouse": GreenhouseAdapter(),
+#     # "lever": LeverAdapter(),
+# }
 
-# Fuzzy match to find similarities
-def match_score(a: str, b: str) -> float:
-    return (fuzz.token_set_ratio(a.lower(), b.lower()) / 100)
+# # Fuzzy match to find similarities
+# def match_score(a: str, b: str) -> float:
+#     return (fuzz.token_set_ratio(a.lower(), b.lower()) / 100)
 
-async def verify_ats(company_name: str, job_title: str, ats_type: str, ats_company: str) -> ATSResult:
-    logger = logging.getLogger("verify_ats")
-    company_lower = company_name.lower().strip()
+# async def verify_ats(company_name: str, job_title: str, ats_type: str, ats_company: str) -> ATSResult:
+#     logger = logging.getLogger(__name__)
+#     company_lower = company_name.lower().strip()
 
-    cache_key = f"{company_lower}:{job_title.lower()[:60]}:{ats_type}"
+#     cache_key = f"{company_lower}:{job_title.lower()[:60]}:{ats_type}"
 
-    logger.info(f"cache_key: {cache_key}")
-    logger.info(f"ats_cache: {ats_cache}")
-    if cache_key in ats_cache:
-        return ats_cache[cache_key]
+#     logger.info(f"cache_key: {cache_key}")
+#     logger.info(f"ats_cache: {ats_cache}")
+#     if cache_key in ats_cache:
+#         return ats_cache[cache_key]
 
-    adapter = ATS_ADAPTERS.get(ats_type)
+#     adapter = ATS_ADAPTERS.get(ats_type)
 
-    logger.info(f"adapter: {adapter}")
-    if not adapter:
-        result = ATSResult(
-            exists=None,
-            confidence=0.0,
-            url=None,
-            source=ats_type,
-            reason="No adapter available"
-        )
-        return result
+#     logger.info(f"adapter: {adapter}")
+#     if not adapter:
+#         result = ATSResult(
+#             exists=None,
+#             confidence=0.0,
+#             url=None,
+#             source=ats_type,
+#             reason="No adapter available"
+#         )
+#         return result
 
-    result = await adapter.verify(ats_company, job_title)
+#     result = await adapter.verify(ats_company, job_title)
 
-    ats_cache[cache_key] = result
+#     ats_cache[cache_key] = result
 
-    return result
+#     return result
 
 # ============================================================================
 # API Endpoints
@@ -620,7 +706,7 @@ async def analyze_job(request: JobAnalysisRequest) -> AnalysisResponse:
     """
     Analyze a job posting and return legitimacy score with detailed breakdown.
     """
-    logger = logging.getLogger("Analyze Job")
+    logger = logging.getLogger(__name__)
     factors = []
     insights = []
     warnings = []
