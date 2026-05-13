@@ -1,6 +1,10 @@
 # Ghost Job Detector
 
 A production-grade platform to help job seekers analyze job postings and identify potential "ghost jobs" - fake or inactive job listings that companies post without genuine hiring intent.
+# Byte-compiled / optimized files
+__pycache__/
+*.py[cod]
+*$py.class
 
 ## Purpose
 
