@@ -15,9 +15,10 @@ node_modules
 .DS_Store
 .vercel
 
-# Python cache
-backend/__pycache__
-*.pyc
+# Byte-compiled / optimized files
+__pycache__/
+*.py[cod]
+*$py.class
 
 # Virtual environment
 backend/.venv
