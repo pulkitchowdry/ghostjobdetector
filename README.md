@@ -1,5 +1,5 @@
 # Ghost Job Detector
-https://docs.rs/tree-sitter/latest/tree_sitter/
+
 A production-grade platform to help job seekers analyze job postings and identify potential "ghost jobs" - fake or inactive job listings that companies post without genuine hiring intent.
 
 ## Purpose
