@@ -1,0 +1,1 @@
+from .ats_details import fetch_ats_from_db

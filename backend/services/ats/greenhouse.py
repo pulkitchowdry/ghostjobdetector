@@ -22,6 +22,9 @@ class GreenhouseAdapter(ATSAdapter):
 
         for job in jobs:
             score = match_score(job.get("title", ""), job_title)
+            created_at = job.get("first_published")
+            updated_at = job.get("updated_at")
+            application_deadline = job.get("application_deadline")
 
             if score > best_score:
                 best_score = score
@@ -33,5 +36,8 @@ class GreenhouseAdapter(ATSAdapter):
             confidence=best_score,
             url=best_url,
             source="greenhouse",
-            reason=f"Best match: {best_title}"
+            reason=f"Best match: {best_title}",
+            created_at=created_at,
+            updated_at=updated_at,
+            application_deadline=application_deadline
         )

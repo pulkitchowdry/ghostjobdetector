@@ -22,7 +22,10 @@ async def verify_ats(company_name: str, job_title: str, ats_type: str, ats_compa
             confidence=0.0,
             url=None,
             source=ats_type,
-            reason="No adapter available"
+            reason="No adapter available",
+            created_at=None,
+            updated_at=None,
+            application_deadline=None,
         )
         return result
 

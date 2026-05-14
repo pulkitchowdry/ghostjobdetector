@@ -1,0 +1,1 @@
+from .applicant_ratio import calculate_applicant_ratio_score

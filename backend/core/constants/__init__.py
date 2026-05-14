@@ -1,0 +1,1 @@
+from .ats_patterns import ATS_PATTERNS, CAREERS_KEYWORDS, BAD_DOMAINS

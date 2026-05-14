@@ -1,0 +1,1 @@
+from .community_submission import get_community_score
