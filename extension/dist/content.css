@@ -1,0 +1,69 @@
+/* Ghost Job Detector - Content Script Styles */
+
+.gjd-badge {
+  margin-bottom: 16px;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+}
+
+.gjd-badge__content {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 12px 20px;
+  border-radius: 12px;
+  background: #1a1a1f;
+  border: 1px solid #333;
+  color: white;
+  min-width: 120px;
+}
+
+.gjd-badge__score {
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 1;
+}
+
+.gjd-badge__label {
+  font-size: 10px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  color: #888;
+  margin-top: 4px;
+}
+
+.gjd-badge__verdict {
+  font-size: 12px;
+  font-weight: 500;
+  margin-top: 8px;
+  padding: 4px 8px;
+  border-radius: 4px;
+  background: rgba(255, 255, 255, 0.1);
+}
+
+/* Color variants */
+.gjd-badge--green .gjd-badge__score {
+  color: #22c55e;
+}
+
+.gjd-badge--green .gjd-badge__verdict {
+  background: rgba(34, 197, 94, 0.2);
+  color: #22c55e;
+}
+
+.gjd-badge--yellow .gjd-badge__score {
+  color: #eab308;
+}
+
+.gjd-badge--yellow .gjd-badge__verdict {
+  background: rgba(234, 179, 8, 0.2);
+  color: #eab308;
+}
+
+.gjd-badge--red .gjd-badge__score {
+  color: #ef4444;
+}
+
+.gjd-badge--red .gjd-badge__verdict {
+  background: rgba(239, 68, 68, 0.2);
+  color: #ef4444;
+}
