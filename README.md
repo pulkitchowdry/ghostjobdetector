@@ -178,6 +178,13 @@ GET /api/health
 6. Check community reports for additional insights
 7. Submit your own report after applying
 
+### Product Screenshots
+### Home page
+<img width="1074" height="772" alt="image" src="https://github.com/user-attachments/assets/382f3dfd-d984-4975-8666-5f5fdb024876" />
+
+### Analysis
+<img width="1093" height="774" alt="image" src="https://github.com/user-attachments/assets/37bad269-9f38-4175-a1c5-da2f7890c138" />
+
 ### Chrome Extension
 
 1. Download the extension from `extension/` directory
