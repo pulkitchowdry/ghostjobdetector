@@ -1,8 +1,10 @@
 # Ghost Job Detector
 
+## Overview
+
 A production-grade platform to help job seekers analyze job postings and identify potential "ghost jobs" - fake or inactive job listings that companies post without genuine hiring intent.
 
-## Purpose
+## Problem
 
 Job seekers spend countless hours applying to positions that may never be filled. Ghost jobs waste time, create false hope, and contribute to job search fatigue. This platform empowers job seekers by providing:
 
@@ -46,58 +48,12 @@ Job seekers spend countless hours applying to positions that may never be filled
 - **20-39**: Multiple warning signs - verify directly with company
 - **0-19**: High likelihood of ghost job - consider skipping
 
-## Tech Stack
+### Product Screenshots
+### Home page
+<img width="1074" height="772" alt="image" src="https://github.com/user-attachments/assets/382f3dfd-d984-4975-8666-5f5fdb024876" />
 
-### Frontend (Next.js 16)
-- **Framework**: Next.js 16 with App Router
-- **Styling**: Tailwind CSS v4 with custom design tokens
-- **Typography**: Inter (headings) + JetBrains Mono (monospace)
-- **Components**: Custom components with shadcn/ui patterns
-
-### Backend (FastAPI)
-- **Framework**: FastAPI with async support
-- **NLP Analysis**: Pattern-based text analysis (extensible to sentence-transformers)
-- **ATS Verification**: Direct URL pattern matching for major ATS platforms (Currently support Greenhouse and Smartrecruiters with Workday and Lever coming soon!)
-- **Storage**: In-memory (ready for Redis/Supabase integration)
-
-### Chrome Extension
-- **Manifest**: V3 (latest Chrome extension standard)
-- **Content Scripts**: LinkedIn DOM reader
-- **Popup**: Vanilla JS with modern CSS
-
-### Infrastructure
-- **Deployment**: Vercel with experimentalServices API
-- **Architecture**: Microservices (frontend + backend as separate services)
-
-## Project Structure
-
-```
-ghost-job-detector/
-├── vercel.json              # Services configuration
-├── frontend/                # Next.js web application
-│   ├── app/
-│   │   ├── layout.tsx       # Root layout with fonts
-│   │   ├── page.tsx         # Main analyzer page
-│   │   └── globals.css      # Tailwind + design tokens
-│   ├── components/
-│   │   ├── job-analyzer-form.tsx
-│   │   ├── score-ring.tsx
-│   │   ├── factor-breakdown.tsx
-│   │   ├── insights-panel.tsx
-│   │   └── community-reports.tsx
-│   └── lib/
-│       └── utils.ts
-├── backend/                 # FastAPI Python backend
-│   ├── main.py              # API routes + scoring engine
-│   └── pyproject.toml       # Python dependencies
-└── extension/               # Chrome extension
-    ├── manifest.json
-    ├── src/
-    │   ├── content/         # LinkedIn content scripts
-    │   ├── popup/           # Extension popup UI
-    │   └── background/      # Service worker
-    └── public/icons/
-```
+### Analysis
+<img width="1093" height="774" alt="image" src="https://github.com/user-attachments/assets/37bad269-9f38-4175-a1c5-da2f7890c138" />
 
 ## API Reference
 
@@ -166,45 +122,35 @@ GET /api/reports/{job_hash}
 GET /api/health
 ```
 
-## Usage
+## Tech Stack
 
-### Web Application
+### Frontend (Next.js 16)
+- **Framework**: Next.js 16 with App Router
+- **Styling**: Tailwind CSS v4 with custom design tokens
+- **Typography**: Inter (headings) + JetBrains Mono (monospace)
+- **Components**: Custom components with shadcn/ui patterns
 
-1. Visit the deployed application URL
-2. Paste a job description into the text area
-3. (Optional) Add company name, job URL, posted date, and applicant count for deeper analysis
-4. Click "Analyze Job Posting"
-5. Review your legitimacy score and factor breakdown
-6. Check community reports for additional insights
-7. Submit your own report after applying
-
-### Product Screenshots
-### Home page
-<img width="1074" height="772" alt="image" src="https://github.com/user-attachments/assets/382f3dfd-d984-4975-8666-5f5fdb024876" />
-
-### Analysis
-<img width="1093" height="774" alt="image" src="https://github.com/user-attachments/assets/37bad269-9f38-4175-a1c5-da2f7890c138" />
+### Backend (FastAPI)
+- **Framework**: FastAPI with async support
+- **NLP Analysis**: Pattern-based text analysis (extensible to sentence-transformers)
+- **ATS Verification**: Direct URL pattern matching for major ATS platforms (Currently support Greenhouse and Smartrecruiters with Workday and Lever coming soon!)
+- **Storage**: In-memory (ready for Redis/Supabase integration)
 
 ### Chrome Extension
+- **Manifest**: V3 (latest Chrome extension standard)
+- **Content Scripts**: LinkedIn DOM reader
+- **Popup**: Vanilla JS with modern CSS
 
-1. Download the extension from `extension/` directory
-2. Open Chrome and go to `chrome://extensions`
-3. Enable "Developer mode" (top right)
-4. Click "Load unpacked" and select the `extension/` folder
-5. Navigate to any LinkedIn job posting
-6. Click the extension icon to see the analysis
-7. Or look for the score badge overlay on the job page
+### Infrastructure
+- **Deployment**: Vercel with experimentalServices API
+- **Architecture**: Microservices (frontend + backend as separate services)
 
-## Development
+## Installation
 
 ### Prerequisites
 - Node.js 18+
 - Python 3.11+
 - pnpm (recommended) or npm
-
-### Local Development
-
-The project uses Vercel's experimentalServices API. When deployed or running via `vercel dev`, both services start automatically.
 
 **Frontend only:**
 ```bash
@@ -225,20 +171,17 @@ uvicorn main:app --reload
 ```bash
 vercel dev
 ```
+Access localhost:3000 on the browser with the API service running on localhost:8000 for local development
 
-### Environment Variables
+### How to run Chrome Extension in dev mode
 
-For production with full features, configure:
-
-```env
-# Supabase (for persistent storage)
-SUPABASE_URL=your_supabase_url
-SUPABASE_ANON_KEY=your_anon_key
-
-# Upstash Redis (for ATS caching)
-UPSTASH_REDIS_REST_URL=your_redis_url
-UPSTASH_REDIS_REST_TOKEN=your_redis_token
-```
+1. Download the extension from `extension/` directory
+2. Open Chrome and go to `chrome://extensions`
+3. Enable "Developer mode" (top right)
+4. Click "Load unpacked" and select the `extension/` folder
+5. Navigate to any LinkedIn job posting
+6. Click the extension icon to see the analysis
+7. Or look for the score badge overlay on the job page
 
 ## Deployment
 
@@ -256,60 +199,155 @@ UPSTASH_REDIS_REST_TOKEN=your_redis_token
 2. Run `cd extension && pnpm build` (or manually zip the extension folder)
 3. Submit to Chrome Web Store Developer Dashboard
 
-## Extending the Platform
+## How to use
+There are two ways to use this application,
+1. Webpage
+2. Chrome extension - On LinkedIn pages for now
 
-### Adding New ATS Platforms
+### Webpage
+Enter information about the job like job title, company name, job description and few optional details like date posted, number of applications, etc. 
+Click on Analyze and wait for the results
 
-Edit `backend/main.py` and add patterns to `ATS_PATTERNS`:
+Every analysis gets an overall score with proper breakdown across different categories displayed on the right.
+Participate in the community submission if you have applied to the job and help everyone identify real jobs.
 
-```python
-ATS_PATTERNS = {
-    "greenhouse": {"domain": "greenhouse.io", "pattern": "/jobs/"},
-    "lever": {"domain": "lever.co", "pattern": "/"},
-    "workday": {"domain": "myworkdayjobs.com", "pattern": "/"},
-    "your_ats": {"domain": "ats-domain.com", "pattern": "/careers/"},
-}
+### Chrome Extension
+Currently the extension works only on LinkedIn jobs page.
+Click on the extensions icon in the top right corner on Chrome after opening a job on LinkedIn
+Click on Analyze and observe the results on the widget
+Access the webpage for detailed results
+
+## Project Structure
+
+```
+ghostjobdetector/
+├── app
+│   ├── globals.css
+│   └── layout.tsx
+├── backend                          # FastAPI based backend
+│   ├── core                         # Core services - Logging, Search, Constants
+│   │   ├── __init__.py
+│   │   ├── constants
+│   │   │   ├── __init__.py
+│   │   │   └── ats_patterns.py
+│   │   ├── db.py
+│   │   ├── logging.py
+│   │   └── search
+│   │       ├── __init__.py
+│   │       └── careers_finder.py
+│   ├── data_services                # Database services - Supabase
+│   │   ├── __init__.py
+│   │   ├── ats_details.py
+│   │   ├── companies.py
+│   │   └── jobs.py
+│   ├── info.txt
+│   ├── main.py
+│   ├── pyproject.toml                # Project information with list of dependecies
+│   ├── requirements.txt
+│   ├── services                        # List of Services directory
+│   │   ├── applicant_ratio            # Applicant ratio analysis
+│   │   │   ├── __init__.py
+│   │   │   └── applicant_ratio.py
+│   │   ├── ats                        # ATS system related to files
+│   │   │   ├── __init__.py
+│   │   │   ├── ats_info.json
+│   │   │   ├── base.py
+│   │   │   ├── greenhouse_sample_list.txt
+│   │   │   ├── greenhouse.py
+│   │   │   ├── registry.py
+│   │   │   ├── smartrecruiter_sample_job.txt
+│   │   │   ├── smartrecruiter_sample_list.txt
+│   │   │   ├── smartrecruiters.py
+│   │   │   └── verifier.py
+│   │   ├── community                    # Community submissions
+│   │   │   ├── __init__.py
+│   │   │   └── community_submission.py
+│   │   ├── description                    # Job description analysis
+│   │   │   ├── __init__.py
+│   │   │   ├── description_analyzer.py
+│   │   │   └── description_dictionary.py
+│   │   ├── job_recency                    # Job freshness analysis
+│   │   │   ├── __init__.py
+│   │   │   └── job_freshness.py
+│   │   └── job_uniqueness                # Duplicate job identifier
+│   │       ├── __init__.py
+│   │       └── job_unique.py
+│   └── utils
+│       ├── __init__.py
+│       └── matchscoring.py
+├── components                        
+│   ├── theme-provider.tsx
+│   └── ui              
+│       ├── accordion.tsx
+│       ├── alert-dialog.tsx
+│       ├── alert.tsx
+│       ├── aspect-ratio.tsx
+│       ├── avatar.tsx
+│       ├── badge.tsx
+├── extension                    # Chrome extension
+│   ├── build.js
+│   ├── manifest.json
+│   ├── package.json
+│   ├── public
+│   │   └── icons
+│   │       ├── icon128.png
+│   │       ├── icon16.png
+│   │       ├── icon32.png
+│   │       └── icon48.png
+│   ├── README.md
+│   └── src
+│       ├── background
+│       │   └── background.js
+│       ├── content
+│       │   ├── content.css
+│       │   └── content.js
+│       └── popup
+│           ├── popup.html
+│           └── popup.js
+├── frontend                            # Next.js based frontend
+│   ├── app
+│   │   ├── globals.css
+│   │   ├── layout.tsx
+│   │   └── page.tsx
+│   ├── components                        # Frontend UI components
+│   │   ├── community-reports.tsx
+│   │   ├── factor-breakdown.tsx
+│   │   ├── insights-panel.tsx
+│   │   ├── job-analyzer-form.tsx
+│   │   └── score-ring.tsx
+│   ├── lib
+│   │   └── utils.ts
+│   ├── next-env.d.ts
+│   ├── next.config.ts
+│   ├── package-lock.json
+│   ├── package.json
+│   ├── pnpm-lock.yaml
+│   ├── pnpm-workspace.yaml
+│   ├── postcss.config.mjs
+│   └── tsconfig.json
+├── hooks
+│   ├── use-mobile.ts
+│   └── use-toast.ts
+├── lib
+│   └── utils.ts
+├── public
+│   ├── apple-icon.png
+│   ├── icon-dark-32x32.png
+│   ├── icon-light-32x32.png
+│   ├── icon.svg
+│   ├── placeholder-logo.png
+│   ├── placeholder-logo.svg
+│   ├── placeholder-user.jpg
+│   ├── placeholder.jpg
+│   └── placeholder.svg
+├── README.md
+├── styles
+│   └── globals.css
+└── vercel.json
 ```
 
-### Adding Sentence Transformers (Advanced NLP)
+## Reflection
+Through this project, I was able to identify a structure in flagging ghost jobs on various online platforms and could also observe how ATS systems work. The next steps are to improve the analysis and help people identify right job opportunities.
 
-For production-grade semantic analysis, add to `backend/main.py`:
-
-```python
-from sentence_transformers import SentenceTransformer
-
-model = SentenceTransformer('all-MiniLM-L6-v2')
-
-def calculate_semantic_similarity(desc1: str, desc2: str) -> float:
-    embeddings = model.encode([desc1, desc2])
-    return cosine_similarity([embeddings[0]], [embeddings[1]])[0][0]
-```
-
-### Connecting Real Database
-
-Replace in-memory stores with Supabase/Redis:
-
-```python
-# Supabase example
-from supabase import create_client
-supabase = create_client(os.getenv("SUPABASE_URL"), os.getenv("SUPABASE_ANON_KEY"))
-
-# Redis example
-from upstash_redis import Redis
-redis = Redis.from_env()
-```
-
-## Contributing
-
-1. Fork the repository
-2. Create a feature branch
-3. Make your changes
-4. Submit a pull request
-
-## License
-
-MIT License - see LICENSE file for details.
-
-## Acknowledgments
-
+## Final note
 Inspired by the need for transparency in job markets. Built to help job seekers make informed decisions and reduce time wasted on ghost job applications.
