@@ -1,10 +1,6 @@
 # Ghost Job Detector
 
 A production-grade platform to help job seekers analyze job postings and identify potential "ghost jobs" - fake or inactive job listings that companies post without genuine hiring intent.
-# Byte-compiled / optimized files
-__pycache__/
-*.py[cod]
-*$py.class
 
 ## Purpose
 
@@ -36,7 +32,7 @@ Job seekers spend countless hours applying to positions that may never be filled
 
 | Factor | Weight | What Increases Score |
 |--------|--------|----------------------|
-| **ATS Verification** | 25% | Job found on company's official ATS (Greenhouse, Lever, Workday) |
+| **ATS Verification** | 25% | Job found on company's official ATS (Greenhouse, Lever, Workday, Smartrecruiters) |
 | **Description Quality** | 20% | Specific requirements, clear responsibilities, real tech stack |
 | **Posting Freshness** | 15% | Recently posted (within 2 weeks ideal) |
 | **Applicant Ratio** | 10% | Reasonable applicant count for posting age |
@@ -61,7 +57,7 @@ Job seekers spend countless hours applying to positions that may never be filled
 ### Backend (FastAPI)
 - **Framework**: FastAPI with async support
 - **NLP Analysis**: Pattern-based text analysis (extensible to sentence-transformers)
-- **ATS Verification**: Direct URL pattern matching for major ATS platforms
+- **ATS Verification**: Direct URL pattern matching for major ATS platforms (Currently support Greenhouse and Smartrecruiters with Workday and Lever coming soon!)
 - **Storage**: In-memory (ready for Redis/Supabase integration)
 
 ### Chrome Extension

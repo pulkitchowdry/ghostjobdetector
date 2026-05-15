@@ -101,7 +101,7 @@ export default function HomePage() {
               Extension
             </a>
             <a 
-              href="https://github.com" 
+              href="https://github.com/pulkitchowdry/ghostjobdetector" 
               target="_blank"
               rel="noopener noreferrer"
               className="text-sm text-muted-foreground hover:text-foreground transition-colors flex items-center gap-1"
