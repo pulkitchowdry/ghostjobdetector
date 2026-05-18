@@ -19,7 +19,8 @@ interface CommunityReportsProps {
 }
 
 export function CommunityReports({ jobId, stats, onReport }: CommunityReportsProps) {
-  const API_URL = process.env.NEXT_PUBLIC_API_URL
+  // const API_URL = process.env.NEXT_PUBLIC_API_URL
+  const API_URL = '/api'
   const [submitted, setSubmitted] = useState<string | null>(null)
   const [isSubmitting, setIsSubmitting] = useState(false)
   

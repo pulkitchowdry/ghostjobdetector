@@ -30,3 +30,5 @@ backend/*.egg-info
 # Build
 backend/build
 
+.serverless/
+

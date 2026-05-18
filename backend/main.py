@@ -19,6 +19,7 @@ from typing import Optional
 from rapidfuzz import fuzz
 from core import setup_logging
 import logging
+from mangum import Mangum
 
 # Imports from our other files
 from services.ats import verify_ats
@@ -458,3 +459,5 @@ async def get_stats() -> dict:
         "total_community_reports": total_reports,
         "cached_ats_results": len(ats_cache),
     }
+
+handler = Mangum(app)

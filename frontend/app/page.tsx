@@ -33,7 +33,8 @@ interface AnalysisResult {
 }
 
 export default function HomePage() {
-  const API_URL = process.env.NEXT_PUBLIC_API_URL
+  // const API_URL = process.env.NEXT_PUBLIC_API_URL
+  const API_URL = '/api'
   const [result, setResult] = useState<AnalysisResult | null>(null)
   const [isLoading, setIsLoading] = useState(false)
   const [error, setError] = useState<string | null>(null)
