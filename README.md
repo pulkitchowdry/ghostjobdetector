@@ -134,7 +134,7 @@ GET /api/health
 - **Framework**: FastAPI with async support
 - **NLP Analysis**: Pattern-based text analysis (extensible to sentence-transformers)
 - **ATS Verification**: Direct URL pattern matching for major ATS platforms (Currently support Greenhouse and Smartrecruiters with Workday and Lever coming soon!)
-- **Storage**: In-memory (ready for Redis/Supabase integration)
+- **Storage**: Supabase database
 
 ### Chrome Extension
 - **Manifest**: V3 (latest Chrome extension standard)
@@ -142,7 +142,7 @@ GET /api/health
 - **Popup**: Vanilla JS with modern CSS
 
 ### Infrastructure
-- **Deployment**: Vercel with experimentalServices API
+- **Deployment**: Vercel for frontend and AWS Lambda for backend
 - **Architecture**: Microservices (frontend + backend as separate services)
 
 ## Installation
@@ -185,13 +185,22 @@ Access localhost:3000 on the browser with the API service running on localhost:8
 
 ## Deployment
 
-### Vercel (Recommended)
+### Vercel (Recommended for frontend)
 
 1. Push to GitHub
 2. Import project in Vercel
-3. Set Framework Preset to "Services" in Build Settings
-4. Add environment variables
-5. Deploy
+3. Add environment variables
+4. Deploy
+
+### AWS (Recommended for backend)
+
+1. Install AWS CLI and login using 'aws login'
+2. Install serverless framework and login - npm i -g serverless
+3. Install Docker (This is because certain libraries in AWS Lambda might not work)
+4. Add environment variables in AWS Lambda
+5. Run serverless deploy
+6. Copy the AWS endpoint and add it to your Frontend environement variables
+
 
 ### Chrome Web Store
 
@@ -224,9 +233,6 @@ Access the webpage for detailed results
 
 ```
 ghostjobdetector/
-├── app
-│   ├── globals.css
-│   └── layout.tsx
 ├── backend                          # FastAPI based backend
 │   ├── core                         # Core services - Logging, Search, Constants
 │   │   ├── __init__.py
@@ -245,6 +251,8 @@ ghostjobdetector/
 │   │   └── jobs.py
 │   ├── info.txt
 │   ├── main.py
+│   ├── package-lock.json
+│   ├── package.json
 │   ├── pyproject.toml                # Project information with list of dependecies
 │   ├── requirements.txt
 │   ├── services                        # List of Services directory
@@ -276,8 +284,9 @@ ghostjobdetector/
 │   │       ├── __init__.py
 │   │       └── job_unique.py
 │   └── utils
-│       ├── __init__.py
-│       └── matchscoring.py
+│   |   ├── __init__.py
+│   |   └── matchscoring.py
+|   |__ serverless.yml                    # Serverless Framework file to deploy on AWS
 ├── components                        
 │   ├── theme-provider.tsx
 │   └── ui              
@@ -309,6 +318,9 @@ ghostjobdetector/
 │           └── popup.js
 ├── frontend                            # Next.js based frontend
 │   ├── app
+|   |   ├── api                         # Handling API route to backend
+|   |   |   └──[...slug]
+|   |   |       └──route.ts
 │   │   ├── globals.css
 │   │   ├── layout.tsx
 │   │   └── page.tsx
@@ -328,25 +340,7 @@ ghostjobdetector/
 │   ├── pnpm-workspace.yaml
 │   ├── postcss.config.mjs
 │   └── tsconfig.json
-├── hooks
-│   ├── use-mobile.ts
-│   └── use-toast.ts
-├── lib
-│   └── utils.ts
-├── public
-│   ├── apple-icon.png
-│   ├── icon-dark-32x32.png
-│   ├── icon-light-32x32.png
-│   ├── icon.svg
-│   ├── placeholder-logo.png
-│   ├── placeholder-logo.svg
-│   ├── placeholder-user.jpg
-│   ├── placeholder.jpg
-│   └── placeholder.svg
 ├── README.md
-├── styles
-│   └── globals.css
-└── vercel.json
 ```
 
 ## Reflection
