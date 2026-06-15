@@ -15,7 +15,9 @@ Job seekers spend countless hours applying to positions that may never be filled
 
 **Important**: We provide analysis and insights to help you make informed decisions - not definitive claims about whether a job is real or fake.
 
-## Features
+## Outcome
+
+### Features
 
 ### Web Application
 - Paste any job description for instant analysis
@@ -48,14 +50,56 @@ Job seekers spend countless hours applying to positions that may never be filled
 - **20-39**: Multiple warning signs - verify directly with company
 - **0-19**: High likelihood of ghost job - consider skipping
 
+## Demo
+
 ### Product Screenshots
 ### Home page
 <img width="1074" height="772" alt="image" src="https://github.com/user-attachments/assets/382f3dfd-d984-4975-8666-5f5fdb024876" />
 
+Job seekers can enter details related to the job. It is mandatory to provide the below details,
+1. Job title
+2. Company name
+3. Job description
+
+Following are some optional details that can be added and will help in providing a more accurate score,
+1. Job posting date
+2. Number of applicants
+3. LinkedIn URL
+4. Location
+
+Note - While using the Chrome extension (which works on the linkedin jobs page), the above details will be fetched automatically.
+
 ### Analysis
 <img width="1093" height="774" alt="image" src="https://github.com/user-attachments/assets/37bad269-9f38-4175-a1c5-da2f7890c138" />
 
-## API Reference
+System provides an overall score for the respective job along with a proper breakdown of different categories. It also provides a brief statement which shares the reasoning for the respective category score. 
+
+Community signals is a feature which allows users to participate and help other job seekers in identifying fake jobs.
+
+## Tech Stack
+
+### Frontend (Next.js 16)
+- **Framework**: Next.js 16 with App Router
+- **Styling**: Tailwind CSS v4 with custom design tokens
+- **Typography**: Inter (headings) + JetBrains Mono (monospace)
+- **Components**: Custom components with shadcn/ui patterns
+
+### Backend (FastAPI)
+- **Framework**: FastAPI with async support
+- **NLP Analysis**: Pattern-based text analysis (extensible to sentence-transformers)
+- **ATS Verification**: Direct URL pattern matching for major ATS platforms (Currently support Greenhouse and Smartrecruiters with Workday and Lever coming soon!)
+- **Storage**: Supabase database
+
+### Chrome Extension
+- **Manifest**: V3 (latest Chrome extension standard)
+- **Content Scripts**: LinkedIn DOM reader
+- **Popup**: Vanilla JS with modern CSS
+
+### Infrastructure
+- **Deployment**: Vercel for frontend and AWS Lambda for backend
+- **Architecture**: Microservices (frontend + backend as separate services)
+
+### API Reference
 
 ### Analyze Job
 ```http
@@ -122,29 +166,6 @@ GET /api/reports/{job_hash}
 GET /api/health
 ```
 
-## Tech Stack
-
-### Frontend (Next.js 16)
-- **Framework**: Next.js 16 with App Router
-- **Styling**: Tailwind CSS v4 with custom design tokens
-- **Typography**: Inter (headings) + JetBrains Mono (monospace)
-- **Components**: Custom components with shadcn/ui patterns
-
-### Backend (FastAPI)
-- **Framework**: FastAPI with async support
-- **NLP Analysis**: Pattern-based text analysis (extensible to sentence-transformers)
-- **ATS Verification**: Direct URL pattern matching for major ATS platforms (Currently support Greenhouse and Smartrecruiters with Workday and Lever coming soon!)
-- **Storage**: Supabase database
-
-### Chrome Extension
-- **Manifest**: V3 (latest Chrome extension standard)
-- **Content Scripts**: LinkedIn DOM reader
-- **Popup**: Vanilla JS with modern CSS
-
-### Infrastructure
-- **Deployment**: Vercel for frontend and AWS Lambda for backend
-- **Architecture**: Microservices (frontend + backend as separate services)
-
 ## Installation
 
 ### Prerequisites
@@ -207,14 +228,6 @@ Access localhost:3000 on the browser with the API service running on localhost:8
 1. Update `API_BASE_URL` in `extension/src/popup/popup.js` and `extension/src/content/content.js`
 2. Run `cd extension && pnpm build` (or manually zip the extension folder)
 3. Submit to Chrome Web Store Developer Dashboard
-
-## AI Tools
-1. v0 - For initial frontend development
-2. Claude - FastAPI backend development to integrate with the Next.js based frontend
-3. ChatGPT - Debugging and solving integration issues
-
-## Development with AI
-Multiple AI tools were used in the development of this application - v0, Claude and ChatGPT. AI tools were primarily good with frontend related code while there were bugs in the backend code. Debugging and solving the issues were critical to bringing a workable solution and AI was also useful in debugging and understanding the different errors.
 
 ## How to use
 There are two ways to use this application,
@@ -345,6 +358,9 @@ ghostjobdetector/
 │   ├── pnpm-workspace.yaml
 │   ├── postcss.config.mjs
 │   └── tsconfig.json
+├── docs                           
+│   ├── ai-dev
+|   |   ├── README.md               # Details on how AI was used in the development of this project
 ├── README.md
 ```
 
