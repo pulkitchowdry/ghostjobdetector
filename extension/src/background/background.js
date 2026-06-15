@@ -4,7 +4,7 @@
  */
 
 // API endpoint - change this to your deployed API URL
-const API_BASE = 'http://localhost:8000';
+const API_BASE = 'https://ghostjobdetector-tau.vercel.app/api';
 
 // Simple in-memory cache for the session
 const analysisCache = new Map();
