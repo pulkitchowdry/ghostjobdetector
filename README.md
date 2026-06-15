@@ -208,6 +208,11 @@ Access localhost:3000 on the browser with the API service running on localhost:8
 2. Run `cd extension && pnpm build` (or manually zip the extension folder)
 3. Submit to Chrome Web Store Developer Dashboard
 
+## AI Tools
+1. v0 - For initial frontend development
+2. Claude - FastAPI backend development to integrate with the Next.js based frontend
+3. ChatGPT - Debugging and solving integration issues
+
 ## Development with AI
 Multiple AI tools were used in the development of this application - v0, Claude and ChatGPT. AI tools were primarily good with frontend related code while there were bugs in the backend code. Debugging and solving the issues were critical to bringing a workable solution and AI was also useful in debugging and understanding the different errors.
 
