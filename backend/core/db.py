@@ -7,6 +7,10 @@ load_dotenv()
 def init_supabase() -> Client:
     url = os.getenv("SUPABASE_URL")
     key = os.getenv("SUPABASE_SERVICE_ROLE_KEY")
+    if not url:
+        print("no url present")
+    else:
+        print(f"url with len: {len(url)}")
     if not key:
         print("no key present")
     else:
