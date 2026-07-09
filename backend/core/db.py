@@ -6,6 +6,7 @@ from dotenv import load_dotenv
 load_dotenv()
 def init_supabase() -> Client:
     url = os.getenv("SUPABASE_URL")
+    print(f"---- url: {url} ----")
     key = os.getenv("SUPABASE_SERVICE_ROLE_KEY")
     logger = logging.getLogger(__name__)
 
