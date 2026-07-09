@@ -9,12 +9,8 @@ def init_supabase() -> Client:
     key = os.getenv("SUPABASE_SERVICE_ROLE_KEY")
     if not url:
         print("no url present")
-    else:
-        print(f"url with len: {len(url)}")
     if not key:
         print("no key present")
-    else:
-        print(f"key with len: {len(key)}")
     logger = logging.getLogger(__name__)
 
     logger.info(f"url: {url}")
