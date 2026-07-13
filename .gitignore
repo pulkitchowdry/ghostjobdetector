@@ -32,3 +32,4 @@ backend/build
 
 .serverless/
 
+*.txt

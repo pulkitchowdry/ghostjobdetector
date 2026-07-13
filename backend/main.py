@@ -28,9 +28,12 @@ from services.job_recency import calculate_freshness_score
 from services.applicant_ratio import calculate_applicant_ratio_score
 from services.job_uniqueness import check_uniqueness
 from services.community import get_community_score
-from data_services.ats_details import fetch_ats_from_db
+# from data_services.ats_details import fetch_ats_from_db
 
 setup_logging()
+
+logger = logging.getLogger(__name__)
+
 
 app = fastapi.FastAPI(
     title="Ghost Job Detector API",
@@ -130,48 +133,48 @@ def generate_job_hash(title: str, company: str, description: str) -> str:
 # }
 
 # Company to ATS mapping (expand this in production)
-COMPANY_ATS_MAP = {
-    "stripe":       {
-                        "ats_type": "greenhouse",
-                        "ats_url_company": "stripe"
-                    },
-    "airbnb":       {
-                        "ats_type": "greenhouse",
-                        "ats_url_company": "airbnb"
-                    },
-    "notion":       {
-                        "ats_type": "greenhouse",
-                        "ats_url_company": "notion"
-                    },
-    "figma":        {
-                        "ats_type": "lever",
-                        "ats_url_company": "figma"
-                    },
-    "spotify":      {
-                        "ats_type": "greenhouse",
-                        "ats_url_company": "spotify"
-                    },
-    "meta":         {
-                        "ats_type": "workday",
-                        "ats_url_company": "meta"
-                    },
-    "google":       {
-                        "ats_type": "workday",
-                        "ats_url_company": "google"
-                    },
-    "freshworks":   {
-                        "ats_type": "smartrecruiters",
-                        "ats_url_company": "freshworks"
-                    },
-    "visa":         {
-                        "ats_type": "smartrecruiters",
-                        "ats_url_company": "visa"
-                    },
-    "cato networks":         {
-                        "ats_type": "greenhouse",
-                        "ats_url_company": "catonetworks"
-                    },
-}
+# COMPANY_ATS_MAP = {
+#     "stripe":       {
+#                         "ats_type": "greenhouse",
+#                         "ats_url_company": "stripe"
+#                     },
+#     "airbnb":       {
+#                         "ats_type": "greenhouse",
+#                         "ats_url_company": "airbnb"
+#                     },
+#     "notion":       {
+#                         "ats_type": "greenhouse",
+#                         "ats_url_company": "notion"
+#                     },
+#     "figma":        {
+#                         "ats_type": "lever",
+#                         "ats_url_company": "figma"
+#                     },
+#     "spotify":      {
+#                         "ats_type": "greenhouse",
+#                         "ats_url_company": "spotify"
+#                     },
+#     "meta":         {
+#                         "ats_type": "workday",
+#                         "ats_url_company": "meta"
+#                     },
+#     "google":       {
+#                         "ats_type": "workday",
+#                         "ats_url_company": "google"
+#                     },
+#     "freshworks":   {
+#                         "ats_type": "smartrecruiters",
+#                         "ats_url_company": "freshworks"
+#                     },
+#     "visa":         {
+#                         "ats_type": "smartrecruiters",
+#                         "ats_url_company": "visa"
+#                     },
+#     "cato networks":         {
+#                         "ats_type": "greenhouse",
+#                         "ats_url_company": "catonetworks"
+#                     },
+# }
 
 # ============================================================================
 # API Endpoints
@@ -186,7 +189,6 @@ async def analyze_job(request: JobAnalysisRequest) -> AnalysisResponse:
     """
     Analyze a job posting and return legitimacy score with detailed breakdown.
     """
-    logger = logging.getLogger(__name__)
     factors = []
     insights = []
     warnings = []
@@ -197,24 +199,25 @@ async def analyze_job(request: JobAnalysisRequest) -> AnalysisResponse:
     unedited_company_name = request.company_name
     company_name = request.company_name.lower().strip()
     
-    logger.info(f"un: {unedited_company_name}, cp: {company_name}")
-    dummy_ats_info = fetch_ats_from_db(company_name)
-    logger.info(f"dummy: {dummy_ats_info}")
+    # print(f"printing state: {logger.handlers}")
+    # logger.info(f"un: {unedited_company_name}, cp: {company_name}")
+    # dummy_ats_info = fetch_ats_from_db(company_name)
+    # logger.info(f"dummy: {dummy_ats_info}")
 
-    ats_info = COMPANY_ATS_MAP.get(company_name)
-    logger.info(f"{ats_info}")
-    if ats_info:
-        ats_type = ats_info.get("ats_type")
-        ats_company = ats_info.get("ats_url_company")
-    else:
-        ats_type, ats_company = None, None
+    # ats_info = COMPANY_ATS_MAP.get(company_name)
+    # logger.info(f"{ats_info}")
+    # if ats_info:
+    #     ats_company = ats_info.get("ats_url_company")
+    #     ats_type = ats_info.get("ats_type")
+    # else:
+    #     ats_type, ats_company = None, None
     # 1. ATS Verification (25% weight)
     # ats_verified, ats_url, ats_details = await verify_ats(request.company_name, request.job_title)
     ats_result = await verify_ats(
             company_name=request.company_name,
             job_title=request.job_title,
-            ats_type=ats_type,
-            ats_company=ats_company
+            # ats_type=ats_type,
+            # ats_company=ats_company
         )
     logger.info(f"{ats_result}")
 
@@ -227,7 +230,7 @@ async def analyze_job(request: JobAnalysisRequest) -> AnalysisResponse:
         insights.append(
             "Job verified on company careers page with strong match confidence"
         )
-        ats_details = f"Job found on the company careers page. Confidence level: {ats_score}"
+        ats_details = f"Job found on the company careers page. Confidence level: {ats_score:.0f}%"
         ats_verified = True
         ats_url = ats_result.url
         job_created_at = ats_result.created_at
@@ -262,12 +265,15 @@ async def analyze_job(request: JobAnalysisRequest) -> AnalysisResponse:
     ))
     
     # 2. Description Quality (20% weight)
-    desc_score, desc_indicators = analyze_description_quality(request.job_description)
+    desc_score, desc_indicators = analyze_description_quality(request.job_description, request.job_title)
     
     if desc_score >= 70:
         insights.append("Job description contains specific, detailed requirements")
     elif desc_score < 40:
         warnings.append("Job description appears generic - may lack real requirements")
+    
+    if any(ind.startswith("MISMATCH") for ind in desc_indicators):
+        warnings.append("Description content doesn't appear to match the job title - possible spam or mislabeled posting.")
     
     factors.append(AnalysisFactor(
         name="Job Description Quality",
@@ -392,6 +398,7 @@ async def submit_report(report: CommunityReport) -> dict:
     valid_types = ["interview_scheduled", "response_received", "no_response", "offer_received"]
     
     if report.report_type not in valid_types:
+        logger.error(f"Invalid report_type: {report.report_type}")
         raise fastapi.HTTPException(
             status_code=400,
             detail=f"Invalid report type. Must be one of: {valid_types}"
@@ -399,6 +406,7 @@ async def submit_report(report: CommunityReport) -> dict:
     
     # Simple spam prevention - limit reports per fingerprint
     if report.fingerprint:
+        logger.info(f"Spam prevention: {report.fingerprint}")
         existing_reports = community_reports.get(report.job_id, [])
         same_fingerprint = [r for r in existing_reports if r.get("fingerprint") == report.fingerprint]
         
@@ -433,6 +441,7 @@ async def get_reports(job_id: str) -> dict:
         "offer_received": 0,
     }
     
+    logger.info(f"count: {counts}")
     for report in reports:
         if report["report_type"] in counts:
             counts[report["report_type"]] += 1
@@ -453,7 +462,8 @@ async def get_stats() -> dict:
     """
     total_jobs = len(job_history)
     total_reports = sum(len(reports) for reports in community_reports.values())
-    
+
+    logger.info(f"total_jobs: {total_jobs}; total_reports: {total_reports}")    
     return {
         "total_jobs_analyzed": total_jobs,
         "total_community_reports": total_reports,

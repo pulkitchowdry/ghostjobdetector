@@ -1,75 +1,61 @@
-import httpx
-from .base import ATSAdapter, ATSResult
-from utils.matchscoring import match_score
 import logging
+
+import httpx
 from bs4 import BeautifulSoup
 
-# Need to implement pagination, find dateposted from the specific job posting details page
+from .base import ATSAdapter, ATSJob
+
+logger = logging.getLogger(__name__)
+
+
 class SmartRecruitersAdapter(ATSAdapter):
-    async def verify(self, company: str, job_title: str) -> ATSResult:
-        url = f"https://careers.smartrecruiters.com/{company}/api/groups?page=1"
+    source_name = "smartrecruiters"
+
+    async def list_jobs(self, ats_slug: str) -> list[ATSJob] | None:
+        url = f"https://careers.smartrecruiters.com/{ats_slug}/api/groups?page=1"
 
         try:
             async with httpx.AsyncClient(timeout=10.0) as client:
                 response = await client.get(url)
+        except Exception as e:
+            logger.error(f"SmartRecruiters fetch failed for '{ats_slug}': {e}")
+            return None
 
-            if response.status_code != 200:
-                return ATSResult(
-                    exists=None,
-                    confidence=0.0,
-                    url=None,
-                    source="smartrecruiters",
-                    reason="Failed to fetch ATS page"
+        if response.status_code != 200:
+            logger.warning(f"SmartRecruiters returned {response.status_code} for '{ats_slug}'")
+            return None
+
+        soup = BeautifulSoup(response.text, "html.parser")
+        jobs: list[ATSJob] = []
+
+        sections = soup.select("section.openings-section")
+        for section in sections:
+            location_el = section.select_one("h3.opening-title")
+            location_hint = location_el.text.strip() if location_el else None
+
+            for job_el in section.select("li.opening-job"):
+                title_el = job_el.select_one("h4.job-title")
+                link_el = job_el.select_one("a")
+
+                if not title_el or not link_el:
+                    continue
+
+                title = title_el.text.strip()
+                href = link_el.get("href")
+                # href is typically a relative/partial path; SmartRecruiters
+                # job IDs live in the URL, use it as the external id.
+                external_id = href.rstrip("/").split("/")[-1] if href else title
+
+                jobs.append(
+                    ATSJob(
+                        external_job_id=external_id,
+                        job_title=title,
+                        job_url=href,
+                        location=location_hint,
+                        raw_json={"title": title, "href": href, "location": location_hint},
+                    )
                 )
 
-            soup = BeautifulSoup(response.text, "html.parser")
-
-            best_score = 0.0
-            best_url = None
-            best_title = None
-            location_hint = None
-
-            sections = soup.select("section.openings-section")
-
-            for section in sections:
-                location_el = section.select_one("h3.opening-title")
-                location_hint = location_el.text.strip() if location_el else None
-
-                jobs = section.select("li.opening-job")
-
-                for job in jobs:
-                    title_el = job.select_one("h4.job-title")
-                    link_el = job.select_one("a")
-
-                    if not title_el or not link_el:
-                        continue
-
-                    title = title_el.text.strip()
-                    href = link_el.get("href")
-
-                    score = match_score(title, job_title)
-
-                    if score > best_score:
-                        best_score = score
-                        best_url = href
-                        best_title = title
-
-            # decision threshold (tune this later)
-            exists = best_score >= 0.85
-
-            return ATSResult(
-                exists=exists,
-                confidence=best_score,
-                url=best_url,
-                source="smartrecruiters",
-                reason=f"Best match: {best_title} in {location_hint}"
-            )
-
-        except Exception as e:
-            return ATSResult(
-                exists=None,
-                confidence=0.0,
-                url=None,
-                source="smartrecruiters",
-                reason=f"Exception: {str(e)}"
-            )
+        # NOTE: pagination is not implemented yet - this only captures page 1.
+        # Good enough for an early-stage cache; flagged as a follow-up.
+        return jobs

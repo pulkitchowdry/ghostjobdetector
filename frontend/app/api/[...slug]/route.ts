@@ -10,6 +10,7 @@ export async function POST (req: Request) {
 async function handleProxy(req: Request) {
     console.log(`Proxy handler`)
     const awsLambdaUrl = process.env.NEXT_PUBLIC_API_URL
+    console.log(`api url: ${awsLambdaUrl}`)
     const receivedUrl = new URL(req.url)
     const path = receivedUrl?.pathname.split('/api/').pop()
     const fullLambdaUrl = `${awsLambdaUrl}/${path}`

@@ -1,63 +1,46 @@
 import logging
 import re
-import math
-from .description_dictionary import GENERIC_PHRASES, SPECIFIC_INDICATORS, RED_FLAGS
 
-def analyze_description_quality(description: str) -> tuple[int, list[str]]:
-    logger = logging.getLogger(__name__)
+from .description_dictionary import GENERIC_PHRASES, SPECIFIC_INDICATORS, RED_FLAGS
+from .role_taxonomy import compute_role_relevance
+
+logger = logging.getLogger(__name__)
+
+# Below this relevance score (and only when the classifier is confident),
+# we treat it as a hard signal that content doesn't belong to this posting
+# at all, and cap the score regardless of how "specific" the text looks.
+HARD_MISMATCH_THRESHOLD = 20
+HARD_MISMATCH_CAP = 15
+
+
+def _analyze_structural_quality(description: str) -> tuple[int, list[str]]:
+    """The original regex/keyword scoring - checks the description in
+    isolation (length, structure, buzzwords, red flags). This has no way
+    to know whether the content actually belongs to the stated job title;
+    that's handled separately by role_taxonomy.compute_role_relevance."""
     text = description.lower()
     indicators = []
 
     words = text.split()
     word_count = len(words)
 
-    # ---------------------------
-    # 1. Generic signal (weak penalty)
-    # ---------------------------
     generic_hits = sum(1 for phrase in GENERIC_PHRASES if phrase in text)
     generic_score = min(generic_hits * 2, 20)
 
-    logger.info(f"generic_hits: {generic_hits}, generic_score: {generic_score}")
-    # ---------------------------
-    # 2. Specific signal (strong reward)
-    # ---------------------------
-    tech_hits = sum(
-        1 for pattern in SPECIFIC_INDICATORS
-        if re.search(pattern, text, re.IGNORECASE)
-    )
+    tech_hits = sum(1 for pattern in SPECIFIC_INDICATORS if re.search(pattern, text, re.IGNORECASE))
     specific_score = min(tech_hits * 5, 40)
 
-    logger.info(f"tech_hits: {tech_hits}")
-    # ---------------------------
-    # 3. Red flags (strong penalty)
-    # ---------------------------
-    red_flags = sum(
-        1 for pattern in RED_FLAGS
-        if re.search(pattern, text, re.IGNORECASE)
-    )
+    red_flags = sum(1 for pattern in RED_FLAGS if re.search(pattern, text, re.IGNORECASE))
     red_flag_score = red_flags * 15
-    logger.info(f"red_flag: {red_flag_score}")
-    # ---------------------------
-    # 4. Structure score
-    # ---------------------------
+
     structure_score = 0
     for section in ["responsibilities", "requirements", "qualifications"]:
         if section in text:
             structure_score += 10
 
-    logger.info(f"struc: {structure_score}")
-    # ---------------------------
-    # 5. Filler ratio
-    # ---------------------------
-    filler_words = generic_hits
-    filler_ratio = filler_words / max(word_count, 1)
-
+    filler_ratio = generic_hits / max(word_count, 1)
     filler_penalty = int(filler_ratio * 30)
-    logger.info(f"filler: {filler_penalty}")
 
-    # ---------------------------
-    # 6. Length signal
-    # ---------------------------
     if word_count < 80:
         length_score = -10
         indicators.append("Very short description")
@@ -66,10 +49,6 @@ def analyze_description_quality(description: str) -> tuple[int, list[str]]:
     else:
         length_score = 0
 
-    logger.info(f"len: {length_score}")
-    # ---------------------------
-    # FINAL SCORE
-    # ---------------------------
     score = (
         50
         + specific_score
@@ -79,9 +58,7 @@ def analyze_description_quality(description: str) -> tuple[int, list[str]]:
         - filler_penalty
         + length_score
     )
-
     score = max(0, min(100, score))
-    logger.info(f"description_score: {score}")
 
     indicators.append(f"Generic phrases: {generic_hits}")
     indicators.append(f"Specific signals: {tech_hits}")
@@ -90,61 +67,43 @@ def analyze_description_quality(description: str) -> tuple[int, list[str]]:
     return score, indicators
 
 
-# Old one
-# def analyze_description_quality(description: str) -> tuple[int, list[str]]:
-#     """
-#     Analyze job description for specificity vs generic content.
-#     Returns score (0-100) and list of indicators found.
-#     """
-#     description_lower = description.lower()
-#     indicators = []
-    
-#     # Count generic phrases (decreases score)
-#     generic_count = sum(1 for phrase in GENERIC_PHRASES if phrase in description_lower)
-    
-#     # Count specific indicators (increases score)
-#     specific_count = 0
-#     for pattern in SPECIFIC_INDICATORS:
-#         matches = re.findall(pattern, description_lower, re.IGNORECASE)
-#         if matches:
-#             specific_count += len(matches)
-#             indicators.append(f"Found specific detail: {pattern[:30]}...")
-    
-#     # Check for red flags
-#     red_flag_count = 0
-#     for pattern in RED_FLAGS:
-#         if re.search(pattern, description_lower, re.IGNORECASE):
-#             red_flag_count += 1
-#             indicators.append(f"Warning: Red flag pattern detected")
-    
-#     # Description length analysis
-#     word_count = len(description.split())
-#     if word_count < 100:
-#         indicators.append("Very short description (under 100 words)")
-#     elif word_count > 300:
-#         indicators.append("Detailed description (300+ words)")
-    
-#     # Calculate score
-#     # Start at 50, adjust based on findings
-#     base_score = 50
-    
-#     # Penalize generic content (-3 per generic phrase, max -30)
-#     generic_penalty = min(generic_count * 3, 30)
-    
-#     # Reward specific content (+5 per specific indicator, max +40)
-#     specific_bonus = min(specific_count * 5, 40)
-    
-#     # Penalize red flags heavily (-15 per flag)
-#     red_flag_penalty = red_flag_count * 15
-    
-#     # Length bonus/penalty
-#     length_modifier = 0
-#     if word_count < 100:
-#         length_modifier = -10
-#     elif word_count > 300:
-#         length_modifier = 10
-    
-#     score = base_score - generic_penalty + specific_bonus - red_flag_penalty + length_modifier
-#     score = max(0, min(100, score))
-    
-#     return score, indicators
+def analyze_description_quality(description: str, job_title: str | None = None) -> tuple[int, list[str]]:
+    """
+    Two independent checks, combined:
+      1. Structural quality - is the writing specific/detailed vs generic/thin?
+      2. Title/content relevance - does the content actually match the stated
+         role? (catches e.g. a "Software Engineer" title paired with a food-
+         service description, which pure regex on the description alone
+         cannot detect.)
+
+    A confident, strong relevance mismatch acts as a hard cap on the final
+    score - it's a stronger fraud signal than "vague but on-topic", so it
+    shouldn't just quietly average out against a high structural score.
+    """
+    structural_score, indicators = _analyze_structural_quality(description)
+
+    if not job_title:
+        return structural_score, indicators
+
+    relevance = compute_role_relevance(job_title, description)
+    indicators.append(
+        f"Title/content relevance: {relevance['relevance_score']}/100 - {relevance['reason']}"
+    )
+
+    if relevance["confident"] and relevance["relevance_score"] <= HARD_MISMATCH_THRESHOLD:
+        final_score = min(structural_score, HARD_MISMATCH_CAP)
+        indicators.append(
+            "MISMATCH: description content does not appear to match the stated job title"
+        )
+    else:
+        # Soft blend otherwise - relevance nudges the score without a
+        # confident classification overriding everything else.
+        final_score = int(round(structural_score * 0.7 + relevance["relevance_score"] * 0.3))
+
+    final_score = max(0, min(100, final_score))
+    logger.info(
+        f"description_score: structural={structural_score} "
+        f"relevance={relevance['relevance_score']} final={final_score}"
+    )
+
+    return final_score, indicators
