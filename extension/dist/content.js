@@ -4,7 +4,7 @@
  */
 
 // API endpoint - change this to your deployed API URL
-const API_BASE = 'http://localhost:8000';
+const API_BASE = 'https://ghostjobdetector-tau.vercel.app/api';
 
 /**
  * Extract job data from the currently displayed LinkedIn job page

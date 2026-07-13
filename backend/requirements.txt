@@ -9,3 +9,4 @@ supabase
 python-dotenv>=1.0.0
 ddgs
 mangum
+rapidfuzz
